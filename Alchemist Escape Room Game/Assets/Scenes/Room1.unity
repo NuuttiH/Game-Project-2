@@ -855,8 +855,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
-  leftWallX: -25
-  rightWallX: 30
+  leftWall: -25.5
+  rightWall: 33
 --- !u!1 &2145889355
 GameObject:
   m_ObjectHideFlags: 0
