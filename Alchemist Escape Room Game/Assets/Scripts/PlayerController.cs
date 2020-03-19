@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class PlayerMovement : MonoBehaviour{
+public class PlayerController : MonoBehaviour{
     public Vector3 targetPosition;
     private float camHeight; // 0
 
@@ -16,7 +17,8 @@ public class PlayerMovement : MonoBehaviour{
     }
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.Mouse0)){
+        if(Input.GetKeyDown(KeyCode.Mouse0) &&
+        !EventSystem.current.IsPointerOverGameObject()){
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             targetPosition.y = camHeight;
             if(targetPosition.x < leftWall) targetPosition.x = leftWall;
