@@ -12,7 +12,7 @@ public class ItemTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     }
 
     public void OnPointerEnter(PointerEventData eventData){
-        if(GameMaster.Instance.inventoryOpen) tooltipCanvas.alpha = 1;
+        tooltipCanvas.alpha = 1;
     }
 
     public void OnPointerExit(PointerEventData eventData){

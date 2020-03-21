@@ -8,9 +8,11 @@ public class GameMaster : MonoBehaviour{
     
     public float objectActivationDistance = 3.8f;
 
+    public bool puzzleOpen;
+
     [Header("Inventory")]
-    public InventoryManager inventoryManager;
     public bool inventoryOpen;
+    public InventoryManager inventoryManager;
     public int inventoryOffset;
     public Item emptyItem;
     public int inventorySize = 8;
@@ -41,6 +43,6 @@ public class GameMaster : MonoBehaviour{
             if(items[0] == emptyItem) break;
         }
         items[i] = item;
-        inventoryManager.InventoryDraw();
+        inventoryManager.DrawInventory();
     }
 }

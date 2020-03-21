@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class InventoryManager : MonoBehaviour{
     public static InventoryManager Instance;
     public Animator animator;
-    public Animator animator2;
 
     public Button inventoryButton;
 
@@ -27,23 +26,21 @@ public class InventoryManager : MonoBehaviour{
     }
 
     public void TaskOnClick(){
-        if(GameMaster.Instance.inventoryOpen) InventoryClose();
-        else InventoryOpen();
+        if(GameMaster.Instance.inventoryOpen) CloseInventory();
+        else OpenInventory();
     }
 
     
-    public void InventoryClose(){
-        animator.SetBool("IsOpen1", false);
-        animator2.SetBool("IsOpen2", false);
+    public void CloseInventory(){
+        animator.SetBool("IsOpen", false);
         GameMaster.Instance.inventoryOpen = false;
     }
-    public void InventoryOpen(){
-        animator.SetBool("IsOpen1", true);
-        animator2.SetBool("IsOpen2", true);
+    public void OpenInventory(){
+        animator.SetBool("IsOpen", true);
         GameMaster.Instance.inventoryOpen = true;
     }
 
-    public void InventoryDraw(){
+    public void DrawInventory(){
         int offset = GameMaster.Instance.inventoryOffset;
         item1.GetComponent<ItemDisplay>().NewDisplay(GameMaster.Instance.items[0+offset]);
         /*item2.GetComponent<ItemDisplay>().NewDisplay(GameMaster.Instance.items[1+offset]);

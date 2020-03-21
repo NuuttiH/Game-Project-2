@@ -8,6 +8,7 @@ public class InteractiveObject : MonoBehaviour{
     public SpriteRenderer spriteRenderer;
     public bool hasPickup;
     public bool disappearOnAction;
+    public Puzzle puzzle;
 
 
     void Start(){
@@ -24,6 +25,9 @@ public class InteractiveObject : MonoBehaviour{
   
                 if(hasPickup) GameMaster.Instance.ItemPickup(item);
                 if(disappearOnAction) Destroy(gameObject);
+                if(puzzle!=null){
+                    puzzle.OpenPuzzle();
+                }
             }
         }
     }
