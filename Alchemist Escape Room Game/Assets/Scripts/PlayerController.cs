@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour{
     public float rightWall;
 
     void Start(){
+        this.transform.position = GameMaster.Instance.startLocation;
         targetPosition = GameMaster.Instance.startLocation;
         camHeight = GameMaster.Instance.startLocation.y; // 0
     }

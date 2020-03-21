@@ -2232,7 +2232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191deddb4f13e4140a4cddd1ea17c203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startLocation: {x: 0, y: 0, z: 0}
+  startLocation: {x: 19.2, y: 0, z: 0}
   objectActivationDistance: 3.8
   inventoryManager: {fileID: 315563362}
   inventoryOpen: 0
