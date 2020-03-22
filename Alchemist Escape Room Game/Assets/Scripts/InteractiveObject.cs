@@ -8,6 +8,7 @@ public class InteractiveObject : MonoBehaviour{
     public SpriteRenderer spriteRenderer;
     public bool hasPickup;
     public bool disappearOnAction;
+    public Dialogue pickupDialogue;
     public Puzzle puzzle;
 
 
@@ -24,6 +25,8 @@ public class InteractiveObject : MonoBehaviour{
             this.transform.position) < GameMaster.Instance.objectActivationDistance){
   
                 if(hasPickup) GameMaster.Instance.ItemPickup(item);
+                if(pickupDialogue!=null) 
+                    DialogueManager.Instance.StartDialogue(pickupDialogue);
                 if(disappearOnAction) Destroy(gameObject);
                 if(puzzle!=null){
                     PuzzleController.Instance.OpenPuzzle(puzzle);
