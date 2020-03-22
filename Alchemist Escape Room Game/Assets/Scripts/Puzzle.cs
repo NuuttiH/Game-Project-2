@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Puzzle : MonoBehaviour{
-    public Canvas canvas;
-    public Animator animator;
-    public Image background;
+[CreateAssetMenu(fileName = "New Puzzle", menuName = "Puzzle")]
+public class Puzzle : ScriptableObject{
+    public string title;
+    [TextArea(10,15)]
+    public string puzzleText;
+    public Sprite combineIcon;
 
     public int puzzleItemCount;
     public Item item1;
@@ -15,18 +17,8 @@ public class Puzzle : MonoBehaviour{
     public Item item4;
     public Item item5;
     public Item item6;
-    
 
-    void Update(){
-        if(Input.GetKeyUp(KeyCode.Escape)) canvas.enabled = false;
-    }
+    public List<Item> solution = new List<Item>();
 
-    public void OpenPuzzle(){
-        animator.SetBool("IsOpen", true);
-        GameMaster.Instance.puzzleOpen = true;
-    }
-    public void ClosePuzzle(){
-        animator.SetBool("IsOpen", false);
-        GameMaster.Instance.puzzleOpen = false;
-    }
+    public int customEventId;
 }

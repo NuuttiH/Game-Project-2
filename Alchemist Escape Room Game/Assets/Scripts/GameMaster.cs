@@ -15,10 +15,9 @@ public class GameMaster : MonoBehaviour{
     public InventoryManager inventoryManager;
     public int inventoryOffset;
     public Item emptyItem;
-    public int inventorySize = 8;
 
     [Header("Items")]
-    public Item[] items;
+    public List<Item> items = new List<Item>();
     
     
     void Awake(){
@@ -29,20 +28,21 @@ public class GameMaster : MonoBehaviour{
     void Start(){
         inventoryOpen = false;
         inventoryOffset = 0;
-        items = new Item[inventorySize];
-        for(int i=0; i<inventorySize; i++){
-            items[i] = emptyItem;
-        }
+
+        PuzzleController.Instance.ClosePuzzle();
     }
 
     public void ItemPickup(Item item){
         // Assume inventory is large enough to hold all items
         Debug.Log("Picked up " + item.name);
-        int i = 0;
-        for(; i<inventorySize; i++){
-            if(items[0] == emptyItem) break;
-        }
-        items[i] = item;
+        items.Add(item);
+        inventoryManager.DrawInventory();
+    }
+
+    public void ItemRemoval(Item item){
+        // Assume inventory is large enough to hold all items
+        Debug.Log("Removing " + item.name);
+        items.Remove(item);
         inventoryManager.DrawInventory();
     }
 }

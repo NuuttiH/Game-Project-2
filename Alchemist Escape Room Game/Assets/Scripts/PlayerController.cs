@@ -18,8 +18,8 @@ public class PlayerController : MonoBehaviour{
     }
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.Mouse0) &&
-        !EventSystem.current.IsPointerOverGameObject()){
+        if(!GameMaster.Instance.puzzleOpen && Input.GetKeyDown(KeyCode.Mouse0)
+        && !EventSystem.current.IsPointerOverGameObject()){
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             targetPosition.y = camHeight;
             if(targetPosition.x < leftWall) targetPosition.x = leftWall;

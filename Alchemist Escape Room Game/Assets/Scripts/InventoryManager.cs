@@ -42,11 +42,24 @@ public class InventoryManager : MonoBehaviour{
 
     public void DrawInventory(){
         int offset = GameMaster.Instance.inventoryOffset;
-        item1.GetComponent<ItemDisplay>().NewDisplay(GameMaster.Instance.items[0+offset]);
-        /*item2.GetComponent<ItemDisplay>().NewDisplay(GameMaster.Instance.items[1+offset]);
-        item3.GetComponent<ItemDisplay>().NewDisplay(GameMaster.Instance.items[2+offset]);
-        item4.GetComponent<ItemDisplay>().NewDisplay(GameMaster.Instance.items[3+offset]);
-        item5.GetComponent<ItemDisplay>().NewDisplay(GameMaster.Instance.items[4+offset]);
-        item6.GetComponent<ItemDisplay>().NewDisplay(GameMaster.Instance.items[5+offset]);
-    */}
+        int size = GameMaster.Instance.items.Count;
+        if(size>0)
+            item1.GetComponent<ItemDisplay>()
+            .NewDisplay(GameMaster.Instance.items[0+offset]);
+        if(size>1)
+            item2.GetComponent<ItemDisplay>()
+            .NewDisplay(GameMaster.Instance.items[1+offset]);
+        if(size>2)
+            item3.GetComponent<ItemDisplay>()
+            .NewDisplay(GameMaster.Instance.items[2+offset]);
+        if(size>3)
+            item4.GetComponent<ItemDisplay>()
+            .NewDisplay(GameMaster.Instance.items[3+offset]);
+        if(size>4)
+            item5.GetComponent<ItemDisplay>()
+            .NewDisplay(GameMaster.Instance.items[4+offset]);
+        if(size>5)
+            item6.GetComponent<ItemDisplay>()
+            .NewDisplay(GameMaster.Instance.items[5+offset]);
+    }
 }

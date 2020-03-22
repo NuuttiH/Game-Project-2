@@ -16,7 +16,7 @@ public class InteractiveObject : MonoBehaviour{
     }
 
     void OnMouseOver(){
-        if(Input.GetMouseButtonDown(1)){
+        if(Input.GetKeyDown(KeyCode.Mouse0)){
             Debug.Log("Distance between player and object: " + Vector3.Distance(
             GameObject.FindWithTag("Player").transform.position,this.transform.position));
             
@@ -26,7 +26,7 @@ public class InteractiveObject : MonoBehaviour{
                 if(hasPickup) GameMaster.Instance.ItemPickup(item);
                 if(disappearOnAction) Destroy(gameObject);
                 if(puzzle!=null){
-                    puzzle.OpenPuzzle();
+                    PuzzleController.Instance.OpenPuzzle(puzzle);
                 }
             }
         }
