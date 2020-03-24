@@ -24,9 +24,9 @@ public class InteractiveObject : MonoBehaviour{
             if(Vector3.Distance(GameObject.FindWithTag("Player").transform.position,
             this.transform.position) < GameMaster.Instance.objectActivationDistance){
   
-                if(hasPickup) GameMaster.Instance.ItemPickup(item);
+                if(hasPickup) GameMaster.Instance.PickupItem(item);
                 if(pickupDialogue!=null) 
-                    DialogueManager.Instance.StartDialogue(pickupDialogue);
+                    pickupDialogue.Trigger();
                 if(disappearOnAction) Destroy(gameObject);
                 if(puzzle!=null){
                     PuzzleController.Instance.OpenPuzzle(puzzle);

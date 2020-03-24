@@ -32,14 +32,14 @@ public class GameMaster : MonoBehaviour{
         PuzzleController.Instance.ClosePuzzle();
     }
 
-    public void ItemPickup(Item item){
+    public void PickupItem(Item item){
         // Assume inventory is large enough to hold all items
         Debug.Log("Picked up " + item.name);
         items.Add(item);
         inventoryManager.DrawInventory();
     }
 
-    public void ItemRemoval(Item item){
+    public void RemoveItem(Item item){
         // Assume inventory is large enough to hold all items
         Debug.Log("Removing " + item.name);
         items.Remove(item);

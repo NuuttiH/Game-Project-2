@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 131688878}
   - component: {fileID: 131688877}
   - component: {fileID: 131688879}
+  - component: {fileID: 131688881}
   - component: {fileID: 131688880}
   m_Layer: 0
   m_Name: TestItemObjectAlt
@@ -637,6 +638,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.24, y: 10.24}
   m_EdgeRadius: 0
+--- !u!114 &131688881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131688876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5716cd1e8f81435489389b5faa788a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - sprite: {fileID: 0}
+    name: 
+    sentence: 
+  - sprite: {fileID: 0}
+    name: 
+    sentence: 
 --- !u!1 &154337507
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +1008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 1004289620}
+  image: {fileID: 208936266}
 --- !u!1 &218210577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,6 +1912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 2754082}
+  image: {fileID: 437353842}
 --- !u!1 &445784912
 GameObject:
   m_ObjectHideFlags: 0
@@ -2626,6 +2648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 1665447294}
+  image: {fileID: 664855617}
 --- !u!1 &672044235
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,6 +2981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 1803135797}
+  image: {fileID: 720624060}
 --- !u!1 &722040604
 GameObject:
   m_ObjectHideFlags: 0
@@ -4732,6 +4756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 471173355}
+  image: {fileID: 1156287860}
 --- !u!1 &1180814303
 GameObject:
   m_ObjectHideFlags: 0
@@ -4906,6 +4931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 1420221822}
+  image: {fileID: 1223080585}
 --- !u!1 &1246067399
 GameObject:
   m_ObjectHideFlags: 0
@@ -5454,6 +5480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 225524458}
+  image: {fileID: 1381542678}
 --- !u!1 &1382801342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5628,6 +5655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 1057731147}
+  image: {fileID: 1385835195}
 --- !u!1 &1391169128
 GameObject:
   m_ObjectHideFlags: 0
@@ -6313,8 +6341,6 @@ GameObject:
   - component: {fileID: 1546891544}
   - component: {fileID: 1546891543}
   - component: {fileID: 1546891548}
-  - component: {fileID: 1546891547}
-  - component: {fileID: 1546891546}
   - component: {fileID: 1546891542}
   m_Layer: 0
   m_Name: TestItemObject
@@ -6431,37 +6457,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1546891546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546891541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8529c77756c5ae4cb8344308d47c5d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 65aedb33342ed2d44b9a8679ad19c287, type: 3}
-  name: Also Wizard Name
-  sentence: Sentence 2! Sentence 3! Sentence 4! Sentence 5! Sentence 6! Sentence
-    7! Sentence 8! Sentence 9!
---- !u!114 &1546891547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546891541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8529c77756c5ae4cb8344308d47c5d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: a0496f6da664b064a851976025e38ae2, type: 3}
-  name: Wizard Name
-  sentence: Sentence 1!
 --- !u!114 &1546891548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6475,8 +6470,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - {fileID: 1546891547}
-  - {fileID: 1546891546}
+  - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
+    name: Grumpy Wizard
+    sentence: So  you picked that up huh?
+  - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
+    name: Grumpy Wizard
+    sentence: I wouldn't have done that if I were you.
 --- !u!1 &1572965434
 GameObject:
   m_ObjectHideFlags: 0
@@ -7208,6 +7207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 1246067403}
+  image: {fileID: 1662660500}
 --- !u!1 &1665447290
 GameObject:
   m_ObjectHideFlags: 0
@@ -7467,6 +7467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 469514757}
+  image: {fileID: 1689343677}
 --- !u!1 &1705359602
 GameObject:
   m_ObjectHideFlags: 0
@@ -9227,6 +9228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 696067604}
+  image: {fileID: 2020142093}
 --- !u!1 &2033205523
 GameObject:
   m_ObjectHideFlags: 0
@@ -9489,6 +9491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDisplay: {fileID: 1756067510}
+  image: {fileID: 2049643898}
 --- !u!1 &2070888253
 GameObject:
   m_ObjectHideFlags: 0
