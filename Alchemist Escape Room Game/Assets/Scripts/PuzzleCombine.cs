@@ -18,7 +18,7 @@ public class PuzzleCombine : ScriptableObject{
     public Item item5;
     public Item item6;
 
-    public List<Item> solution = new List<Item>();
-
-    public int customEventId;
+    public PuzzleCombineSolution correctSolution;
+    public PuzzleCombineSolution[] solutions;
+    public PuzzleCombineSolution defaultFailingSolution;
 }

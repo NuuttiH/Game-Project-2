@@ -40,7 +40,7 @@ public class PuzzleCombineController : MonoBehaviour{
         puzzleText.text = puzzle.puzzleText;
         combineIcon.sprite = puzzle.combineIcon;
 
-        combineText.text = "0/" + puzzle.solution.Count;
+        combineText.text = "0/" + puzzle.correctSolution.solution.Count;
         item1.GetComponent<ItemDisplay>().NewDisplay(puzzle.item1);
         item2.GetComponent<ItemDisplay>().NewDisplay(puzzle.item2);
         item3.GetComponent<ItemDisplay>().NewDisplay(puzzle.item3);
@@ -48,7 +48,7 @@ public class PuzzleCombineController : MonoBehaviour{
         item5.GetComponent<ItemDisplay>().NewDisplay(puzzle.item5);
         item6.GetComponent<ItemDisplay>().NewDisplay(puzzle.item6);
         
-        realSolution = puzzle.solution;
+        realSolution = puzzle.correctSolution.solution;
         currentPuzzle = puzzle;
 
         currentSolution = new List<Item>();
@@ -79,11 +79,41 @@ public class PuzzleCombineController : MonoBehaviour{
 
             if(match){
                 Debug.Log("Puzzle compleated");
-                GameEventHandler.Instance.DoEvent(currentPuzzle.customEventId);
+                currentPuzzle.correctSolution.resultDialogue.Trigger();
+                GameEventHandler.Instance
+                .DoEvent(currentPuzzle.correctSolution.customEventId);
                 ClosePuzzle();
             }
             else{
                 Debug.Log("Puzzle failed");
+
+                foreach(PuzzleCombineSolution s in currentPuzzle.solutions){
+                    foreach(Item solutionItem in s.solution){
+                        match = false;
+                        foreach(Item currentSolutionItem in currentSolution){
+                            if(solutionItem.name == currentSolutionItem.name){
+                                match = true;
+                                break;
+                            }
+                        }
+                        if(!match) break;
+                    }
+                    if(match){
+                        Debug.Log("Failing solution found");
+                        s.resultDialogue.Trigger();
+                        GameEventHandler.Instance
+                        .DoEvent(s.customEventId);
+                        ClosePuzzle();
+                    }
+                    else{
+                        Debug.Log("No specific failing solution found");
+                        currentPuzzle.defaultFailingSolution.resultDialogue.Trigger();
+                        GameEventHandler.Instance
+                        .DoEvent(currentPuzzle.defaultFailingSolution.customEventId);
+                        ClosePuzzle();
+                    }
+                }
+
                 ResetPuzzle();
             }
         }
