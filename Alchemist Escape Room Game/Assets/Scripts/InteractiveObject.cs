@@ -8,8 +8,8 @@ public class InteractiveObject : MonoBehaviour{
     public SpriteRenderer spriteRenderer;
     public bool hasPickup;
     public bool disappearOnAction;
-    public Dialogue pickupDialogue;
-    public Puzzle puzzle;
+    public Dialogue actionDialogue;
+    public PuzzleCombine puzzleCombine;
 
 
     void Start(){
@@ -24,12 +24,11 @@ public class InteractiveObject : MonoBehaviour{
             if(Vector3.Distance(GameObject.FindWithTag("Player").transform.position,
             this.transform.position) < GameMaster.Instance.objectActivationDistance){
   
+                actionDialogue.Trigger();
                 if(hasPickup) GameMaster.Instance.PickupItem(item);
-                if(pickupDialogue!=null) 
-                    pickupDialogue.Trigger();
                 if(disappearOnAction) Destroy(gameObject);
-                if(puzzle!=null){
-                    PuzzleController.Instance.OpenPuzzle(puzzle);
+                if(puzzleCombine!=null){
+                    PuzzleCombineController.Instance.OpenPuzzle(puzzleCombine);
                 }
             }
         }

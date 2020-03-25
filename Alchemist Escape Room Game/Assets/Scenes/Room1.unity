@@ -521,7 +521,6 @@ GameObject:
   - component: {fileID: 131688878}
   - component: {fileID: 131688877}
   - component: {fileID: 131688879}
-  - component: {fileID: 131688881}
   - component: {fileID: 131688880}
   m_Layer: 0
   m_Name: TestItemObjectAlt
@@ -609,9 +608,13 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: d3118fe79ec752b45a053caccbca10ad, type: 2}
   spriteRenderer: {fileID: 131688877}
   hasPickup: 1
-  disappearOnAction: 1
-  pickupDialogue: {fileID: 0}
-  puzzle: {fileID: 0}
+  disappearOnAction: 0
+  actionDialogue:
+    lines:
+    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
+      name: Angry Wizard
+      sentence: Hey! Don't pick that up.
+  puzzleCombine: {fileID: 0}
 --- !u!61 &131688880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -638,25 +641,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.24, y: 10.24}
   m_EdgeRadius: 0
---- !u!114 &131688881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131688876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5716cd1e8f81435489389b5faa788a00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lines:
-  - sprite: {fileID: 0}
-    name: 
-    sentence: 
-  - sprite: {fileID: 0}
-    name: 
-    sentence: 
 --- !u!1 &154337507
 GameObject:
   m_ObjectHideFlags: 0
@@ -3759,8 +3743,12 @@ MonoBehaviour:
   spriteRenderer: {fileID: 964803594}
   hasPickup: 0
   disappearOnAction: 0
-  pickupDialogue: {fileID: 0}
-  puzzle: {fileID: 11400000, guid: 9ff35e1fa92a40c4c86fa0bad353858b, type: 2}
+  actionDialogue:
+    lines:
+    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
+      name: Grumpy Wizard
+      sentence: Think you can solve this? I doubt it.
+  puzzleCombine: {fileID: 11400000, guid: 9ff35e1fa92a40c4c86fa0bad353858b, type: 2}
 --- !u!212 &964803594
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4562,7 +4550,6 @@ MonoBehaviour:
   inventoryOpen: 0
   inventoryManager: {fileID: 315563362}
   inventoryOffset: 0
-  emptyItem: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
   items: []
 --- !u!4 &1140302199
 Transform:
@@ -5267,7 +5254,7 @@ GameObject:
   - component: {fileID: 1372248759}
   - component: {fileID: 1372248762}
   m_Layer: 5
-  m_Name: PuzzleGUI
+  m_Name: PuzzleCombineGUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6340,7 +6327,6 @@ GameObject:
   - component: {fileID: 1546891545}
   - component: {fileID: 1546891544}
   - component: {fileID: 1546891543}
-  - component: {fileID: 1546891548}
   - component: {fileID: 1546891542}
   m_Layer: 0
   m_Name: TestItemObject
@@ -6391,8 +6377,17 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1546891544}
   hasPickup: 1
   disappearOnAction: 1
-  pickupDialogue: {fileID: 1546891548}
-  puzzle: {fileID: 0}
+  actionDialogue:
+    lines:
+    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
+      name: Grumpy Wizard
+      sentence: 'sadafsaf asf afsa fas fasf asf asf asf asfsa fa '
+    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
+      name: Grumpy Wizard
+      sentence: 'sadafsaf asf afsa fas fasf asf asf asf asfsa fa sadafsaf asf afsa
+        fas fasf asf asf asf asfsa fa sadafsaf asf afsa fas fasf asf asf asf asfsa
+        fa '
+  puzzleCombine: {fileID: 0}
 --- !u!212 &1546891544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6457,25 +6452,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1546891548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546891541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5716cd1e8f81435489389b5faa788a00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lines:
-  - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-    name: Grumpy Wizard
-    sentence: So  you picked that up huh?
-  - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-    name: Grumpy Wizard
-    sentence: I wouldn't have done that if I were you.
 --- !u!1 &1572965434
 GameObject:
   m_ObjectHideFlags: 0

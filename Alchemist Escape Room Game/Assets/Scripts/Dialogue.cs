@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour{
+[System.Serializable]
+public class Dialogue{
     public DialogueLine[] lines;
 
     public void Trigger(){
-        DialogueManager.Instance.StartDialogue(this);
+        if(lines.Length>0) DialogueManager.Instance.StartDialogue(this);
     }
 }

@@ -15,17 +15,25 @@ public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler{
 
     public void OnEndDrag(PointerEventData eventData){
         transform.localPosition = Vector3.zero;
-        
-        List<RaycastResult> results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(eventData, results);
-        
-        if(results.Count>0){
-            Debug.Log("Item dropped on: " + results[0]);
-            if(results[0].gameObject.name == "CombineIcon") 
-                results[0].gameObject.transform.root.GetComponent<Canvas>()
-                .GetComponent<PuzzleController>().Combine(itemDisplay.item);
+
+        int puzzleId = GameMaster.Instance.puzzleOpen;
+        if(puzzleId!=0){
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(eventData, results);
+            
+            if(results.Count>0){
+                Debug.Log("Item dropped on: " + results[0]);
+                if(results[0].gameObject.name == "CombineIcon"){
+                    if(puzzleId==1){
+                        results[0].gameObject.transform.root.GetComponent<Canvas>()
+                        .GetComponent<PuzzleCombineController>()
+                        .Combine(itemDisplay.item);
+                    }
+                }
+            }
+            else{ Debug.Log("Item dropped over nothing "); }
         }
-        else{ Debug.Log("Item dropped over nothing "); }
+        
 
         StartCoroutine(TurnRaycasterBackOn());
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "New Puzzle", menuName = "Puzzle")]
-public class Puzzle : ScriptableObject{
+public class PuzzleCombine : ScriptableObject{
     public string title;
     [TextArea(10,15)]
     public string puzzleText;

@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PuzzleController : MonoBehaviour{
-    public static PuzzleController Instance;
+public class PuzzleCombineController : MonoBehaviour{
+    public static PuzzleCombineController Instance;
     public Canvas canvas;
     public Image background;
     public Image combineIcon;
@@ -24,7 +24,7 @@ public class PuzzleController : MonoBehaviour{
     public List<Item> realSolution = new List<Item>();
     
     public List<Item> currentSolution = new List<Item>();
-    private Puzzle currentPuzzle;
+    private PuzzleCombine currentPuzzle;
 
     void Awake(){
         Instance = this;
@@ -35,7 +35,7 @@ public class PuzzleController : MonoBehaviour{
     }
 
 
-    public void OpenPuzzle(Puzzle puzzle){
+    public void OpenPuzzle(PuzzleCombine puzzle){
         title.text = puzzle.title;
         puzzleText.text = puzzle.puzzleText;
         combineIcon.sprite = puzzle.combineIcon;
@@ -52,11 +52,11 @@ public class PuzzleController : MonoBehaviour{
         currentPuzzle = puzzle;
 
         currentSolution = new List<Item>();
-        GameMaster.Instance.puzzleOpen = true;
+        GameMaster.Instance.puzzleOpen = 1;
         canvas.enabled = true;
     }
     public void ClosePuzzle(){
-        GameMaster.Instance.puzzleOpen = false;
+        GameMaster.Instance.puzzleOpen = 0;
         canvas.enabled = false;
     }
     public void ResetPuzzle(){ OpenPuzzle(currentPuzzle); }

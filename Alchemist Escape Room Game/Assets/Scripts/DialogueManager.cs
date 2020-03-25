@@ -43,16 +43,11 @@ public class DialogueManager : MonoBehaviour{
         DialogueLine line = lines.Dequeue();
         image.sprite = line.sprite;
         title.text = line.name;
-        // StopAllCoroutines();     // not necessary?
+        StopAllCoroutines();
         StartCoroutine(TypeText(line.sentence));
 
         //StartCoroutine(ContinueToNextSentence()); in TypeText()
     }
-    IEnumerator ContinueToNextSentence(){
-        yield return new WaitForSeconds(dialogueDelay);
-        DisplayNextSentence();
-    }
-
     IEnumerator TypeText(string text){
         textbox.text = "";
         foreach(char c in text.ToCharArray()){
@@ -61,6 +56,11 @@ public class DialogueManager : MonoBehaviour{
         }
         StartCoroutine(ContinueToNextSentence());
     }
+    IEnumerator ContinueToNextSentence(){
+        yield return new WaitForSeconds(dialogueDelay);
+        DisplayNextSentence();
+    }
+    
 
     IEnumerator EndDialogue(){
         yield return new WaitForSeconds(dialogueAfterDelay);
