@@ -613,7 +613,8 @@ MonoBehaviour:
     lines:
     - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
       name: Angry Wizard
-      sentence: Hey! Don't pick that up, stupid.
+      sentence: Hey! Don't pick that up, stupid. You might end this before we even
+        get started!
       audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
   puzzleCombine: {fileID: 0}
 --- !u!61 &131688880
@@ -3780,7 +3781,9 @@ MonoBehaviour:
     lines:
     - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
       name: Grumpy Wizard
-      sentence: Think you can solve this? I doubt it.
+      sentence: Oh, look! You actually managed to find the right tools. How about
+        showing me you know how to actually use them. Cast a light for us so you
+        won't trip over your heels again.
       audioClip: {fileID: 0}
   puzzleCombine: {fileID: 11400000, guid: 9ff35e1fa92a40c4c86fa0bad353858b, type: 2}
 --- !u!212 &964803594
@@ -6415,7 +6418,8 @@ MonoBehaviour:
     lines:
     - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
       name: Grumpy Wizard
-      sentence: 'sadafsaf asf afsa fas fasf asf asf asf asfsa fa '
+      sentence: I'm not sure you'll need that yet, but sure, just take whatever's
+        not yours. I'm sure a master wizard won't need that any time soon...
       audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
     - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
       name: Grumpy Wizard
