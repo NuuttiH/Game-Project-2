@@ -614,6 +614,7 @@ MonoBehaviour:
     - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
       name: Angry Wizard
       sentence: Hey! Don't pick that up.
+      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
   puzzleCombine: {fileID: 0}
 --- !u!61 &131688880
 BoxCollider2D:
@@ -2347,6 +2348,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2454,6 +2456,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &635419170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,6 +3781,7 @@ MonoBehaviour:
     - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
       name: Grumpy Wizard
       sentence: Think you can solve this? I doubt it.
+      audioClip: {fileID: 0}
   puzzleCombine: {fileID: 11400000, guid: 9ff35e1fa92a40c4c86fa0bad353858b, type: 2}
 --- !u!212 &964803594
 SpriteRenderer:
@@ -6382,11 +6416,13 @@ MonoBehaviour:
     - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
       name: Grumpy Wizard
       sentence: 'sadafsaf asf afsa fas fasf asf asf asf asfsa fa '
+      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
     - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
       name: Grumpy Wizard
       sentence: 'sadafsaf asf afsa fas fasf asf asf asf asfsa fa sadafsaf asf afsa
         fas fasf asf asf asf asfsa fa sadafsaf asf afsa fas fasf asf asf asf asfsa
         fa '
+      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
   puzzleCombine: {fileID: 0}
 --- !u!212 &1546891544
 SpriteRenderer:
@@ -8543,6 +8579,7 @@ GameObject:
   - component: {fileID: 1900863763}
   - component: {fileID: 1900863762}
   - component: {fileID: 1900863766}
+  - component: {fileID: 1900863767}
   m_Layer: 5
   m_Name: TextGUI
   m_TagString: Untagged
@@ -8643,12 +8680,109 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueCanvas: {fileID: 763120293}
+  audioSource: {fileID: 1900863767}
   letterDelay: 0.05
   dialogueDelay: 2.5
   dialogueAfterDelay: 3.5
   image: {fileID: 718596779}
   title: {fileID: 2642567}
   textbox: {fileID: 1835619703}
+--- !u!82 &1900863767
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900863761}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1901208302
 GameObject:
   m_ObjectHideFlags: 0

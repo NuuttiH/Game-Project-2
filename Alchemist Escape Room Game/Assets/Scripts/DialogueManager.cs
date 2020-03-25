@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour{
     public static DialogueManager Instance;
     public CanvasGroup dialogueCanvas;
+    public AudioSource audioSource;
     public float letterDelay;
     public float dialogueDelay;
     public float dialogueAfterDelay;
@@ -45,6 +46,10 @@ public class DialogueManager : MonoBehaviour{
         title.text = line.name;
         StopAllCoroutines();
         StartCoroutine(TypeText(line.sentence));
+        if(line.audioClip != null){
+            audioSource.Stop();
+            audioSource.PlayOneShot(line.audioClip);
+        }
 
         //StartCoroutine(ContinueToNextSentence()); in TypeText()
     }

@@ -9,4 +9,6 @@ public class DialogueLine{
 
     [TextArea(3, 10)]
     public string sentence;
+
+    public AudioClip audioClip;
 }
