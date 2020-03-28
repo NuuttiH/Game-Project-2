@@ -10,6 +10,8 @@ public class GameMaster : MonoBehaviour{
 
     public int puzzleOpen; // 0 = no puzzle, 1 = PuzzleCombine
 
+    public Item emptyItem;
+
     [Header("Inventory")]
     public bool inventoryOpen;
     public InventoryManager inventoryManager;
@@ -28,7 +30,8 @@ public class GameMaster : MonoBehaviour{
         inventoryOpen = false;
         inventoryOffset = 0;
 
-        PuzzleCombineController.Instance.ClosePuzzle();
+        PuzzleCombine1Controller.Instance.ClosePuzzle();
+        PuzzleCombine2Controller.Instance.ClosePuzzle();
     }
 
     public void PickupItem(Item item){

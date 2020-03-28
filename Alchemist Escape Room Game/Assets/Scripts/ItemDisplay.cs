@@ -23,12 +23,23 @@ public class ItemDisplay : MonoBehaviour{
         if(newItem == null){
             item = null;
             artwork.enabled = false;
-            return;
         }
-        item = newItem;
+        else if(newItem == GameMaster.Instance.emptyItem) EmptyDisplay();
+        else{
+            item = newItem;
+            artwork.sprite = item.artwork;
+            artwork.enabled = true;
+            artwork.GetComponent<ItemTooltip>().enabled = true;
+            artwork.GetComponent<ItemDragHandler>().enabled = true;
+            itemName.text = item.name;
+            itemDescription.text = item.description;
+        }
+    }
+
+    public void EmptyDisplay(){
+        item = GameMaster.Instance.emptyItem;
         artwork.sprite = item.artwork;
-        artwork.enabled = true;
-        itemName.text = item.name;
-        itemDescription.text = item.description;
+        artwork.GetComponent<ItemTooltip>().enabled = false;
+        artwork.GetComponent<ItemDragHandler>().enabled = false;
     }
 }

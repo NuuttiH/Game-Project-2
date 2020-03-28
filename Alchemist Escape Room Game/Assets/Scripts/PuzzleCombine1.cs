@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "New Puzzle", menuName = "Puzzle")]
-public class PuzzleCombine : ScriptableObject{
+[CreateAssetMenu(fileName = "New Puzzle (Combine1)", menuName = "Puzzle (Combine1)")]
+public class PuzzleCombine1 : ScriptableObject{
     public string title;
     [TextArea(10,15)]
     public string puzzleText;
@@ -18,7 +18,7 @@ public class PuzzleCombine : ScriptableObject{
     public Item item5;
     public Item item6;
 
-    public PuzzleCombineSolution correctSolution;
-    public PuzzleCombineSolution[] solutions;
-    public PuzzleCombineSolution defaultFailingSolution;
+    public PuzzleCombine1Solution correctSolution;
+    public PuzzleCombine1Solution[] solutions;
+    public PuzzleCombine1Solution defaultFailingSolution;
 }

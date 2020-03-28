@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41429aa144a45444fbef52a307aa83a9, type: 3}
+  m_Script: {fileID: 11500000, guid: c610b1456e49ef942a7d0550d48905d4, type: 3}
   m_Name: TestPuzzle
   m_EditorClassIdentifier: 
   title: The Test Puzzle

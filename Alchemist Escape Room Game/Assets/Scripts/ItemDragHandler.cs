@@ -23,12 +23,25 @@ public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler{
             
             if(results.Count>0){
                 Debug.Log("Item dropped on: " + results[0]);
-                if(results[0].gameObject.name == "CombineIcon"){
-                    if(puzzleId==1){
+                string resultName = results[0].gameObject.name;
+                switch(resultName){
+                    case "CombineIcon":
                         results[0].gameObject.transform.root.GetComponent<Canvas>()
-                        .GetComponent<PuzzleCombineController>()
+                        .GetComponent<PuzzleCombine1Controller>()
                         .Combine(itemDisplay.item);
-                    }
+                        break;
+                    case "ItemInput1Image":
+                        results[0].gameObject.transform.root.GetComponent<Canvas>()
+                        .GetComponent<PuzzleCombine2Controller>()
+                        .Combine(itemDisplay.item, 1);
+                        break;
+                    case "ItemInput2Image":
+                        results[0].gameObject.transform.root.GetComponent<Canvas>()
+                        .GetComponent<PuzzleCombine2Controller>()
+                        .Combine(itemDisplay.item, 2);
+                        break;
+                    default:
+                        break;
                 }
             }
             else{ Debug.Log("Item dropped over nothing "); }

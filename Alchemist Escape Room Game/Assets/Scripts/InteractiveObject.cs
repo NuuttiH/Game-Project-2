@@ -9,7 +9,8 @@ public class InteractiveObject : MonoBehaviour{
     public bool hasPickup;
     public bool disappearOnAction;
     public Dialogue actionDialogue;
-    public PuzzleCombine puzzleCombine;
+    public PuzzleCombine1 puzzleCombine1;
+    public PuzzleCombine2 puzzleCombine2;
 
 
     void Start(){
@@ -27,8 +28,11 @@ public class InteractiveObject : MonoBehaviour{
                 actionDialogue.Trigger();
                 if(hasPickup) GameMaster.Instance.PickupItem(item);
                 if(disappearOnAction) Destroy(gameObject);
-                if(puzzleCombine!=null){
-                    PuzzleCombineController.Instance.OpenPuzzle(puzzleCombine);
+                else if(puzzleCombine1!=null){
+                    PuzzleCombine1Controller.Instance.OpenPuzzle(puzzleCombine1);
+                }
+                else if(puzzleCombine2!=null){
+                    PuzzleCombine2Controller.Instance.OpenPuzzle(puzzleCombine2);
                 }
             }
         }

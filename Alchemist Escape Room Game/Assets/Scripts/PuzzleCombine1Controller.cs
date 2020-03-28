@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PuzzleCombineController : MonoBehaviour{
-    public static PuzzleCombineController Instance;
+public class PuzzleCombine1Controller : MonoBehaviour{
+    public static PuzzleCombine1Controller Instance;
     public Canvas canvas;
     public Image background;
     public Image combineIcon;
@@ -20,11 +20,9 @@ public class PuzzleCombineController : MonoBehaviour{
     public GameObject item4;
     public GameObject item5;
     public GameObject item6;
-
-    public List<Item> realSolution = new List<Item>();
     
     public List<Item> currentSolution = new List<Item>();
-    private PuzzleCombine currentPuzzle;
+    private PuzzleCombine1 currentPuzzle;
 
     void Awake(){
         Instance = this;
@@ -35,7 +33,7 @@ public class PuzzleCombineController : MonoBehaviour{
     }
 
 
-    public void OpenPuzzle(PuzzleCombine puzzle){
+    public void OpenPuzzle(PuzzleCombine1 puzzle){
         title.text = puzzle.title;
         puzzleText.text = puzzle.puzzleText;
         combineIcon.sprite = puzzle.combineIcon;
@@ -48,7 +46,6 @@ public class PuzzleCombineController : MonoBehaviour{
         item5.GetComponent<ItemDisplay>().NewDisplay(puzzle.item5);
         item6.GetComponent<ItemDisplay>().NewDisplay(puzzle.item6);
         
-        realSolution = puzzle.correctSolution.solution;
         currentPuzzle = puzzle;
 
         currentSolution = new List<Item>();
@@ -63,13 +60,13 @@ public class PuzzleCombineController : MonoBehaviour{
 
     public void Combine(Item item){
         currentSolution.Add(item);
-        if(currentSolution.Count == realSolution.Count){
+        if(currentSolution.Count == currentPuzzle.correctSolution.solution.Count){
             bool match = false;
 
-            foreach(Item realSolutionItem in realSolution){
+            foreach(Item correctItem in currentPuzzle.correctSolution.solution){
                 match = false;
                 foreach(Item currentSolutionItem in currentSolution){
-                    if(realSolutionItem.name == currentSolutionItem.name){
+                    if(correctItem.name == currentSolutionItem.name){
                         match = true;
                         break;
                     }
@@ -87,7 +84,7 @@ public class PuzzleCombineController : MonoBehaviour{
             else{
                 Debug.Log("Puzzle failed");
 
-                foreach(PuzzleCombineSolution s in currentPuzzle.solutions){
+                foreach(PuzzleCombine1Solution s in currentPuzzle.solutions){
                     foreach(Item solutionItem in s.solution){
                         match = false;
                         foreach(Item currentSolutionItem in currentSolution){
@@ -118,7 +115,7 @@ public class PuzzleCombineController : MonoBehaviour{
             }
         }
         else{
-            combineText.text = currentSolution.Count + "/" + realSolution.Count;
+            combineText.text = currentSolution.Count + "/" + currentPuzzle.correctSolution.solution.Count;
         }
     }
     

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PuzzleCombineSolution{
+public class PuzzleCombine2Solution{
     public Dialogue resultDialogue;
-    public List<Item> solution = new List<Item>();
+    public Item[] solution = new Item[2];
     public int customEventId;
+    public Item rewardItem;
 }
