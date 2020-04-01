@@ -45,9 +45,9 @@ MonoBehaviour:
       lines:
       - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
         name: Grumpy Wizard
-        sentence: Well I'm guessing that you skipped my "Runecasting" class. The
-          last kid in my class that combined those runes had to be dusted off the
-          floors with a broom. I suggest trying something else."
+        sentence: Well I'm guessing you skipped my "Runecasting" class. The last
+          kid combining those runes had to be dusted off the floors with a broom.
+          I suggest trying something else."
         audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
     solution:
     - {fileID: 11400000, guid: 8da8ac8fcdd923c4db5482bf4d0239ff, type: 2}
@@ -71,7 +71,7 @@ MonoBehaviour:
       - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
         name: Grumpy Wizard
         sentence: You know, I rather like that table. I'd rather not let you pulverize
-          it so carelessly with that spell. Maybe you should try something else.
+          it so carelessly with that spell. How about trying something else.
         audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
     solution:
     - {fileID: 11400000, guid: 8da8ac8fcdd923c4db5482bf4d0239ff, type: 2}
@@ -82,10 +82,9 @@ MonoBehaviour:
       lines:
       - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
         name: Grumpy Wizard
-        sentence: "I once knew a man who tried the same thing\u2026 *Laughs mockingly*
-          You should have seen his face when he realized that goat wasn't his soulmate.
-          Love potions never work the way you think they do. Let's just get the lights
-          on, shall we?"
+        sentence: I once knew a man who tried the same thing. You should have seen
+          his face when he realized that goat wasn't his soulmate. Love potions never
+          work the way you think they do. Let's just get the lights on, shall we?
         audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
     solution:
     - {fileID: 11400000, guid: e5211b53d89939247a88195732e6cfc6, type: 2}
@@ -110,7 +109,7 @@ MonoBehaviour:
       lines:
       - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
         name: Grumpy Wizard
-        sentence: Why would you even try that?
+        sentence: Are you crazy?!
         audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
     solution: []
     customEventId: 0
