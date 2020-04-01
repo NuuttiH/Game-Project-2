@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler{
+    [Header("GUI Reference")]
     public ItemDisplay itemDisplay;
     public Image image;
 

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ItemDisplay : MonoBehaviour{
+    [Header("GUI Reference")]
     public Item item;
     public Image artwork;
     public Text itemName;

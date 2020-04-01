@@ -5,19 +5,25 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class GameEventHandler : MonoBehaviour{
     public static GameEventHandler Instance;
+    [HideInInspector]
+    public int eventCount = 2;
 
     void Awake(){
         Instance = this;
     }
 
     public void DoEvent(int customEventId){
-        switch(customEventId){
-            case 1:
-                Event1();
-                break;
-            case 0:
-                Debug.Log("Custom Event Handler - No Event");
-                break;
+        if(customEventId==0 || (eventCount>customEventId 
+        && !GameMaster.Instance.eventMemory[customEventId])){
+            switch(customEventId){
+                case 1:
+                    Event1();
+                    break;
+                default:
+                    Debug.Log("Custom Event Handler - No Event");
+                    break;
+            }
+            GameMaster.Instance.eventMemory[customEventId] = true;
         }
     }
 

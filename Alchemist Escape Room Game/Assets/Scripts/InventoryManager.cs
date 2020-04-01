@@ -5,11 +5,9 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour{
     public static InventoryManager Instance;
+    [Header("GUI Reference")]
     public Animator animator;
-
     public Button inventoryButton;
-
-    [Header("GUI Item Reference")]
     public GameObject item1;
     public GameObject item2;
     public GameObject item3;

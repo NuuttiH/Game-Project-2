@@ -6,12 +6,12 @@ using UnityEngine.EventSystems;
 
 public class PuzzleCombine2Controller : MonoBehaviour{
     public static PuzzleCombine2Controller Instance;
+    [Header("GUI Reference")]
     public Canvas canvas;
     public Image background;
     public Text title;
     public Text puzzleText;
 
-    [Header("GUI Item Reference")]
     public GameObject item1;
     public GameObject item2;
     public GameObject item3;

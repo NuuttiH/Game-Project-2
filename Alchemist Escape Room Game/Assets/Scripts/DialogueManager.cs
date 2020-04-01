@@ -5,14 +5,18 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour{
     public static DialogueManager Instance;
+    [Header("GUI Reference")]
     public CanvasGroup dialogueCanvas;
     public AudioSource audioSource;
-    public float letterDelay;
-    public float dialogueDelay;
-    public float dialogueAfterDelay;
     public Image image;
     public Text title;
     public Text textbox;
+
+    [Header("Delays for text display")]
+    public float letterDelay;
+    public float dialogueDelay;
+    public float dialogueAfterDelay;
+
     private Queue<DialogueLine> lines;
     
     void Awake(){

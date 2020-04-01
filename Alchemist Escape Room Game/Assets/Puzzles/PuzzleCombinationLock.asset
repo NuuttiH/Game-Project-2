@@ -22,21 +22,21 @@ MonoBehaviour:
   rewardItem: {fileID: 0}
   customEventId: 0
   firstFailDialogue:
-    uniqueID: 0
+    uniqueID: 60
     lines:
     - sprite: {fileID: 0}
       name: 
       sentence: first fail
       audioClip: {fileID: 0}
   firstSuccessDialogue:
-    uniqueID: 0
+    uniqueID: 61
     lines:
     - sprite: {fileID: 0}
       name: 
       sentence: first success
       audioClip: {fileID: 0}
   correctSolutionDialogue:
-    uniqueID: 0
+    uniqueID: 62
     lines:
     - sprite: {fileID: 0}
       name: 
