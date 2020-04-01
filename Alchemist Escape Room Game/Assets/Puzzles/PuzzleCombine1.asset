@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: A Light Puzzle
   puzzleText: Combine two correct things to turn on the lights.
-  combineIcon: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
+  combineIcon: {fileID: 21300000, guid: 2529a479302d88149a4f49727c67f378, type: 3}
   puzzleItemCount: 4
   item1: {fileID: 11400000, guid: 8da8ac8fcdd923c4db5482bf4d0239ff, type: 2}
   item2: {fileID: 11400000, guid: e5211b53d89939247a88195732e6cfc6, type: 2}

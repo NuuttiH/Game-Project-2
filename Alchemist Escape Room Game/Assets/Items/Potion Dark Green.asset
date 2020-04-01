@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 718214b97b4a507439c9b90e0aad6467, type: 3}
-  m_Name: ItemA
+  m_Name: Potion Dark Green
   m_EditorClassIdentifier: 
-  name: Item A
-  description: This is placeholder item A.
-  artwork: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  name: Potion Dark Green
+  description: 
+  artwork: {fileID: 21300000, guid: 0477db04ca4dd3b4699b5380dc4fd5ac, type: 3}
