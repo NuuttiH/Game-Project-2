@@ -100,18 +100,18 @@ public class PuzzleCombine1Controller : MonoBehaviour{
                         s.resultDialogue.Trigger();
                         GameEventHandler.Instance
                         .DoEvent(s.customEventId);
-                        ClosePuzzle();
-                    }
-                    else{
-                        Debug.Log("No specific failing solution found");
-                        currentPuzzle.defaultFailingSolution.resultDialogue.Trigger();
-                        GameEventHandler.Instance
-                        .DoEvent(currentPuzzle.defaultFailingSolution.customEventId);
-                        ClosePuzzle();
+                        ResetPuzzle();
+                        return;
                     }
                 }
-
+                
+                Debug.Log("No specific failing solution found");
+                currentPuzzle.defaultFailingSolution.resultDialogue.Trigger();
+                GameEventHandler.Instance
+                .DoEvent(currentPuzzle.defaultFailingSolution.customEventId);
                 ResetPuzzle();
+
+                
             }
         }
         else{
