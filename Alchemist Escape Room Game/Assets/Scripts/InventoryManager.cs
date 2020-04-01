@@ -8,6 +8,8 @@ public class InventoryManager : MonoBehaviour{
     [Header("GUI Reference")]
     public Animator animator;
     public Button inventoryButton;
+    public Button inventoryRightButton;
+    public Button inventoryLeftButton;
     public GameObject item1;
     public GameObject item2;
     public GameObject item3;
@@ -21,6 +23,8 @@ public class InventoryManager : MonoBehaviour{
 
     void Start(){
         inventoryButton.onClick.AddListener(TaskOnClick);
+        inventoryRightButton.onClick.AddListener(MoveInventoryRight);
+        inventoryLeftButton.onClick.AddListener(MoveInventoryLeft);
     }
 
     public void TaskOnClick(){
@@ -41,23 +45,38 @@ public class InventoryManager : MonoBehaviour{
     public void DrawInventory(){
         int offset = GameMaster.Instance.inventoryOffset;
         int size = GameMaster.Instance.items.Count;
-        if(size>0)
+        int sizeAfterCut = size-offset;
+
+        if(sizeAfterCut>0)
             item1.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[0+offset]);
-        if(size>1)
+        if(sizeAfterCut>1)
             item2.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[1+offset]);
-        if(size>2)
+        if(sizeAfterCut>2)
             item3.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[2+offset]);
-        if(size>3)
+        if(sizeAfterCut>3)
             item4.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[3+offset]);
-        if(size>4)
+        if(sizeAfterCut>4)
             item5.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[4+offset]);
-        if(size>5)
+        if(sizeAfterCut>5)
             item6.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[5+offset]);
+    }
+
+    public void MoveInventoryRight(){
+        if(GameMaster.Instance.items.Count-GameMaster.Instance.inventoryOffset>6){
+            GameMaster.Instance.inventoryOffset++;
+            DrawInventory();
+        }
+    }
+    public void MoveInventoryLeft(){
+        if(GameMaster.Instance.inventoryOffset!=0){
+            GameMaster.Instance.inventoryOffset--;
+            DrawInventory();
+        }
     }
 }

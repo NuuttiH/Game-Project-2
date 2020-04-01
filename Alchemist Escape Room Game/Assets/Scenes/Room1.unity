@@ -832,7 +832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 131688877}
   item: {fileID: 11400000, guid: d3118fe79ec752b45a053caccbca10ad, type: 2}
-  pickupOnAction: 0
+  pickupOnAction: 1
   disappearOnAction: 0
   actionDialogue:
     uniqueID: 0
@@ -2128,8 +2128,8 @@ RectTransform:
   m_Children:
   - {fileID: 445784913}
   - {fileID: 2033205527}
-  - {fileID: 2070888254}
   - {fileID: 485731036}
+  - {fileID: 2070888254}
   - {fileID: 696067603}
   - {fileID: 1004289617}
   - {fileID: 1246067400}
@@ -2158,6 +2158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 315563363}
   inventoryButton: {fileID: 2033205524}
+  inventoryRightButton: {fileID: 485731037}
+  inventoryLeftButton: {fileID: 2070888255}
   item1: {fileID: 696067602}
   item2: {fileID: 1004289616}
   item3: {fileID: 1246067399}
@@ -3348,7 +3350,7 @@ RectTransform:
   m_Children:
   - {fileID: 368172142}
   m_Father: {fileID: 315563361}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -3397,7 +3399,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 485731038}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &485731038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8879,7 +8892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1546891544}
   item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
-  pickupOnAction: 0
+  pickupOnAction: 1
   disappearOnAction: 1
   actionDialogue:
     uniqueID: 0
@@ -13112,7 +13125,7 @@ RectTransform:
   m_Children:
   - {fileID: 1866938310}
   m_Father: {fileID: 315563361}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
