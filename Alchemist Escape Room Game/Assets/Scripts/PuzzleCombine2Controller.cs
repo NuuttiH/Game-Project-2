@@ -10,7 +10,6 @@ public class PuzzleCombine2Controller : MonoBehaviour{
     public Canvas canvas;
     public Image background;
     public Text title;
-    public Text puzzleText;
 
     public GameObject item1;
     public GameObject item2;
@@ -31,7 +30,6 @@ public class PuzzleCombine2Controller : MonoBehaviour{
 
     public void OpenPuzzle(PuzzleCombine2 puzzle){
         title.text = puzzle.title;
-        puzzleText.text = puzzle.puzzleText;
         
         item1.GetComponent<ItemDisplay>().EmptyDisplay();
         item2.GetComponent<ItemDisplay>().EmptyDisplay();
