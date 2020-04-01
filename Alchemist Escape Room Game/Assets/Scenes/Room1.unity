@@ -5598,7 +5598,8 @@ MonoBehaviour:
     lines:
     - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
       name: Grumpy Wizard
-      sentence: Think you can solve this? I doubt it.
+      sentence: "There you go. Now just transconfigure the Xanthium\u2019s Bane and
+        the Cedar Resin."
       audioClip: {fileID: 0}
   puzzleCombine1: {fileID: 11400000, guid: 9ff35e1fa92a40c4c86fa0bad353858b, type: 2}
   puzzleCombine2: {fileID: 0}
