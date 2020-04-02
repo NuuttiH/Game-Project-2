@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PuzzleCombinationLockController : MonoBehaviour{
-    public static PuzzleCombinationLockController Instance;
+public class CombinationLockController : MonoBehaviour{
+    public static CombinationLockController Instance;
     [Header("GUI Reference")]
     public Canvas canvas;
     public CanvasGroup canvasGroup;
@@ -18,7 +18,7 @@ public class PuzzleCombinationLockController : MonoBehaviour{
     public InputField inputField3;
     
     private char[] currentSolution;
-    private PuzzleCombinationLock currentPuzzle;
+    private CombinationLock currentPuzzle;
 
     void Awake(){
         Instance = this;
@@ -29,7 +29,7 @@ public class PuzzleCombinationLockController : MonoBehaviour{
     }
 
 
-    public void OpenPuzzle(PuzzleCombinationLock puzzle){
+    public void OpenPuzzle(CombinationLock puzzle){
         puzzleText.text = puzzle.puzzleText;
         
         currentPuzzle = puzzle;

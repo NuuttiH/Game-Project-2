@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour{
 
     void Start(){
         lines = new Queue<DialogueLine>();
-        StartCoroutine(EndDialogue());
+        dialogueCanvas.alpha = 0;
     }
 
     public void StartDialogue(Dialogue dialogue){

@@ -763,7 +763,7 @@ Transform:
   m_LocalScale: {x: 0.87, y: 0.87, z: 0.87}
   m_Children: []
   m_Father: {fileID: 2102484913}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &88646109
 SpriteRenderer:
@@ -969,7 +969,7 @@ Transform:
   m_LocalScale: {x: 0.12226088, y: 0.07960504, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &131688879
 MonoBehaviour:
@@ -996,7 +996,7 @@ MonoBehaviour:
       audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
-  puzzleCombinationLock: {fileID: 0}
+  combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
 --- !u!61 &131688880
 BoxCollider2D:
@@ -1090,7 +1090,7 @@ MonoBehaviour:
     lines: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
-  puzzleCombinationLock: {fileID: 0}
+  combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 11400000, guid: bb34ea493497f3b4892c633038fb2b73, type: 2}
 --- !u!212 &150836817
 SpriteRenderer:
@@ -1154,7 +1154,7 @@ Transform:
   m_LocalScale: {x: 0.07408447, y: 0.12128455, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &154337507
 GameObject:
@@ -1235,7 +1235,7 @@ Transform:
   m_LocalScale: {x: 0.47630262, y: 0.44648126, z: 1}
   m_Children: []
   m_Father: {fileID: 2102484913}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161128624
 GameObject:
@@ -2131,7 +2131,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00004386902, y: 0.0000038146973}
+  m_AnchoredPosition: {x: 0.00004386902, y: 0}
   m_SizeDelta: {x: 1270.6, y: 594.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &237527756
@@ -3179,12 +3179,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407678905}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.77, y: 0.099999905, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.161484, y: -0.6966162, z: 3.8125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 1177899788}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &427112840
 GameObject:
@@ -5391,9 +5391,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1743463511
-  m_SortingLayer: -1
-  m_SortingOrder: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 897206de1ce8f4044b90f43d5f43d3a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5413,11 +5413,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754330799}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.926, y: 2.926, z: 0}
+  m_LocalPosition: {x: 19.926, y: -0.76399994, z: 0}
   m_LocalScale: {x: 0.16360113, y: 0.8383207, z: 1}
   m_Children: []
-  m_Father: {fileID: 2102484913}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &760000398
 GameObject:
@@ -6473,7 +6473,7 @@ MonoBehaviour:
       audioClip: {fileID: 0}
   puzzleCombine1: {fileID: 11400000, guid: 9ff35e1fa92a40c4c86fa0bad353858b, type: 2}
   puzzleCombine2: {fileID: 0}
-  puzzleCombinationLock: {fileID: 0}
+  combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
 --- !u!212 &964803594
 SpriteRenderer:
@@ -6537,7 +6537,7 @@ Transform:
   m_LocalScale: {x: 0.12226088, y: 0.07960504, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &974047380
 GameObject:
@@ -8096,6 +8096,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171759244}
   m_CullTransparentMesh: 0
+--- !u!1 &1177899787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1177899788}
+  m_Layer: 0
+  m_Name: Lights
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1177899788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177899787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.3914835, y: 0.7966161, z: -3.8125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1612530166}
+  - {fileID: 1951029286}
+  - {fileID: 1299039123}
+  - {fileID: 1262238043}
+  - {fileID: 407678907}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1180814303
 GameObject:
   m_ObjectHideFlags: 0
@@ -8519,12 +8554,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262238041}
-  m_LocalRotation: {x: 0, y: 0, z: 0.0030804954, w: 0.9999953}
-  m_LocalPosition: {x: -15.91, y: 1.5900002, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0030804954, w: 0.9999953}
+  m_LocalPosition: {x: -13.518517, y: 0.7933841, z: 3.8125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 1177899788}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1287531560
 GameObject:
@@ -8687,12 +8722,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299039121}
-  m_LocalRotation: {x: 0, y: 0, z: 0.9999879, w: -0.0049174535}
-  m_LocalPosition: {x: -15.78, y: 3.83, z: 1.57}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9999879, w: -0.0049174535}
+  m_LocalPosition: {x: -13.388516, y: 3.0333838, z: 5.3825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 1177899788}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -179.87401}
 --- !u!1 &1331779330
 GameObject:
@@ -9054,7 +9089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89af0fe1d2feb244bc4cb3b2abbe661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleCombinationLockController: {fileID: 31470962}
+  combinationLockController: {fileID: 31470962}
   text: {fileID: 476303836}
   id: 2
 --- !u!1 &1381542676
@@ -10189,7 +10224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89af0fe1d2feb244bc4cb3b2abbe661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleCombinationLockController: {fileID: 31470962}
+  combinationLockController: {fileID: 31470962}
   text: {fileID: 741058235}
   id: 0
 --- !u!1 &1520497656
@@ -10345,7 +10380,7 @@ MonoBehaviour:
       audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
-  puzzleCombinationLock: {fileID: 0}
+  combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
 --- !u!212 &1546891544
 SpriteRenderer:
@@ -10409,7 +10444,7 @@ Transform:
   m_LocalScale: {x: 0.12226088, y: 0.07960504, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1548011271
 GameObject:
@@ -10949,12 +10984,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612530164}
-  m_LocalRotation: {x: 0, y: 0, z: -0.52741104, w: 0.84961027}
-  m_LocalPosition: {x: 0, y: 4.64, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.52741104, w: 0.84961027}
+  m_LocalPosition: {x: 2.3914835, y: 3.8433838, z: 3.8125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 1177899788}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1628523137
 GameObject:
@@ -11210,7 +11245,7 @@ Transform:
   m_LocalScale: {x: 0.28234592, y: 0.22954388, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1638435235
 BoxCollider2D:
@@ -11259,8 +11294,7 @@ MonoBehaviour:
     lines: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
-  puzzleCombinationLock: {fileID: 11400000, guid: 135ac914ca5c32845a478d314da644dc,
-    type: 2}
+  combinationLock: {fileID: 11400000, guid: 135ac914ca5c32845a478d314da644dc, type: 2}
   puzzleSpellbook: {fileID: 0}
 --- !u!1 &1643979449
 GameObject:
@@ -13521,7 +13555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89af0fe1d2feb244bc4cb3b2abbe661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleCombinationLockController: {fileID: 31470962}
+  combinationLockController: {fileID: 31470962}
   text: {fileID: 287924486}
   id: 1
 --- !u!1 &1888822071
@@ -13553,7 +13587,7 @@ Transform:
   m_LocalScale: {x: 600, y: 220, z: 1}
   m_Children: []
   m_Father: {fileID: 2102484913}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1888822073
 SpriteRenderer:
@@ -14156,12 +14190,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951029284}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.69, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3914835, y: -4.486616, z: 3.8125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 1177899788}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1973072514
 GameObject:
@@ -14519,7 +14553,7 @@ Transform:
   m_Children:
   - {fileID: 1826239660}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2012733885
 MonoBehaviour:
@@ -14942,7 +14976,7 @@ MonoBehaviour:
     lines: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 11400000, guid: 8a6e817207748244c988f260896ffbd1, type: 2}
-  puzzleCombinationLock: {fileID: 0}
+  combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
 --- !u!212 &2063413381
 SpriteRenderer:
@@ -15006,7 +15040,7 @@ Transform:
   m_LocalScale: {x: 0.18767215, y: 0.064699106, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2063413383
 BoxCollider2D:
@@ -15268,12 +15302,11 @@ Transform:
   m_LocalPosition: {x: 0, y: -3.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 754330801}
   - {fileID: 154337509}
   - {fileID: 88646108}
   - {fileID: 1888822072}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2109249760
 GameObject:

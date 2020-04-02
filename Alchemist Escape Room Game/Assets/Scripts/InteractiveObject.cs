@@ -16,7 +16,7 @@ public class InteractiveObject : MonoBehaviour{
     [Header("Attached puzzle")]
     public PuzzleCombine1 puzzleCombine1;
     public PuzzleCombine2 puzzleCombine2;
-    public PuzzleCombinationLock puzzleCombinationLock;
+    public CombinationLock combinationLock;
     public Spellbook puzzleSpellbook;
 
 
@@ -43,8 +43,8 @@ public class InteractiveObject : MonoBehaviour{
                 else if(puzzleCombine2!=null){
                     PuzzleCombine2Controller.Instance.OpenPuzzle(puzzleCombine2);
                 }
-                else if(puzzleCombinationLock!=null){
-                    PuzzleCombinationLockController.Instance.OpenPuzzle(puzzleCombinationLock);
+                else if(combinationLock!=null){
+                    CombinationLockController.Instance.OpenPuzzle(combinationLock);
                 }
                 else if(puzzleSpellbook!=null){
                     SpellbookController.Instance.OpenPuzzle(puzzleSpellbook);

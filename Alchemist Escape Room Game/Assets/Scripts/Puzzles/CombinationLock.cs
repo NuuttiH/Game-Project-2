@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Puzzle (Combination Lock)", menuName = "Puzzle (Combination Lock)")]
-public class PuzzleCombinationLock : ScriptableObject{
+public class CombinationLock : ScriptableObject{
     [TextArea(10,15)]
     public string puzzleText;
     public char[] correctSolution = new char[3];

@@ -44,7 +44,7 @@ public class GameMaster : MonoBehaviour{
 
         PuzzleCombine1Controller.Instance.ClosePuzzle();
         PuzzleCombine2Controller.Instance.ClosePuzzle();
-        PuzzleCombinationLockController.Instance.ClosePuzzle();
+        CombinationLockController.Instance.ClosePuzzle();
         SpellbookController.Instance.ClosePuzzle();
     }
 
