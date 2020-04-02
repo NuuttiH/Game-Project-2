@@ -4,16 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class InteractiveObject : MonoBehaviour{
-    public Item item;
+    [Header("Optional Sprite Renderer reference")]
     public SpriteRenderer spriteRenderer;
-    public bool hasPickup;
+
+    [Header("Item Behaviour")]
+    public Item item;
+    public bool pickupOnAction;
     public bool disappearOnAction;
     public Dialogue actionDialogue;
-    public PuzzleCombine puzzleCombine;
+
+    [Header("Attached puzzle")]
+    public PuzzleCombine1 puzzleCombine1;
+    public PuzzleCombine2 puzzleCombine2;
+    public CombinationLock combinationLock;
+    public Spellbook puzzleSpellbook;
 
 
     void Start(){
-        spriteRenderer.sprite = item.artwork;
+        if(spriteRenderer!=null) spriteRenderer.sprite = item.artwork;
     }
 
     void OnMouseOver(){
@@ -25,11 +33,23 @@ public class InteractiveObject : MonoBehaviour{
             this.transform.position) < GameMaster.Instance.objectActivationDistance){
   
                 actionDialogue.Trigger();
-                if(hasPickup) GameMaster.Instance.PickupItem(item);
-                if(disappearOnAction) Destroy(gameObject);
-                if(puzzleCombine!=null){
-                    PuzzleCombineController.Instance.OpenPuzzle(puzzleCombine);
+                if(pickupOnAction){ 
+                    GameMaster.Instance.PickupItem(item);
+                    if(disappearOnAction) Destroy(gameObject);
                 }
+                else if(puzzleCombine1!=null){
+                    PuzzleCombine1Controller.Instance.OpenPuzzle(puzzleCombine1);
+                }
+                else if(puzzleCombine2!=null){
+                    PuzzleCombine2Controller.Instance.OpenPuzzle(puzzleCombine2);
+                }
+                else if(combinationLock!=null){
+                    CombinationLockController.Instance.OpenPuzzle(combinationLock);
+                }
+                else if(puzzleSpellbook!=null){
+                    SpellbookController.Instance.OpenPuzzle(puzzleSpellbook);
+                }
+                else if(disappearOnAction) Destroy(gameObject);
             }
         }
     }

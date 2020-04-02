@@ -4,27 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PuzzleCombineController : MonoBehaviour{
-    public static PuzzleCombineController Instance;
+public class PuzzleCombine2Controller : MonoBehaviour{
+    public static PuzzleCombine2Controller Instance;
+    [Header("GUI Reference")]
     public Canvas canvas;
     public Image background;
-    public Image combineIcon;
-    public Text combineText;
     public Text title;
-    public Text puzzleText;
 
-    [Header("GUI Item Reference")]
     public GameObject item1;
     public GameObject item2;
     public GameObject item3;
-    public GameObject item4;
-    public GameObject item5;
-    public GameObject item6;
-
-    public List<Item> realSolution = new List<Item>();
     
-    public List<Item> currentSolution = new List<Item>();
-    private PuzzleCombine currentPuzzle;
+    private Item[] currentSolution;
+    private PuzzleCombine2 currentPuzzle;
+
 
     void Awake(){
         Instance = this;
@@ -35,24 +28,17 @@ public class PuzzleCombineController : MonoBehaviour{
     }
 
 
-    public void OpenPuzzle(PuzzleCombine puzzle){
+    public void OpenPuzzle(PuzzleCombine2 puzzle){
         title.text = puzzle.title;
-        puzzleText.text = puzzle.puzzleText;
-        combineIcon.sprite = puzzle.combineIcon;
-
-        combineText.text = "0/" + puzzle.correctSolution.solution.Count;
-        item1.GetComponent<ItemDisplay>().NewDisplay(puzzle.item1);
-        item2.GetComponent<ItemDisplay>().NewDisplay(puzzle.item2);
-        item3.GetComponent<ItemDisplay>().NewDisplay(puzzle.item3);
-        item4.GetComponent<ItemDisplay>().NewDisplay(puzzle.item4);
-        item5.GetComponent<ItemDisplay>().NewDisplay(puzzle.item5);
-        item6.GetComponent<ItemDisplay>().NewDisplay(puzzle.item6);
         
-        realSolution = puzzle.correctSolution.solution;
+        item1.GetComponent<ItemDisplay>().EmptyDisplay();
+        item2.GetComponent<ItemDisplay>().EmptyDisplay();
+        item3.GetComponent<ItemDisplay>().EmptyDisplay();
+        
         currentPuzzle = puzzle;
 
-        currentSolution = new List<Item>();
-        GameMaster.Instance.puzzleOpen = 1;
+        currentSolution = new Item[2];
+        GameMaster.Instance.puzzleOpen = 2;
         canvas.enabled = true;
     }
     public void ClosePuzzle(){
@@ -61,15 +47,22 @@ public class PuzzleCombineController : MonoBehaviour{
     }
     public void ResetPuzzle(){ OpenPuzzle(currentPuzzle); }
 
-    public void Combine(Item item){
-        currentSolution.Add(item);
-        if(currentSolution.Count == realSolution.Count){
+    public void Combine(Item item, int slot){
+        if(slot == 1){
+            item1.GetComponent<ItemDisplay>().NewDisplay(item);
+            currentSolution[0] = item;
+        }
+        else{
+            item2.GetComponent<ItemDisplay>().NewDisplay(item);
+            currentSolution[1] = item;
+        }
+        if(currentSolution[0]!=null && currentSolution[1]!=null){
             bool match = false;
 
-            foreach(Item realSolutionItem in realSolution){
+            foreach(Item correctItem in currentPuzzle.correctSolution.solution){
                 match = false;
                 foreach(Item currentSolutionItem in currentSolution){
-                    if(realSolutionItem.name == currentSolutionItem.name){
+                    if(correctItem.name == currentSolutionItem.name){
                         match = true;
                         break;
                     }
@@ -82,12 +75,16 @@ public class PuzzleCombineController : MonoBehaviour{
                 currentPuzzle.correctSolution.resultDialogue.Trigger();
                 GameEventHandler.Instance
                 .DoEvent(currentPuzzle.correctSolution.customEventId);
-                ClosePuzzle();
+                item3.GetComponent<ItemDisplay>()
+                .NewDisplay(currentPuzzle.correctSolution.rewardItem);
+                GameMaster.Instance
+                .PickupItem(currentPuzzle.correctSolution.rewardItem);
+                //ClosePuzzle(); do not close this puzzle on completion
             }
             else{
                 Debug.Log("Puzzle failed");
 
-                foreach(PuzzleCombineSolution s in currentPuzzle.solutions){
+                foreach(PuzzleCombine2Solution s in currentPuzzle.solutions){
                     foreach(Item solutionItem in s.solution){
                         match = false;
                         foreach(Item currentSolutionItem in currentSolution){
@@ -104,21 +101,18 @@ public class PuzzleCombineController : MonoBehaviour{
                         GameEventHandler.Instance
                         .DoEvent(s.customEventId);
                         ClosePuzzle();
-                    }
-                    else{
-                        Debug.Log("No specific failing solution found");
-                        currentPuzzle.defaultFailingSolution.resultDialogue.Trigger();
-                        GameEventHandler.Instance
-                        .DoEvent(currentPuzzle.defaultFailingSolution.customEventId);
-                        ClosePuzzle();
+                        return;
                     }
                 }
-
-                ResetPuzzle();
+                Debug.Log("No specific failing solution found");
+                currentPuzzle.defaultFailingSolution.resultDialogue.Trigger();
+                GameEventHandler.Instance
+                .DoEvent(currentPuzzle.defaultFailingSolution.customEventId);
+                ClosePuzzle();
             }
         }
         else{
-            combineText.text = currentSolution.Count + "/" + realSolution.Count;
+            Debug.Log("Testing");
         }
     }
     

@@ -4,21 +4,32 @@ using UnityEngine;
 
 public class GameMaster : MonoBehaviour{
     public static GameMaster Instance;
-    public Vector3 startLocation; // = (0, 0, 0); expect player to spawn here
+    public Vector3 startLocation;
     
     public float objectActivationDistance = 3.8f;
 
-    public int puzzleOpen; // 0 = no puzzle, 1 = PuzzleCombine
+    [HideInInspector]
+    public int puzzleOpen; // 0 = no puzzle, 1 = PuzzleCombine, ...
+
+    public Item emptyItem;
 
     [Header("Inventory")]
-    public bool inventoryOpen;
     public InventoryManager inventoryManager;
+    [HideInInspector]
+    public bool inventoryOpen;
+    [HideInInspector]
     public int inventoryOffset;
 
-    [Header("Items")]
     public List<Item> items = new List<Item>();
     
-    
+    [Header("Size of dialogue memory")]
+    public int dialogueMemorySize = 100;
+    [HideInInspector]
+    public bool[] dialogueMemory;
+
+    [HideInInspector]
+    public bool[] eventMemory;
+
     void Awake(){
         Instance = this;
         DontDestroyOnLoad(this.gameObject);
@@ -28,7 +39,13 @@ public class GameMaster : MonoBehaviour{
         inventoryOpen = false;
         inventoryOffset = 0;
 
-        PuzzleCombineController.Instance.ClosePuzzle();
+        dialogueMemory = new bool[dialogueMemorySize];
+        eventMemory = new bool[GameEventHandler.Instance.eventCount];
+
+        PuzzleCombine1Controller.Instance.ClosePuzzle();
+        PuzzleCombine2Controller.Instance.ClosePuzzle();
+        CombinationLockController.Instance.ClosePuzzle();
+        SpellbookController.Instance.ClosePuzzle();
     }
 
     public void PickupItem(Item item){

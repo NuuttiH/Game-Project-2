@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class ItemTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler{
+    [Header("GUI Reference")]
     public CanvasGroup tooltipCanvas;
 
     void Start(){
