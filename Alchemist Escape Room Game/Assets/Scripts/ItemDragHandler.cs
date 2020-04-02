@@ -41,6 +41,21 @@ public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler{
                         .GetComponent<PuzzleCombine2Controller>()
                         .Combine(itemDisplay.item, 2);
                         break;
+                    case "SpellbookInputImage1":
+                        results[0].gameObject.transform.root.GetComponent<Canvas>()
+                        .GetComponent<SpellbookController>()
+                        .InsertItem(itemDisplay.item, 1);
+                        break;
+                    case "SpellbookInputImage2":
+                        results[0].gameObject.transform.root.GetComponent<Canvas>()
+                        .GetComponent<SpellbookController>()
+                        .InsertItem(itemDisplay.item, 2);
+                        break;
+                    case "SpellbookInputImage3":
+                        results[0].gameObject.transform.root.GetComponent<Canvas>()
+                        .GetComponent<SpellbookController>()
+                        .InsertItem(itemDisplay.item, 3);
+                        break;
                     default:
                         break;
                 }

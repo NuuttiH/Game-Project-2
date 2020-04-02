@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3da9cfb03d10547b4bb183c8dbad5a, type: 3}
+  m_Name: Spellbook
+  m_EditorClassIdentifier: 
+  title: A Spellbook title
+  item1: {fileID: 11400000, guid: 363e1bd5450bd094e8b82beccbe1fc8a, type: 2}
+  item2: {fileID: 11400000, guid: 363e1bd5450bd094e8b82beccbe1fc8a, type: 2}
+  item3: {fileID: 11400000, guid: 363e1bd5450bd094e8b82beccbe1fc8a, type: 2}
+  firstFailDialogue:
+    uniqueID: 0
+    lines:
+    - sprite: {fileID: 0}
+      name: 
+      sentence: failure
+      audioClip: {fileID: 0}
+  correctSolutionDialogue:
+    uniqueID: 0
+    lines:
+    - sprite: {fileID: 0}
+      name: 
+      sentence: correct
+      audioClip: {fileID: 0}
+  customEventId: 0

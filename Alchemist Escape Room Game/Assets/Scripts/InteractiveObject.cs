@@ -17,6 +17,7 @@ public class InteractiveObject : MonoBehaviour{
     public PuzzleCombine1 puzzleCombine1;
     public PuzzleCombine2 puzzleCombine2;
     public PuzzleCombinationLock puzzleCombinationLock;
+    public Spellbook puzzleSpellbook;
 
 
     void Start(){
@@ -44,6 +45,9 @@ public class InteractiveObject : MonoBehaviour{
                 }
                 else if(puzzleCombinationLock!=null){
                     PuzzleCombinationLockController.Instance.OpenPuzzle(puzzleCombinationLock);
+                }
+                else if(puzzleSpellbook!=null){
+                    SpellbookController.Instance.OpenPuzzle(puzzleSpellbook);
                 }
                 else if(disappearOnAction) Destroy(gameObject);
             }
