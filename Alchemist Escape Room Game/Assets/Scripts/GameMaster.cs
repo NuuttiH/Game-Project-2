@@ -6,8 +6,6 @@ public class GameMaster : MonoBehaviour{
     public static GameMaster Instance;
     public Vector3 startLocation;
     
-    public float objectActivationDistance = 3.8f;
-
     [HideInInspector]
     public int puzzleOpen; // 0 = no puzzle, 1 = PuzzleCombine, ...
 
@@ -29,6 +27,7 @@ public class GameMaster : MonoBehaviour{
 
     [HideInInspector]
     public bool[] eventMemory;
+
 
     void Awake(){
         Instance = this;

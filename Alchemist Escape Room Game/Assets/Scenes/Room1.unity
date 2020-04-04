@@ -998,6 +998,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!61 &131688880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1065,6 +1066,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!212 &145583160
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1197,6 +1199,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 11400000, guid: bb34ea493497f3b4892c633038fb2b73, type: 2}
+  t: {fileID: 0}
 --- !u!212 &150836817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2686,6 +2689,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!1 &331126472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,6 +3135,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!212 &379513067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4582,6 +4587,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!212 &606273142
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6819,6 +6825,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!212 &964803594
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8083,7 +8090,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLocation: {x: 19.2, y: 0, z: 0}
-  objectActivationDistance: 4
   puzzleOpen: 0
   emptyItem: {fileID: 11400000, guid: ecf38ff011186a745a9cc65c782251d3, type: 2}
   inventoryManager: {fileID: 315563362}
@@ -8874,6 +8880,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!212 &1250783628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9955,6 +9962,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!212 &1401464778
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10936,6 +10944,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!212 &1546891544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11850,6 +11859,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 11400000, guid: 135ac914ca5c32845a478d314da644dc, type: 2}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!1 &1643979449
 GameObject:
   m_ObjectHideFlags: 0
@@ -15122,6 +15132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
+  objectActivationDistance: 4
+  mouseOverInteractiveObject: {fileID: 0}
   leftWall: -18.5
   rightWall: 19.2
 --- !u!1 &2020142091
@@ -15532,6 +15544,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 11400000, guid: 8a6e817207748244c988f260896ffbd1, type: 2}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!212 &2063413381
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15999,6 +16012,7 @@ MonoBehaviour:
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
   puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!212 &2133073498
 SpriteRenderer:
   m_ObjectHideFlags: 0
