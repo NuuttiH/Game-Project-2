@@ -28,6 +28,10 @@ public class PuzzleCombine1Controller : MonoBehaviour{
         Instance = this;
     }
 
+    void Start(){
+        ClosePuzzle();
+    }
+
     void Update(){
         if(Input.GetKeyDown(KeyCode.Mouse1)) ClosePuzzle();
     }

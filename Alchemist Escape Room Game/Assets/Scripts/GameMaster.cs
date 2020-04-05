@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour{
     public static GameMaster Instance;
+    public int sceneNumber;
     public Vector3 startLocation;
     
     [HideInInspector]
@@ -12,6 +14,7 @@ public class GameMaster : MonoBehaviour{
     public Item emptyItem;
 
     [Header("Inventory")]
+    [HideInInspector]
     public InventoryManager inventoryManager;
     [HideInInspector]
     public bool inventoryOpen;
@@ -30,7 +33,12 @@ public class GameMaster : MonoBehaviour{
 
 
     void Awake(){
-        Instance = this;
+        if(Instance==null) Instance = this;
+        else{
+            Destroy(this.gameObject);
+            return;
+        }
+        
         DontDestroyOnLoad(this.gameObject);
     }
 
@@ -40,11 +48,11 @@ public class GameMaster : MonoBehaviour{
 
         dialogueMemory = new bool[dialogueMemorySize];
         eventMemory = new bool[GameEventHandler.Instance.eventCount];
+    }
 
-        PuzzleCombine1Controller.Instance.ClosePuzzle();
-        PuzzleCombine2Controller.Instance.ClosePuzzle();
-        CombinationLockController.Instance.ClosePuzzle();
-        SpellbookController.Instance.ClosePuzzle();
+    public void LoadGame(){
+        GameMaster.Instance.sceneNumber = 1;
+        SceneManager.LoadScene("Room1");
     }
 
     public void PickupItem(Item item){

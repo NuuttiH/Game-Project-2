@@ -25,6 +25,8 @@ public class InventoryManager : MonoBehaviour{
         inventoryButton.onClick.AddListener(TaskOnClick);
         inventoryRightButton.onClick.AddListener(MoveInventoryRight);
         inventoryLeftButton.onClick.AddListener(MoveInventoryLeft);
+
+        GameMaster.Instance.inventoryManager = this;
     }
 
     public void TaskOnClick(){
