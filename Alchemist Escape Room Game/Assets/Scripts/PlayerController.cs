@@ -75,6 +75,9 @@ public class PlayerController : MonoBehaviour{
                 else if(targetPosition.x > rightWall) targetPosition.x = rightWall;
                 targetPosition.z = 0;
             }
+            else{
+                targetPosition = transform.position;
+            }
         }
             
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 5);
