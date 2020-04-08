@@ -9,7 +9,6 @@ public class PuzzleCombine2 : ScriptableObject{
     [TextArea(10,15)]
     public string puzzleText;
 
-    public PuzzleCombine2Solution correctSolution;
     public PuzzleCombine2Solution[] solutions;
     public PuzzleCombine2Solution defaultFailingSolution;
 }

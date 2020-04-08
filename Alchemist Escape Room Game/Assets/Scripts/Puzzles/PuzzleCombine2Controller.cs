@@ -62,62 +62,52 @@ public class PuzzleCombine2Controller : MonoBehaviour{
         }
         if(currentSolution[0]!=null && currentSolution[1]!=null){
             bool match = false;
+            bool no_solution_match = true;
 
-            foreach(Item correctItem in currentPuzzle.correctSolution.solution){
-                match = false;
-                foreach(Item currentSolutionItem in currentSolution){
-                    if(correctItem.name == currentSolutionItem.name){
-                        match = true;
-                        break;
-                    }
-                }
-                if(!match) break;
-            }
-
-            if(match){
-                Debug.Log("Puzzle compleated");
-                currentPuzzle.correctSolution.resultDialogue.Trigger();
-                GameEventHandler.Instance
-                .DoEvent(currentPuzzle.correctSolution.customEventId);
-                item3.GetComponent<ItemDisplay>()
-                .NewDisplay(currentPuzzle.correctSolution.rewardItem);
-                GameMaster.Instance
-                .PickupItem(currentPuzzle.correctSolution.rewardItem);
-                //ClosePuzzle(); do not close this puzzle on completion
-            }
-            else{
-                Debug.Log("Puzzle failed");
-
-                foreach(PuzzleCombine2Solution s in currentPuzzle.solutions){
-                    foreach(Item solutionItem in s.solution){
-                        match = false;
-                        foreach(Item currentSolutionItem in currentSolution){
-                            if(solutionItem.name == currentSolutionItem.name){
-                                match = true;
-                                break;
-                            }
+            foreach(PuzzleCombine2Solution s in currentPuzzle.solutions){
+                foreach(Item solutionItem in s.solution){
+                    match = false;
+                    foreach(Item currentSolutionItem in currentSolution){
+                        if(solutionItem.name == currentSolutionItem.name){
+                            match = true;
+                            break;
                         }
-                        if(!match) break;
                     }
-                    if(match){
-                        Debug.Log("Failing solution found");
-                        s.resultDialogue.Trigger();
-                        GameEventHandler.Instance
-                        .DoEvent(s.customEventId);
-                        ClosePuzzle();
+                    if(!match) break;
+                }
+                // If untriggered match found, trigger it, otherwise continue checking
+                if(match){
+                    Debug.Log("if(match) == true");
+                    no_solution_match = false;
+                    if(s.resultDialogue.Trigger()){
+                        GameEventHandler.Instance.DoEvent(s.customEventId);
+                        if(s.rewardItem != null){
+                            Debug.Log("Some correct solution found");
+                            item3.GetComponent<ItemDisplay>().NewDisplay(s.rewardItem);
+                            GameMaster.Instance.PickupItem(s.rewardItem);
+                        }
+                        else{
+                            Debug.Log("Some wrong solution found");
+                            ResetPuzzle();
+                        }
                         return;
                     }
+                    else{
+                        Debug.Log("Skip used dialogue");
+                    }
                 }
+            }
+            if(no_solution_match){
                 Debug.Log("No specific failing solution found");
                 currentPuzzle.defaultFailingSolution.resultDialogue.Trigger();
                 GameEventHandler.Instance
                 .DoEvent(currentPuzzle.defaultFailingSolution.customEventId);
-                ClosePuzzle();
+                ResetPuzzle();
+            }
+            else{
+                Debug.Log("Failing solution(s) found but already used");
+                ResetPuzzle();
             }
         }
-        else{
-            Debug.Log("Testing");
-        }
     }
-    
 }
