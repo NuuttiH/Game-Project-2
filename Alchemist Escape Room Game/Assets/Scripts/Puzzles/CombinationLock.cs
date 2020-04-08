@@ -8,9 +8,11 @@ public class CombinationLock : ScriptableObject{
     public string puzzleText;
     public char[] correctSolution = new char[3];
 
+    [Header("Success results")]
     public Item rewardItem;
     public int customEventId;
 
+    [Header("Special dialogue")]
     public Dialogue firstFailDialogue;
     public Dialogue firstSuccessDialogue;
     public Dialogue correctSolutionDialogue;

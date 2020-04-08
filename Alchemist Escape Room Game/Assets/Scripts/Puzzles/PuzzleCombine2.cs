@@ -6,9 +6,10 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "New Puzzle (Combine2)", menuName = "Puzzle (Combine2)")]
 public class PuzzleCombine2 : ScriptableObject{
     public string title;
-    [TextArea(10,15)]
-    public string puzzleText;
 
+    [Header("Item combinations with unique results")]
     public PuzzleCombine2Solution[] solutions;
+
+    [Header("Default item combination result")]
     public PuzzleCombine2Solution defaultFailingSolution;
 }

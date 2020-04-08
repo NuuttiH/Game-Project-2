@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03a749c6f9832c34b8228f24d5ee4a25, type: 3}
-  m_Name: CombinationLock
+  m_Name: Locked Chest
   m_EditorClassIdentifier: 
   puzzleText: 'asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd
     asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd
