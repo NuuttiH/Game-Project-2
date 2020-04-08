@@ -87,6 +87,7 @@ public class PuzzleCombine1Controller : MonoBehaviour{
             }
             else{
                 Debug.Log("Puzzle failed");
+                bool no_solution_match = true;
 
                 foreach(PuzzleCombine1Solution s in currentPuzzle.solutions){
                     foreach(Item solutionItem in s.solution){
@@ -99,23 +100,29 @@ public class PuzzleCombine1Controller : MonoBehaviour{
                         }
                         if(!match) break;
                     }
+                    // If untriggered match found, trigger it, otherwise continue checking
                     if(match){
-                        Debug.Log("Failing solution found");
-                        s.resultDialogue.Trigger();
-                        GameEventHandler.Instance
-                        .DoEvent(s.customEventId);
-                        ResetPuzzle();
-                        return;
+                        no_solution_match = false;
+                        if(s.resultDialogue.Trigger()){
+                            Debug.Log("Failing solution found");
+                            GameEventHandler.Instance
+                            .DoEvent(s.customEventId);
+                            ResetPuzzle();
+                            return;
+                        }
                     }
                 }
-                
-                Debug.Log("No specific failing solution found");
-                currentPuzzle.defaultFailingSolution.resultDialogue.Trigger();
-                GameEventHandler.Instance
-                .DoEvent(currentPuzzle.defaultFailingSolution.customEventId);
-                ResetPuzzle();
-
-                
+                if(no_solution_match){
+                    Debug.Log("No specific failing solution found");
+                    currentPuzzle.defaultFailingSolution.resultDialogue.Trigger();
+                    GameEventHandler.Instance
+                    .DoEvent(currentPuzzle.defaultFailingSolution.customEventId);
+                    ResetPuzzle();
+                }
+                else{
+                    Debug.Log("Failing solution(s) found but already used");
+                    ResetPuzzle();
+                }
             }
         }
         else{
