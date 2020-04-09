@@ -52,7 +52,7 @@ public class GameMaster : MonoBehaviour{
 
     public void LoadGame(){
         GameMaster.Instance.sceneNumber = 1;
-        SceneManager.LoadScene("Room1");
+        SceneManager.LoadScene("Intro");
     }
 
     public void PickupItem(Item item){
