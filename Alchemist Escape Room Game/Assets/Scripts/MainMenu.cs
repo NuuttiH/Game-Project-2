@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour{
 
     public void StartGame(){
         Debug.Log("Loading scene 'Room1'");
-        GameMaster.Instance.LoadGame();
+        GameMaster.Instance.StartScene(1);
     }
     public void ExitGame(){
         Debug.Log("Game is exiting...");

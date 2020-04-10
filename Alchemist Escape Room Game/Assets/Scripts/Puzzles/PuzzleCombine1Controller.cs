@@ -24,16 +24,13 @@ public class PuzzleCombine1Controller : MonoBehaviour{
     private List<Item> currentSolution = new List<Item>();
     private PuzzleCombine1 currentPuzzle;
 
+
     void Awake(){
         Instance = this;
     }
 
     void Start(){
         ClosePuzzle();
-    }
-
-    void Update(){
-        if(Input.GetKeyDown(KeyCode.Mouse1)) ClosePuzzle();
     }
 
 

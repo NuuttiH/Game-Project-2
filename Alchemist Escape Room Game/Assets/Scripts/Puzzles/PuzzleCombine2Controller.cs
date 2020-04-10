@@ -26,10 +26,6 @@ public class PuzzleCombine2Controller : MonoBehaviour{
     void Start(){
         ClosePuzzle();
     }
-    
-    void Update(){
-        if(Input.GetKeyDown(KeyCode.Mouse1)) ClosePuzzle();
-    }
 
 
     public void OpenPuzzle(PuzzleCombine2 puzzle){

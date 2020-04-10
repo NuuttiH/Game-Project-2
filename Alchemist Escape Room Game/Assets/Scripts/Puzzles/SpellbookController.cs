@@ -26,10 +26,7 @@ public class SpellbookController : MonoBehaviour{
     void Start(){
         ClosePuzzle();
     }
-
-    void Update(){
-        if(Input.GetKeyDown(KeyCode.Mouse1)) ClosePuzzle();
-    }
+    
 
     public void OpenPuzzle(Spellbook puzzle){
         title.text = puzzle.title;

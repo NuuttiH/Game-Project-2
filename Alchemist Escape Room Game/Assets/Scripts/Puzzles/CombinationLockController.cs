@@ -20,16 +20,13 @@ public class CombinationLockController : MonoBehaviour{
     private char[] currentSolution;
     private CombinationLock currentPuzzle;
 
+
     void Awake(){
         Instance = this;
     }
     
     void Start(){
         ClosePuzzle();
-    }
-
-    void Update(){
-        if(Input.GetKeyDown(KeyCode.Mouse1)) ClosePuzzle();
     }
 
 

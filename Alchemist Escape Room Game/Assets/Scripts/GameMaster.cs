@@ -9,7 +9,10 @@ public class GameMaster : MonoBehaviour{
     public Vector3 startLocation;
     
     [HideInInspector]
-    public int puzzleOpen; // 0 = no puzzle, 1 = PuzzleCombine, ...
+    public int puzzleOpen;  // 0 = no puzzle, 1 = PuzzleCombine1, 2 = PuzzleCombine2
+                            // 3 = CombinationLock, 4 = Spellbook
+    [HideInInspector]
+    public bool menuOpen;
 
     public Item emptyItem;
 
@@ -50,9 +53,64 @@ public class GameMaster : MonoBehaviour{
         eventMemory = new bool[GameEventHandler.Instance.eventCount];
     }
 
-    public void LoadGame(){
-        GameMaster.Instance.sceneNumber = 1;
-        SceneManager.LoadScene("Intro");
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.Mouse1)){
+            if(menuOpen){
+                MenuController.Instance.CloseMenu();
+            }
+            else if(puzzleOpen!=0){
+                switch(puzzleOpen){
+                    case 1:
+                        PuzzleCombine1Controller.Instance.ClosePuzzle();
+                        break;
+                    case 2:
+                        PuzzleCombine2Controller.Instance.ClosePuzzle();
+                        break;
+                    case 3:
+                        CombinationLockController.Instance.ClosePuzzle();
+                        break;
+                    case 4:
+                        SpellbookController.Instance.ClosePuzzle();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape)){
+            if(puzzleOpen!=0){
+                switch(puzzleOpen){
+                    case 1:
+                        PuzzleCombine1Controller.Instance.ClosePuzzle();
+                        break;
+                    case 2:
+                        PuzzleCombine2Controller.Instance.ClosePuzzle();
+                        break;
+                    case 3:
+                        CombinationLockController.Instance.ClosePuzzle();
+                        break;
+                    case 4:
+                        SpellbookController.Instance.ClosePuzzle();
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else{
+                if(menuOpen){
+                    MenuController.Instance.CloseMenu();
+                }
+                else{
+                    MenuController.Instance.OpenMenu();
+                }
+            }
+        }
+    }
+
+
+    public void StartScene(int newSceneNumber){
+        sceneNumber = newSceneNumber;
+        SceneManager.LoadScene(newSceneNumber);
     }
 
     public void PickupItem(Item item){

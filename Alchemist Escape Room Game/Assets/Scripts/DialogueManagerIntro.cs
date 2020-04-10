@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 public class DialogueManagerIntro : MonoBehaviour{
@@ -96,7 +95,6 @@ public class DialogueManagerIntro : MonoBehaviour{
     }
 
     public void NextScene(){
-        GameMaster.Instance.sceneNumber = 2;
-        SceneManager.LoadScene("Room1");
+        GameMaster.Instance.StartScene(2);
     }
 }
