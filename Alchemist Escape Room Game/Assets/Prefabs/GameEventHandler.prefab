@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4643058175658255049
+--- !u!1 &4980639619906057177
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4643058175658255051}
-  - component: {fileID: 4643058175658255050}
+  - component: {fileID: 6598509977316587941}
+  - component: {fileID: 2284487669342894906}
   m_Layer: 0
-  m_Name: GameMaster
+  m_Name: GameEventHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4643058175658255051
+--- !u!4 &6598509977316587941
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4643058175658255049}
+  m_GameObject: {fileID: 4980639619906057177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,28 +31,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4643058175658255050
+--- !u!114 &2284487669342894906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4643058175658255049}
+  m_GameObject: {fileID: 4980639619906057177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 191deddb4f13e4140a4cddd1ea17c203, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e0a91a8a90c5954b956e551c0c54c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 1
-  startLocation: {x: 19.2, y: 0, z: 0}
-  puzzleOpen: 0
-  menuOpen: 0
-  emptyItem: {fileID: 11400000, guid: ecf38ff011186a745a9cc65c782251d3, type: 2}
-  inventoryManager: {fileID: 0}
-  inventoryOpen: 0
-  inventoryOffset: 0
-  items: []
-  dialogueMemorySize: 100
-  dialogueMemory: 
-  eventMemory: 
-  saveLocation: 
+  eventCount: 2

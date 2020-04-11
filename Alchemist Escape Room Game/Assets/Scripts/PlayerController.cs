@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour{
 
     public float objectActivationDistance = 3.8f;
     
-    private float camHeight; // 0
+    [HideInInspector]
+    public float camHeight; // 0
     private Camera cameraMain;
     [HideInInspector]
     public InteractiveObject mouseOverInteractiveObject;
@@ -44,8 +45,7 @@ public class PlayerController : MonoBehaviour{
                     mouseOverInteractiveObject.actionDialogue.Trigger();
                     if(mouseOverInteractiveObject.pickupOnAction){ 
                         GameMaster.Instance.PickupItem(mouseOverInteractiveObject.item);
-                        if(mouseOverInteractiveObject.disappearOnAction) 
-                            Destroy(mouseOverInteractiveObject.gameObject);
+                        Destroy(mouseOverInteractiveObject.gameObject);
                     }
                     else if(mouseOverInteractiveObject.puzzleCombine1!=null){
                         PuzzleCombine1Controller.Instance.OpenPuzzle(
@@ -63,8 +63,6 @@ public class PlayerController : MonoBehaviour{
                         SpellbookController.Instance.OpenPuzzle(
                         mouseOverInteractiveObject.puzzleSpellbook);
                     }
-                    else if(mouseOverInteractiveObject.disappearOnAction) 
-                        Destroy(mouseOverInteractiveObject.gameObject);
                 }
             }
             // Move if no interactive action

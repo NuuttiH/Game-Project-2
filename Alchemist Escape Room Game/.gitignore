@@ -64,3 +64,6 @@ crashlytics-build.properties
 
 # Additional ignores
 .vscode/
+[Aa]ssets/Saves/
+[Aa]ssets/Saves.meta
+

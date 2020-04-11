@@ -10,7 +10,6 @@ public class InteractiveObject : MonoBehaviour{
     [Header("Item Behaviour")]
     public Item item;
     public bool pickupOnAction;
-    public bool disappearOnAction;
     public Dialogue actionDialogue;
 
     [Header("Attached puzzle")]
@@ -24,8 +23,15 @@ public class InteractiveObject : MonoBehaviour{
 
 
     void Start(){
-        if(spriteRenderer!=null) spriteRenderer.sprite = item.artwork;
-        t = transform;
+        // Destroy on startup if already on inventory because of saved data
+        if(pickupOnAction && item!=null 
+        && GameMaster.Instance.items.Find(x => x.name==item.name)){
+            Destroy(this.gameObject);
+        }
+        else{
+            if(spriteRenderer!=null) spriteRenderer.sprite = item.artwork;
+            t = transform;
+        }
     }
 
     void OnMouseOver(){

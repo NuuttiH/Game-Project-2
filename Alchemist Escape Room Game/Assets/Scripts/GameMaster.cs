@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -31,8 +32,12 @@ public class GameMaster : MonoBehaviour{
     [HideInInspector]
     public bool[] dialogueMemory;
 
+    public int eventCount = 2;
     [HideInInspector]
     public bool[] eventMemory;
+
+    [HideInInspector]
+    public string saveLocation;
 
 
     void Awake(){
@@ -43,14 +48,15 @@ public class GameMaster : MonoBehaviour{
         }
         
         DontDestroyOnLoad(this.gameObject);
-    }
 
-    void Start(){
+        saveLocation = Application.dataPath + "/Saves/";
+        if(!Directory.Exists(saveLocation)) Directory.CreateDirectory(saveLocation);
+
         inventoryOpen = false;
         inventoryOffset = 0;
 
         dialogueMemory = new bool[dialogueMemorySize];
-        eventMemory = new bool[GameEventHandler.Instance.eventCount];
+        eventMemory = new bool[eventCount];
     }
 
     void Update(){
@@ -111,6 +117,7 @@ public class GameMaster : MonoBehaviour{
     public void StartScene(int newSceneNumber){
         sceneNumber = newSceneNumber;
         SceneManager.LoadScene(newSceneNumber);
+        Debug.Log("New scene loaded");
     }
 
     public void PickupItem(Item item){
@@ -126,5 +133,62 @@ public class GameMaster : MonoBehaviour{
         Debug.Log("Removing " + item.name);
         items.Remove(item);
         inventoryManager.DrawInventory();
+    }
+
+    public void Save(int saveID){
+        string currentSaveLocation = saveLocation;
+        if(saveID==0) currentSaveLocation += "autosave.json";
+        else currentSaveLocation += "save" + saveID + ".json";
+
+        float playerLocationX = GameObject.FindGameObjectWithTag("Player").transform.position.x;
+
+        SaveObject saveObject = new SaveObject{
+            playerLocationX = playerLocationX,
+            sceneNumber = sceneNumber,
+            items = items,
+            dialogueMemory = dialogueMemory,
+            eventMemory = eventMemory
+        };
+
+        string saveString = JsonUtility.ToJson(saveObject);
+        Debug.Log("Writing save...");
+        File.WriteAllText(currentSaveLocation, saveString);
+        Debug.Log("Save written!");
+    }
+
+    public void Load(int saveID){
+        string currentSaveLocation = saveLocation;
+        if(saveID==0) currentSaveLocation += "autosave.json";
+        else currentSaveLocation += "save" + saveID + ".json";
+
+        if(File.Exists(currentSaveLocation)){
+            Debug.Log("Loading file...  (" + currentSaveLocation + ")");
+            string saveString = File.ReadAllText(currentSaveLocation);
+            SaveObject saveObject = JsonUtility.FromJson<SaveObject>(saveString);
+
+            items = saveObject.items;
+            // Inventory Drawing managed by InventoryManager.Start()
+            // Picked up item removal handled by InteractiveObject.Start()
+            dialogueMemory = saveObject.dialogueMemory;
+            eventMemory = saveObject.eventMemory;  
+            // Event loading managed by GameEventHandler.Start()
+            startLocation = new Vector3(saveObject.playerLocationX, PlayerController.Instance.camHeight, 0f);
+            
+            StartScene(saveObject.sceneNumber);
+            
+            Debug.Log("Loading compleated!");
+        }
+        else{
+            Debug.Log("Save file not found!");
+        }
+    }
+
+    private class SaveObject{
+        public float playerLocationX;
+        public int sceneNumber;
+
+        public List<Item> items = new List<Item>();
+        public bool[] dialogueMemory;
+        public bool[] eventMemory;
     }
 }
