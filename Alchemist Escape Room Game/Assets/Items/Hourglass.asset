@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718214b97b4a507439c9b90e0aad6467, type: 3}
   m_Name: Hourglass
   m_EditorClassIdentifier: 
-  name: Test Item
-  description: This is a test.
+  name: Hourglass
+  description: Hourglass
   artwork: {fileID: 21300000, guid: 0899115144a3b08479c1cc30dfe73d04, type: 3}

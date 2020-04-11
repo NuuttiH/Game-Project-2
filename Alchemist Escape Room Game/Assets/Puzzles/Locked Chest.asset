@@ -18,8 +18,8 @@ MonoBehaviour:
     asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd
     asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd
     asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd asd '
-  correctSolution: 310061003300
-  rewardItem: {fileID: 0}
+  correctSolution: 330050003100
+  rewardItem: {fileID: 11400000, guid: 2003aa9da8b27a442ae900086c757112, type: 2}
   customEventId: 0
   firstFailDialogue:
     uniqueID: 60

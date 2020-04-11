@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 
   description: 
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: 738aaa2a14ecd8c438c5444ed1456317, type: 3}
