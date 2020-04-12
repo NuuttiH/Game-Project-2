@@ -141,18 +141,25 @@ public class GameMaster : MonoBehaviour{
         if(saveID==0) currentSaveLocation += "autosave.json";
         else currentSaveLocation += "save" + saveID + ".json";
 
+        Debug.Log("Writing save...");
+
         float playerLocationX = GameObject.FindGameObjectWithTag("Player").transform.position.x;
+
+        List<string> itemsByName = new List<string>();
+        foreach(Item item in items){
+            Debug.Log("Saving item:  (" + item.name + ")");
+            itemsByName.Add(item.name);
+        }
 
         SaveObject saveObject = new SaveObject{
             playerLocationX = playerLocationX,
             sceneNumber = sceneNumber,
-            items = items,
+            itemsByName = itemsByName,
             dialogueMemory = dialogueMemory,
             eventMemory = eventMemory
         };
 
         string saveString = JsonUtility.ToJson(saveObject);
-        Debug.Log("Writing save...");
         File.WriteAllText(currentSaveLocation, saveString);
         Debug.Log("Save written!");
     }
@@ -167,7 +174,11 @@ public class GameMaster : MonoBehaviour{
             string saveString = File.ReadAllText(currentSaveLocation);
             SaveObject saveObject = JsonUtility.FromJson<SaveObject>(saveString);
 
-            items = saveObject.items;
+            items = new List<Item>();
+            foreach(string itemName in saveObject.itemsByName){
+                Debug.Log("Loading item:  (Items/" + itemName + ")");
+                items.Add(Resources.Load<Item>("Items/" + itemName));
+            }
             // Inventory Drawing managed by InventoryManager.Start()
             // Picked up item removal handled by InteractiveObject.Start()
             dialogueMemory = saveObject.dialogueMemory;
@@ -188,7 +199,7 @@ public class GameMaster : MonoBehaviour{
         public float playerLocationX;
         public int sceneNumber;
 
-        public List<Item> items = new List<Item>();
+        public List<string> itemsByName = new List<string>();
         public bool[] dialogueMemory;
         public bool[] eventMemory;
     }
