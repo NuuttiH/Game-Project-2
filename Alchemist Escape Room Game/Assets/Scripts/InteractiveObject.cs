@@ -10,7 +10,7 @@ public class InteractiveObject : MonoBehaviour{
     [Header("Item Behaviour")]
     public Item item;
     public bool pickupOnAction;
-    public Dialogue actionDialogue;
+    public List<Dialogue> actionDialogue = new List<Dialogue>();
 
     [Header("Attached puzzle")]
     public PuzzleCombine1 puzzleCombine1;
@@ -32,6 +32,18 @@ public class InteractiveObject : MonoBehaviour{
             if(spriteRenderer!=null) spriteRenderer.sprite = item.artwork;
             t = transform;
         }
+    }
+
+
+    public bool DoDialogue(){
+        bool success = false;
+        
+        foreach(Dialogue dialogue in actionDialogue){
+            success = dialogue.Trigger();
+            if(success) break;
+        }
+
+        return success;
     }
 
     void OnMouseOver(){

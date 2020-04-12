@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour{
                 if(Vector3.Distance(this.transform.position, mouseOverInteractiveObject.t.position)
                 < objectActivationDistance){
                     didAction = true;
-                    mouseOverInteractiveObject.actionDialogue.Trigger();
+                    mouseOverInteractiveObject.DoDialogue();
                     if(mouseOverInteractiveObject.pickupOnAction){ 
                         GameMaster.Instance.PickupItem(mouseOverInteractiveObject.item);
                         Destroy(mouseOverInteractiveObject.gameObject);
