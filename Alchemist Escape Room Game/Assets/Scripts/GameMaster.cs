@@ -8,6 +8,7 @@ public class GameMaster : MonoBehaviour{
     public static GameMaster Instance;
     public int sceneNumber;
     public Vector3 startLocation;
+    public float camHeight; // 0
     
     [HideInInspector]
     public int puzzleOpen;  // 0 = no puzzle, 1 = PuzzleCombine1, 2 = PuzzleCombine2
@@ -172,7 +173,7 @@ public class GameMaster : MonoBehaviour{
             dialogueMemory = saveObject.dialogueMemory;
             eventMemory = saveObject.eventMemory;  
             // Event loading managed by GameEventHandler.Start()
-            startLocation = new Vector3(saveObject.playerLocationX, PlayerController.Instance.camHeight, 0f);
+            startLocation = new Vector3(saveObject.playerLocationX, camHeight, 0f);
             
             StartScene(saveObject.sceneNumber);
             

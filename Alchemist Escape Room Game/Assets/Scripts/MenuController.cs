@@ -86,7 +86,7 @@ public class MenuController : MonoBehaviour{
         for(int i=1; i<=saveSlots.Count; i++){
             if(!File.Exists(GameMaster.Instance.saveLocation + "save" + i + ".json")){
                 saveSlots[i-1].GetComponentInChildren<Text>().text = "Save to slot " + i;
-                loadSlots[i-1].GetComponentInChildren<Text>().text = "(no savedata)";
+                loadSlots[i-1].GetComponentInChildren<Text>().text = "(no save data)";
             }
             else{
                 saveSlots[i-1].GetComponentInChildren<Text>().text = "Overwrite save in slot " + i;
@@ -94,7 +94,7 @@ public class MenuController : MonoBehaviour{
             }
         }
         if(!File.Exists(GameMaster.Instance.saveLocation + "autosave.json")){
-            loadSlots[loadSlots.Count-1].GetComponentInChildren<Text>().text = "(no data)";
+            loadSlots[loadSlots.Count-1].GetComponentInChildren<Text>().text = "(no autosave data)";
         }
         else{
             loadSlots[loadSlots.Count-1].GetComponentInChildren<Text>().text 

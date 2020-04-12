@@ -9,8 +9,6 @@ public class PlayerController : MonoBehaviour{
 
     public float objectActivationDistance = 3.8f;
     
-    [HideInInspector]
-    public float camHeight; // 0
     private Camera cameraMain;
     [HideInInspector]
     public InteractiveObject mouseOverInteractiveObject;
@@ -26,13 +24,12 @@ public class PlayerController : MonoBehaviour{
     void Start(){
         this.transform.position = GameMaster.Instance.startLocation;
         targetPosition = GameMaster.Instance.startLocation;
-        camHeight = GameMaster.Instance.startLocation.y; // 0
         cameraMain = Camera.main;
     }
 
     void Update(){
-        if(!EventSystem.current.IsPointerOverGameObject() &&
-        GameMaster.Instance.puzzleOpen==0 && Input.GetKeyDown(KeyCode.Mouse0)){
+        if(!EventSystem.current.IsPointerOverGameObject() && !GameMaster.Instance.menuOpen
+        && GameMaster.Instance.puzzleOpen==0 && Input.GetKeyDown(KeyCode.Mouse0)){
             // Interactive action
             bool didAction = false;
             if(mouseOverInteractiveObject != null){
@@ -68,7 +65,7 @@ public class PlayerController : MonoBehaviour{
             // Move if no interactive action
             if(!didAction){
                 targetPosition = cameraMain.ScreenToWorldPoint(Input.mousePosition);
-                targetPosition.y = camHeight;
+                targetPosition.y = GameMaster.Instance.camHeight;
                 if(targetPosition.x < leftWall) targetPosition.x = leftWall;
                 else if(targetPosition.x > rightWall) targetPosition.x = rightWall;
                 targetPosition.z = 0;
