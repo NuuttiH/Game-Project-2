@@ -356,16 +356,16 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 40
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: Such a primitive way of thinking...
       audioClip: {fileID: 8300000, guid: 1ba98181bc9f8c945a9542534e8f3edb, type: 3}
-  - uniqueID: 0
+  - uniqueID: 98
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
+      sentence: Back to work, fool.
+      audioClip: {fileID: 8300000, guid: 08b8787a9255ee54984bde3b1ee11543, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -1107,22 +1107,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 74
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: Mediocre light spell, but it will make due.
       audioClip: {fileID: 8300000, guid: 934f9ea369883ca40ae157bc83d5ca91, type: 3}
   - uniqueID: 75
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "What a feeble light spell you\u2019ve cast."
       audioClip: {fileID: 8300000, guid: fa9f061218b0c3242a91a9370350e165, type: 3}
-  - uniqueID: 0
+  - uniqueID: 110
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nonononononononononononon
-      audioClip: {fileID: 8300000, guid: fa9f061218b0c3242a91a9370350e165, type: 3}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: That's enough of that.
+      audioClip: {fileID: 8300000, guid: 8eef52f8e0400f94798d232a02e8fe35, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -1336,28 +1336,28 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 3
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: Ignore the hands. Those are just decorative.
       audioClip: {fileID: 8300000, guid: 7986cb012aa0a8d4f863acaf1c75294b, type: 3}
   - uniqueID: 4
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
       sentence: You have no idea what it takes to pry that thing off.
       audioClip: {fileID: 8300000, guid: 99c70712fec69d04e98c7338d889a719, type: 3}
   - uniqueID: 5
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: "I can\u2019t remember where I put the rest of him."
       audioClip: {fileID: 8300000, guid: 6d3b8c46501613b4788a3856488a7238, type: 3}
-  - uniqueID: 0
+  - uniqueID: 78
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: That's enough of that.
+      audioClip: {fileID: 8300000, guid: 8eef52f8e0400f94798d232a02e8fe35, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -1832,7 +1832,13 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   item: {fileID: 0}
   pickupOnAction: 0
-  actionDialogue: []
+  actionDialogue:
+  - uniqueID: 76
+    lines:
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
+      sentence: "Remember, it\u2019s not a children\u2019s book."
+      audioClip: {fileID: 8300000, guid: 6e9c0b7c83fd89c46bab4874c1da726c, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -2483,16 +2489,16 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 18
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: "That one doesn\u2019t have any pictures. You might find it difficult."
       audioClip: {fileID: 8300000, guid: b7c56ac4d048e224bbbf6a926d4a4d40, type: 3}
-  - uniqueID: 0
+  - uniqueID: 87
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: Let's move along.
+      audioClip: {fileID: 8300000, guid: 58b23b8cacdb9804e8345547ad24192b, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -3198,22 +3204,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 24
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 064d2f364c6035a498d59a7cc68dfa36, type: 3}
+      name: Master Wizard Promethia
       sentence: "That\u2019s wonderful with potatoes. Among other things..."
       audioClip: {fileID: 8300000, guid: 0eb075a685346bb4d84566e3d72e0949, type: 3}
   - uniqueID: 25
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: What did I say about dinner recipes?
       audioClip: {fileID: 8300000, guid: a0e3520715b3ee849b7c0b4d020f0750, type: 3}
-  - uniqueID: 0
+  - uniqueID: 91
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: That's enough of that.
+      audioClip: {fileID: 8300000, guid: 8eef52f8e0400f94798d232a02e8fe35, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -3519,22 +3525,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 22
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 562336445066dcb4d9f2baf11198664f, type: 3}
+      name: Master Wizard Promethia
       sentence: "Just take all my money while you\u2019re at it."
       audioClip: {fileID: 8300000, guid: 22ce4793b3588d04986d6db3af14c1df, type: 3}
   - uniqueID: 23
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "I wonder why my face isn\u2019t on the back of those."
       audioClip: {fileID: 8300000, guid: 0c38f96d7f2fd2842a50c93aa650e3cb, type: 3}
-  - uniqueID: 0
+  - uniqueID: 90
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
+      sentence: This again? No. Just move on.
+      audioClip: {fileID: 8300000, guid: e625978a48c407c4f81310977eb794d7, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -3744,22 +3750,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 1
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: Getting drunk on the job? I should have guessed...
       audioClip: {fileID: 8300000, guid: 9d8f01779be3e50448e486e1bb1a3a57, type: 3}
   - uniqueID: 2
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 26a51760890d3aa41a523041e2d7afc2, type: 3}
+      name: Master Wizard Promethia
       sentence: "That\u2019s not for ale. In case you were wondering."
       audioClip: {fileID: 8300000, guid: 72c1b47abbff0c340bb7f98870500d9a, type: 3}
-  - uniqueID: 0
+  - uniqueID: 77
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: Nonononononononono
-      audioClip: {fileID: 0}
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
+      sentence: Back to work, fool.
+      audioClip: {fileID: 8300000, guid: 08b8787a9255ee54984bde3b1ee11543, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -3969,14 +3975,14 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 72
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 064d2f364c6035a498d59a7cc68dfa36, type: 3}
+      name: Master Wizard Promethia
       sentence: "From the finest oak of the nearby children\u2019s playground."
       audioClip: {fileID: 8300000, guid: 1cc2d1c5cdc9d7145ac18755c6862f33, type: 3}
-  - uniqueID: 0
+  - uniqueID: 109
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: "Don\u2019t stain that."
       audioClip: {fileID: 8300000, guid: fc7f421a83d8eba4cb80810e481cea23, type: 3}
   puzzleCombine1: {fileID: 0}
@@ -5087,22 +5093,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 32
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: "You\u2019re like a toddler. You must taste everything in sight."
       audioClip: {fileID: 8300000, guid: d3c267cb587a88942926a7ee7d893355, type: 3}
   - uniqueID: 33
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 064d2f364c6035a498d59a7cc68dfa36, type: 3}
+      name: Master Wizard Promethia
       sentence: "That\u2019s wonderful with potatoes. Among other things..."
       audioClip: {fileID: 8300000, guid: 0eb075a685346bb4d84566e3d72e0949, type: 3}
-  - uniqueID: 0
+  - uniqueID: 95
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
+      sentence: Not this again.
+      audioClip: {fileID: 8300000, guid: 46838f268d1cbcb409a806dd90dfc490, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -5465,34 +5471,34 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 42
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: "Drip, drop \u2013 tick, tock. Time is not on your side."
       audioClip: {fileID: 8300000, guid: 9110f4c0c692a544e8c8104067fb9f82, type: 3}
   - uniqueID: 43
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "My dear, at this rate you\u2019ll be here for an eternity."
       audioClip: {fileID: 8300000, guid: 2b715e81ea643504d96c7a99e45ab912, type: 3}
   - uniqueID: 44
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: Would you look at that. Another hour wasted.
       audioClip: {fileID: 8300000, guid: 225c8fa804729ef478537296c6f03cf7, type: 3}
   - uniqueID: 45
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: Already running past your allotted time I see...
       audioClip: {fileID: 8300000, guid: 36b2c7ade5c04d24d81ad131176d809b, type: 3}
-  - uniqueID: 0
+  - uniqueID: 100
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
+      sentence: That's enough of that.
+      audioClip: {fileID: 8300000, guid: 8eef52f8e0400f94798d232a02e8fe35, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -6525,22 +6531,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 26
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: Try not to let it sting you.
       audioClip: {fileID: 8300000, guid: b37ecff833d9e3c4e909df3b71df1fce, type: 3}
   - uniqueID: 27
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 562336445066dcb4d9f2baf11198664f, type: 3}
+      name: Master Wizard Promethia
       sentence: What did I say about dinner recipes?
       audioClip: {fileID: 8300000, guid: a0e3520715b3ee849b7c0b4d020f0750, type: 3}
-  - uniqueID: 0
+  - uniqueID: 92
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
+      sentence: Back to work, fool.
+      audioClip: {fileID: 8300000, guid: 08b8787a9255ee54984bde3b1ee11543, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -6750,20 +6756,20 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 56
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 064d2f364c6035a498d59a7cc68dfa36, type: 3}
+      name: Master Wizard Promethia
       sentence: Magnificent. Such prominence. Just absolutely glorious.
       audioClip: {fileID: 8300000, guid: 0fc5ae914b8904d44b8f9ba20d27660d, type: 3}
   - uniqueID: 57
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 064d2f364c6035a498d59a7cc68dfa36, type: 3}
+      name: Master Wizard Promethia
       sentence: By the Gods, what a magnificent image.
       audioClip: {fileID: 8300000, guid: 58928ad630836e141bb489656b5f3bbd, type: 3}
   - uniqueID: 0
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: Still handsome as ever.
       audioClip: {fileID: 8300000, guid: 1f9d1649cdfd6504690fb988592fe674, type: 3}
   puzzleCombine1: {fileID: 0}
@@ -7715,8 +7721,8 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 73
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "Don\u2019t stain that."
       audioClip: {fileID: 8300000, guid: fc7f421a83d8eba4cb80810e481cea23, type: 3}
   puzzleCombine1: {fileID: 0}
@@ -8516,22 +8522,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 11
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 641499e48cc2ab649bf75ad656b292ac, type: 3}
+      name: Master Wizard Promethia
       sentence: That might actually help you...
       audioClip: {fileID: 8300000, guid: 414d08e3352526142bc339ff04ddcf59, type: 3}
   - uniqueID: 12
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 064d2f364c6035a498d59a7cc68dfa36, type: 3}
+      name: Master Wizard Promethia
       sentence: "Not to brag, but that\u2019s one of my spells."
       audioClip: {fileID: 8300000, guid: 5aabad48688d0c541a4c590d6ac2ddae, type: 3}
-  - uniqueID: 0
+  - uniqueID: 81
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: Let's move along.
+      audioClip: {fileID: 8300000, guid: 58b23b8cacdb9804e8345547ad24192b, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -9296,6 +9302,8 @@ GameObject:
   m_Component:
   - component: {fileID: 754330801}
   - component: {fileID: 754330800}
+  - component: {fileID: 754330803}
+  - component: {fileID: 754330802}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -9367,6 +9375,59 @@ Transform:
   m_Father: {fileID: 776368553}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &754330802
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754330799}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.07285118, y: 0.17266083}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11.81, y: 20.08}
+    newSize: {x: 10.24, y: 10.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.458757, y: 17.20227}
+  m_EdgeRadius: 0
+--- !u!114 &754330803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754330799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0320106c15ea141beb0919986978c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  pickupOnAction: 0
+  actionDialogue:
+  - uniqueID: 0
+    lines:
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master wizard Promethia
+      sentence: Not until you pass my trials.
+      audioClip: {fileID: 8300000, guid: b8a6c7ddc28704e4191987cade425c26, type: 3}
+  puzzleCombine1: {fileID: 0}
+  puzzleCombine2: {fileID: 0}
+  combinationLock: {fileID: 0}
+  puzzleSpellbook: {fileID: 0}
+  t: {fileID: 0}
 --- !u!1 &760000398
 GameObject:
   m_ObjectHideFlags: 0
@@ -9683,16 +9744,16 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 19
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: "Remember, it\u2019s not a children\u2019s book."
       audioClip: {fileID: 8300000, guid: 6e9c0b7c83fd89c46bab4874c1da726c, type: 3}
-  - uniqueID: 0
+  - uniqueID: 88
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
+      sentence: This again? No. Just move on.
+      audioClip: {fileID: 8300000, guid: e625978a48c407c4f81310977eb794d7, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -9825,16 +9886,16 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 17
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: "Don\u2019t smudge that."
       audioClip: {fileID: 8300000, guid: 3c40769ce6304cc44a154261739f9b79, type: 3}
-  - uniqueID: 0
+  - uniqueID: 86
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 335df02a889e694498087ef22213836f, type: 3}
+      name: Master Wizard Promethia
+      sentence: Back to work, fool.
+      audioClip: {fileID: 8300000, guid: 08b8787a9255ee54984bde3b1ee11543, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -10040,22 +10101,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 28
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "That\u2019s not exactly edible."
       audioClip: {fileID: 8300000, guid: 1048b46b5ac4ce14f8da4ab770ffb902, type: 3}
   - uniqueID: 29
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: "You don\u2019t even know what that is, do you"
       audioClip: {fileID: 8300000, guid: 1968dac6bee0f7c48b6006fa99f041a7, type: 3}
-  - uniqueID: 0
+  - uniqueID: 93
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
+      sentence: Just move along.
+      audioClip: {fileID: 8300000, guid: a684dd0df3e4ac74c9f521ff4aa2c9e9, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -10188,16 +10249,16 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 15
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: That brick will put you to sleep.
       audioClip: {fileID: 8300000, guid: 2aee28d73b786cb4fb555a88648c0a5f, type: 3}
-  - uniqueID: 0
+  - uniqueID: 84
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
+      sentence: That's enough of that.
+      audioClip: {fileID: 8300000, guid: 8eef52f8e0400f94798d232a02e8fe35, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -10859,22 +10920,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 30
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: Maybe you should stick to making tea.
       audioClip: {fileID: 8300000, guid: 62b5bb0e5062d9f4e9d7f346a53168dc, type: 3}
   - uniqueID: 31
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: What did I say about dinner recipes?
       audioClip: {fileID: 8300000, guid: a0e3520715b3ee849b7c0b4d020f0750, type: 3}
-  - uniqueID: 0
+  - uniqueID: 94
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: Let's move along.
+      audioClip: {fileID: 8300000, guid: 58b23b8cacdb9804e8345547ad24192b, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -11161,28 +11222,28 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 68
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: Stop huffing the fumes.
       audioClip: {fileID: 8300000, guid: a43dc2d34f1618441be11338216fcff2, type: 3}
   - uniqueID: 69
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: You're going to make drugs, aren't you.
       audioClip: {fileID: 8300000, guid: 9c49f08eb83f5e7439d6f5c9c9ae6a6e, type: 3}
   - uniqueID: 70
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 641499e48cc2ab649bf75ad656b292ac, type: 3}
+      name: Master Wizard Promethia
       sentence: Apologies. My brews are a tad bit more potent than yours.
       audioClip: {fileID: 8300000, guid: b0567097d0f98f54182d4efb3085e902, type: 3}
   - uniqueID: 0
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
+      sentence: Stop huffing the fumes.
+      audioClip: {fileID: 8300000, guid: a43dc2d34f1618441be11338216fcff2, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -11284,7 +11345,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01958561, y: 3.5030384}
+  m_Offset: {x: 0.01958561, y: 3.8021865}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11295,7 +11356,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.757868, y: 2.1383727}
+  m_Size: {x: 10.757868, y: 0.87186813}
   m_EdgeRadius: 0
 --- !u!114 &921032473
 MonoBehaviour:
@@ -11315,14 +11376,14 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 71
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 064d2f364c6035a498d59a7cc68dfa36, type: 3}
+      name: Master Wizard Promethia
       sentence: "From the finest oak of the nearby children\u2019s playground."
       audioClip: {fileID: 8300000, guid: 1cc2d1c5cdc9d7145ac18755c6862f33, type: 3}
   - uniqueID: 0
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: "Don\u2019t stain that."
       audioClip: {fileID: 8300000, guid: fc7f421a83d8eba4cb80810e481cea23, type: 3}
   puzzleCombine1: {fileID: 0}
@@ -11688,16 +11749,16 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 41
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: "That\u2019s not necessary!"
       audioClip: {fileID: 8300000, guid: be8765e4bd581fa438a7d09abe1c670a, type: 3}
-  - uniqueID: 0
+  - uniqueID: 99
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: Let's move along.
+      audioClip: {fileID: 8300000, guid: 58b23b8cacdb9804e8345547ad24192b, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -11917,18 +11978,13 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: d3118fe79ec752b45a053caccbca10ad, type: 2}
   pickupOnAction: 0
   actionDialogue:
-  - uniqueID: 98
+  - uniqueID: 110
     lines:
-    - sprite: {fileID: 0}
-      name: 
-      sentence: test 1
-      audioClip: {fileID: 0}
-  - uniqueID: 0
-    lines:
-    - sprite: {fileID: 0}
-      name: 
-      sentence: test 2
-      audioClip: {fileID: 0}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Promethia
+      sentence: "That\u2019s correct! Now just transconfigure the Xanthium\u2019s
+        Bane and the\r Cedar Resin."
+      audioClip: {fileID: 8300000, guid: 54e1e901a1f93714e923dd73db9c41bc, type: 3}
   puzzleCombine1: {fileID: 11400000, guid: 9ff35e1fa92a40c4c86fa0bad353858b, type: 2}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -12315,16 +12371,16 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 14
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "Shouldn\u2019t take you that long to read the title."
       audioClip: {fileID: 8300000, guid: f7c44db55a94e984091af2cc427d187c, type: 3}
-  - uniqueID: 0
+  - uniqueID: 83
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: Just move along.
+      audioClip: {fileID: 8300000, guid: a684dd0df3e4ac74c9f521ff4aa2c9e9, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -13336,22 +13392,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 51
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 641499e48cc2ab649bf75ad656b292ac, type: 3}
+      name: Master Wizard Promethia
       sentence: "That\u2019s not a part of your trials!"
       audioClip: {fileID: 8300000, guid: fab226d8daf54b84fab976ec1ac802ca, type: 3}
   - uniqueID: 52
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: "That\u2019s not yours to open!"
       audioClip: {fileID: 8300000, guid: 88d913b1fab6c4f42a5027df68c33478, type: 3}
-  - uniqueID: 0
+  - uniqueID: 103
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 562336445066dcb4d9f2baf11198664f, type: 3}
+      name: Master Wizard Promethia
+      sentence: That's enough of that.
+      audioClip: {fileID: 8300000, guid: 8eef52f8e0400f94798d232a02e8fe35, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -14633,31 +14689,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
   pickupOnAction: 0
-  actionDialogue:
-  - uniqueID: 0
-    lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: 12345
-      audioClip: {fileID: 8300000, guid: ae9b078f15e49f74786020e7e40e4d71, type: 3}
-  - uniqueID: 0
-    lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: asfdsgdasg
-      audioClip: {fileID: 0}
-  - uniqueID: 0
-    lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: 09876543
-      audioClip: {fileID: 0}
-  - uniqueID: 0
-    lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: Nonononononononono
-      audioClip: {fileID: 0}
+  actionDialogue: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -14721,8 +14753,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237594051}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.37, y: 7.2, z: 0}
-  m_LocalScale: {x: 0.2088581, y: 0.18033789, z: 1}
+  m_LocalPosition: {x: -5.27, y: -0.28, z: 0}
+  m_LocalScale: {x: 0.12014186, y: 0.101549715, z: 1}
   m_Children: []
   m_Father: {fileID: 776368553}
   m_RootOrder: 0
@@ -15087,29 +15119,29 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 6
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: "Don\u2019t even think about stealing that."
       audioClip: {fileID: 8300000, guid: 7ca2e3a0e820434498575d21fc04e48b, type: 3}
   - uniqueID: 7
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: I wonder if you even know what that does.
       audioClip: {fileID: 8300000, guid: 5b1393a6ab87a944ab5158e6f36baf2a, type: 3}
   - uniqueID: 8
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: "Don\u2019t worry. That won\u2019t kill you. It\u2019ll just burn
         for a while."
       audioClip: {fileID: 8300000, guid: dcb210f5501449a478188a821a2cce69, type: 3}
-  - uniqueID: 0
+  - uniqueID: 79
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: Just move along.
+      audioClip: {fileID: 8300000, guid: a684dd0df3e4ac74c9f521ff4aa2c9e9, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -16514,16 +16546,16 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 16
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 335df02a889e694498087ef22213836f, type: 3}
+      name: Master Wizard Promethia
       sentence: "I didn\u2019t say you could have that."
       audioClip: {fileID: 8300000, guid: 73712ce3c7c9c934b814eaeb6ad05018, type: 3}
-  - uniqueID: 0
+  - uniqueID: 85
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
+      sentence: Not this again.
+      audioClip: {fileID: 8300000, guid: 46838f268d1cbcb409a806dd90dfc490, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -16932,22 +16964,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 9
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "Well that\u2019s one way to mess up this test."
       audioClip: {fileID: 8300000, guid: ba00676bd4005d84bbfa69e77fa71039, type: 3}
   - uniqueID: 10
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 335df02a889e694498087ef22213836f, type: 3}
+      name: Master Wizard Promethia
       sentence: Try not to go blind...
       audioClip: {fileID: 8300000, guid: a566e240d76b96345ae99e9b05ef082b, type: 3}
-  - uniqueID: 0
+  - uniqueID: 80
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 562336445066dcb4d9f2baf11198664f, type: 3}
+      name: Master Wizard Promethia
+      sentence: That's enough of that.
+      audioClip: {fileID: 8300000, guid: 8eef52f8e0400f94798d232a02e8fe35, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -17249,26 +17281,26 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 64
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: "At least you didn\u2019t break it with your failed spell."
       audioClip: {fileID: 8300000, guid: ff9c944d739a0704eae56d2639c8ddad, type: 3}
   - uniqueID: 65
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: You are the spitting image of my ex-wife. Ugh.
       audioClip: {fileID: 8300000, guid: 3c4f75d7223783544a3efe04d03d237a, type: 3}
   - uniqueID: 66
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "No, there\u2019s no going back now."
       audioClip: {fileID: 8300000, guid: 0e2d324b5e5eac44eac60f79ce5fe762, type: 3}
   - uniqueID: 0
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 562336445066dcb4d9f2baf11198664f, type: 3}
+      name: Master Wizard Promethia
       sentence: Stop admiring yourself and get to work!
       audioClip: {fileID: 8300000, guid: 9e99ad229c2d834469e7b4a42730ad27, type: 3}
   puzzleCombine1: {fileID: 0}
@@ -17403,22 +17435,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 49
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 641499e48cc2ab649bf75ad656b292ac, type: 3}
+      name: Master Wizard Promethia
       sentence: "That\u2019s supposed to be locked!"
       audioClip: {fileID: 8300000, guid: f60d4fcf3b4b6424da6f9a0a5160afee, type: 3}
   - uniqueID: 50
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 26a51760890d3aa41a523041e2d7afc2, type: 3}
+      name: Master Wizard Promethia
       sentence: Nothing of interest for you in there, I assure you.
       audioClip: {fileID: 8300000, guid: 2c14cae4c2a4e734aaa11dd813dddc4a, type: 3}
-  - uniqueID: 0
+  - uniqueID: 102
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
+      sentence: Let's move along.
+      audioClip: {fileID: 8300000, guid: 58b23b8cacdb9804e8345547ad24192b, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -17551,28 +17583,28 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 37
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: "You\u2019ve never used one of these, haven\u2019t you?"
       audioClip: {fileID: 8300000, guid: 4e39040eb5489f447b8c30633b4dabb2, type: 3}
   - uniqueID: 38
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: Try not to pulverize your own fingers.
       audioClip: {fileID: 8300000, guid: 930f7d5ab00647847969c1b7eac593a4, type: 3}
   - uniqueID: 39
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: Those tools cost money, you know.
       audioClip: {fileID: 8300000, guid: faf046c7dbb3ca24f8e59373e4573e63, type: 3}
-  - uniqueID: 0
+  - uniqueID: 97
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 562336445066dcb4d9f2baf11198664f, type: 3}
+      name: Master Wizard Promethia
+      sentence: This again? No. Just move on.
+      audioClip: {fileID: 8300000, guid: e625978a48c407c4f81310977eb794d7, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -18290,16 +18322,16 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 62
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: "I knew you wouldn\u2019t have any appreciation for fine arts."
       audioClip: {fileID: 8300000, guid: 494f7fc47f0aa894eb1df4c899484ff7, type: 3}
-  - uniqueID: 0
+  - uniqueID: 107
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
+      sentence: This again? No. Just move on.
+      audioClip: {fileID: 8300000, guid: e625978a48c407c4f81310977eb794d7, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -20285,16 +20317,16 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 63
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: "I knew you wouldn\u2019t have any appreciation for fine arts."
       audioClip: {fileID: 8300000, guid: 494f7fc47f0aa894eb1df4c899484ff7, type: 3}
-  - uniqueID: 0
+  - uniqueID: 108
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
+      sentence: Back to work fool.
+      audioClip: {fileID: 8300000, guid: 08b8787a9255ee54984bde3b1ee11543, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -20739,23 +20771,23 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 58
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "I doubt you\u2019d ever be capable of harnessing the powers of the
         cosmos"
       audioClip: {fileID: 8300000, guid: 627aefa079e1ca64eb7f596be97d45ff, type: 3}
   - uniqueID: 59
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: Perhaps one day even you could understand real magic.
       audioClip: {fileID: 8300000, guid: 64465e6b2ce55af4b99ef998466f00b0, type: 3}
-  - uniqueID: 0
+  - uniqueID: 105
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: Just move along.
+      audioClip: {fileID: 8300000, guid: 58b23b8cacdb9804e8345547ad24192b, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -21827,14 +21859,14 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 67
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 064d2f364c6035a498d59a7cc68dfa36, type: 3}
+      name: Master Wizard Promethia
       sentence: A throne fit for a king...
       audioClip: {fileID: 8300000, guid: 977dc553e3776c04e83f328958ce921a, type: 3}
   - uniqueID: 0
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: No sitting until you complete your trials!
       audioClip: {fileID: 8300000, guid: 03666a2c080d17c49aac4af958424682, type: 3}
   puzzleCombine1: {fileID: 0}
@@ -22289,28 +22321,28 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 34
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 26a51760890d3aa41a523041e2d7afc2, type: 3}
+      name: Master Wizard Promethia
       sentence: "I don\u2019t believe in luck. That\u2019s just a part of my keychain"
       audioClip: {fileID: 8300000, guid: 6dba2446550db3849912ec492eb7901c, type: 3}
   - uniqueID: 35
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "It\u2019s not for luck. How superstitious are you?"
       audioClip: {fileID: 8300000, guid: 4e16c20c5d2791644ad39bbc422ff241, type: 3}
   - uniqueID: 36
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 064d2f364c6035a498d59a7cc68dfa36, type: 3}
+      name: Master Wizard Promethia
       sentence: "He wasn\u2019t the worst pet I had."
       audioClip: {fileID: 8300000, guid: ca4bb3c944ac5d842aa5de34804ada1e, type: 3}
-  - uniqueID: 0
+  - uniqueID: 96
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
+      sentence: That's enough of that.
+      audioClip: {fileID: 8300000, guid: 8eef52f8e0400f94798d232a02e8fe35, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -22391,7 +22423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888822071}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 5.24, y: -1.15, z: 0}
   m_LocalScale: {x: 600, y: 220, z: 1}
   m_Children: []
   m_Father: {fileID: 2102484913}
@@ -22995,22 +23027,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 12
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 335df02a889e694498087ef22213836f, type: 3}
+      name: Master Wizard Promethia
       sentence: What do you think that is?! A shopping list?!
       audioClip: {fileID: 8300000, guid: a17c7a4f2064398479775970f5192dea, type: 3}
   - uniqueID: 13
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: Show some appreciation for my work!
       audioClip: {fileID: 8300000, guid: 75d8fdb7377de8d4f9e92fac2d3ccb11, type: 3}
-  - uniqueID: 0
+  - uniqueID: 82
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 562336445066dcb4d9f2baf11198664f, type: 3}
+      name: Master Wizard Promethia
+      sentence: This again? No. Just move on.
+      audioClip: {fileID: 8300000, guid: e625978a48c407c4f81310977eb794d7, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -23388,28 +23420,28 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 53
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
       sentence: "\"Bonds of Eternity\". Please don\u2019t clasp those on yourself."
       audioClip: {fileID: 8300000, guid: 7a70f7e6502a5e040b528524ce6c6c57, type: 3}
   - uniqueID: 54
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: Using those would just make this trial even more difficult to watch.
       audioClip: {fileID: 8300000, guid: 90de0d62ade00cc48942401a45f41987, type: 3}
   - uniqueID: 55
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 26a51760890d3aa41a523041e2d7afc2, type: 3}
+      name: Master Wizard Promethia
       sentence: "What I do in my bedroom is nobody\u2019s business!"
       audioClip: {fileID: 8300000, guid: 5388765151c9f294c9852d4368e78323, type: 3}
-  - uniqueID: 0
+  - uniqueID: 104
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
+      sentence: Back to work fool!
+      audioClip: {fileID: 8300000, guid: 08b8787a9255ee54984bde3b1ee11543, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -23644,22 +23676,22 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 60
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: Arachnophobe are you?
       audioClip: {fileID: 8300000, guid: 54527d5f9becd18409331da9af458b50, type: 3}
   - uniqueID: 61
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
       sentence: "Don\u2019t worry. Only three of my trials will test you on that."
       audioClip: {fileID: 8300000, guid: e1cd5838da258614faa5a386ccda4452, type: 3}
-  - uniqueID: 0
+  - uniqueID: 106
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
+      name: Master Wizard Promethia
+      sentence: Not this again.
+      audioClip: {fileID: 8300000, guid: 46838f268d1cbcb409a806dd90dfc490, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -24712,21 +24744,21 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 20
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: "Don\u2019t even think about stealing those."
       audioClip: {fileID: 8300000, guid: d2fd41db17102b048b94d2f2da048be3, type: 3}
   - uniqueID: 21
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 562336445066dcb4d9f2baf11198664f, type: 3}
+      name: Master Wizard Promethia
       sentence: "If you knew alchemy, you wouldn\u2019t need those."
       audioClip: {fileID: 8300000, guid: 98b636a2d808f9b42a055bea32a08b7a, type: 3}
-  - uniqueID: 0
+  - uniqueID: 89
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
+    - sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
+      name: Master Wizard Promethia
+      sentence: Just move along.
       audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
@@ -25104,28 +25136,28 @@ MonoBehaviour:
   actionDialogue:
   - uniqueID: 46
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: I swear, if you draw something obscene on one of my scrolls...
       audioClip: {fileID: 8300000, guid: b0adc7bf68327854baa941117b00465a, type: 3}
   - uniqueID: 47
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+      name: Master Wizard Promethia
       sentence: "Sometimes I\u2019m surprised you can actually write."
       audioClip: {fileID: 8300000, guid: 90594570a6485244ba04ccb85c9398bc, type: 3}
   - uniqueID: 48
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
+    - sprite: {fileID: 21300000, guid: 8823f667e97fc924baed94ca775a6461, type: 3}
+      name: Master Wizard Promethia
       sentence: "Don\u2019t spill the ink you fool."
       audioClip: {fileID: 8300000, guid: 00176462296c8cc428aee48959f1b3ae, type: 3}
-  - uniqueID: 0
+  - uniqueID: 101
     lines:
-    - sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
-      name: velho
-      sentence: nononononononononononono
-      audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+    - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
+      name: Master Wizard Promethia
+      sentence: Just move along.
+      audioClip: {fileID: 8300000, guid: a684dd0df3e4ac74c9f521ff4aa2c9e9, type: 3}
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
   combinationLock: {fileID: 0}
@@ -25276,6 +25308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: sceneNumber
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643058175658255050, guid: 7da2d4f6017c8c244975522ab9a4e517,
+        type: 3}
+      propertyPath: dialogueMemorySize
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4643058175658255051, guid: 7da2d4f6017c8c244975522ab9a4e517,
         type: 3}
