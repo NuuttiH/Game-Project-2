@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class PuzzleCombine2Solution{
     public Dialogue resultDialogue;
-    public Item[] solution = new Item[2];
+    public List<Item> solution = new List<Item>();
     public int customEventId;
     public Item rewardItem;
 }

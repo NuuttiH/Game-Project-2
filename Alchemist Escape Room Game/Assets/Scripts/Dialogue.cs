@@ -8,9 +8,10 @@ public class Dialogue{
     public DialogueLine[] lines;
 
     public bool Trigger(){
-        if(lines.Length>0 && (uniqueID==0 
-        || !GameMaster.Instance.dialogueMemory[uniqueID])){
-            DialogueManager.Instance.StartDialogue(this);
+        if(uniqueID==0 || !GameMaster.Instance.dialogueMemory[uniqueID]){
+            if(lines.Length>0){
+                DialogueManager.Instance.StartDialogue(this);
+            }
             GameMaster.Instance.dialogueMemory[uniqueID] = true;
             return true;
         }

@@ -15,7 +15,7 @@ public class PuzzleCombine2Controller : MonoBehaviour{
     public GameObject item2;
     public GameObject item3;
     
-    private Item[] currentSolution;
+    private List<Item> currentSolution = new List<Item>();
     private PuzzleCombine2 currentPuzzle;
 
 
@@ -37,7 +37,7 @@ public class PuzzleCombine2Controller : MonoBehaviour{
         
         currentPuzzle = puzzle;
 
-        currentSolution = new Item[2];
+        currentSolution = new List<Item>();
         GameMaster.Instance.puzzleOpen = 2;
         canvas.enabled = true;
     }
@@ -48,15 +48,14 @@ public class PuzzleCombine2Controller : MonoBehaviour{
     public void ResetPuzzle(){ OpenPuzzle(currentPuzzle); }
 
     public void Combine(Item item, int slot){
-        if(slot == 1){
+        if(slot == 1)
             item1.GetComponent<ItemDisplay>().NewDisplay(item);
-            currentSolution[0] = item;
-        }
-        else{
+        else 
             item2.GetComponent<ItemDisplay>().NewDisplay(item);
-            currentSolution[1] = item;
-        }
-        if(currentSolution[0]!=null && currentSolution[1]!=null){
+
+        currentSolution.Add(item);
+
+        if(currentSolution.Count==2){
             bool match = false;
             bool no_solution_match = true;
 
@@ -73,7 +72,6 @@ public class PuzzleCombine2Controller : MonoBehaviour{
                 }
                 // If untriggered match found, trigger it, otherwise continue checking
                 if(match){
-                    Debug.Log("if(match) == true");
                     no_solution_match = false;
                     if(s.resultDialogue.Trigger()){
                         GameEventHandler.Instance.DoEvent(s.customEventId);

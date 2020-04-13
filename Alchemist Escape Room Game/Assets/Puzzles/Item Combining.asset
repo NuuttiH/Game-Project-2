@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: Item Combining
   m_EditorClassIdentifier: 
   title: Title2
-  solutions: []
+  solutions:
+  - resultDialogue:
+      uniqueID: 0
+      lines: []
+    solution:
+    - {fileID: 11400000, guid: 2003aa9da8b27a442ae900086c757112, type: 2}
+    - {fileID: 11400000, guid: a5c049cf6d03b4f4f8df5028d80f707f, type: 2}
+    customEventId: 0
+    rewardItem: {fileID: 11400000, guid: 7fbf664b2a910234baa7376fa4fca7f1, type: 2}
   defaultFailingSolution:
     resultDialogue:
       uniqueID: 0
