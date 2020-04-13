@@ -127,6 +127,7 @@ public class GameMaster : MonoBehaviour{
         if(!items.Find(x => x.name==item.name)){
             items.Add(item);
             inventoryManager.DrawInventory();
+            Save(0); // Autosave
         }
     }
 

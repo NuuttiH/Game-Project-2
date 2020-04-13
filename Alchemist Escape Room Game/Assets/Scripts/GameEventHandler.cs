@@ -30,13 +30,20 @@ public class GameEventHandler : MonoBehaviour{
                     Debug.Log("Custom Event Handler - No Event");
                     break;
             }
-            GameMaster.Instance.eventMemory[customEventId] = true;
+            if(customEventId!=0 && !force){
+                GameMaster.Instance.eventMemory[customEventId] = true;
+                GameMaster.Instance.Save(0); // Autosave
+            }
         }
     }
 
     void Event1(){
         Debug.Log("Custom Event Handler - Event 1");
-        GameObject.Find("GlobalLight").GetComponent<Light2D>().intensity = 0.4f;
-        GameObject.Find("ChandelierLight").GetComponent<Light2D>().intensity = 0.6f;
+        GameObject.Find("GlobalLight").GetComponent<Light2D>()
+        .intensity = 0.4f;
+        GameObject.Find("ChandelierLight").GetComponent<Light2D>()
+        .intensity = 0.6f;
+        GameObject.Find("LightPuzzleObject").GetComponent<InteractiveObject>()
+        .puzzleCombine1 = null;
     }
 }

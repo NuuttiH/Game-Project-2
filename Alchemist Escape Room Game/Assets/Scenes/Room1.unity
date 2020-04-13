@@ -11869,7 +11869,7 @@ GameObject:
   - component: {fileID: 964803593}
   - component: {fileID: 964803591}
   m_Layer: 0
-  m_Name: TestPuzzleObject
+  m_Name: LightPuzzleObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
