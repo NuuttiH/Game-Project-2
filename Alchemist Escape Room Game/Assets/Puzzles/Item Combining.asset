@@ -21,7 +21,23 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 2003aa9da8b27a442ae900086c757112, type: 2}
     - {fileID: 11400000, guid: a5c049cf6d03b4f4f8df5028d80f707f, type: 2}
     customEventId: 0
-    rewardItem: {fileID: 11400000, guid: 7fbf664b2a910234baa7376fa4fca7f1, type: 2}
+    rewardItem: {fileID: 11400000, guid: feec8f5e152e2f942aefef9c1e82622a, type: 2}
+  - resultDialogue:
+      uniqueID: 0
+      lines: []
+    solution:
+    - {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+    - {fileID: 11400000, guid: 0aabcb7d1a574ad458140eb1daad61d3, type: 2}
+    customEventId: 0
+    rewardItem: {fileID: 11400000, guid: 8bd007c9d43b52742a6c6e3275278daa, type: 2}
+  - resultDialogue:
+      uniqueID: 0
+      lines: []
+    solution:
+    - {fileID: 11400000, guid: 7fbf664b2a910234baa7376fa4fca7f1, type: 2}
+    - {fileID: 11400000, guid: 3432476974329624ab40ddcbca48d99a, type: 2}
+    customEventId: 0
+    rewardItem: {fileID: 11400000, guid: 74e75b4fe76375d4690593a2243c7423, type: 2}
   defaultFailingSolution:
     resultDialogue:
       uniqueID: 0
