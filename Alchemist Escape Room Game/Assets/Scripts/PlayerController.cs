@@ -17,26 +17,30 @@ public class PlayerController : MonoBehaviour{
     public float leftWall;
     public float rightWall;
 
+    private InteractiveObject queuedAction;
+
     void Awake(){
         Instance = this;
     }
 
     void Start(){
-        this.transform.position = GameMaster.Instance.startLocation;
+        transform.position = GameMaster.Instance.startLocation;
         targetPosition = GameMaster.Instance.startLocation;
         cameraMain = Camera.main;
+        queuedAction = null;
     }
 
     void Update(){
         if(!EventSystem.current.IsPointerOverGameObject() && !GameMaster.Instance.menuOpen
         && GameMaster.Instance.puzzleOpen==0 && Input.GetKeyDown(KeyCode.Mouse0)){
+            queuedAction = null;
             // Interactive action
             bool didAction = false;
             if(mouseOverInteractiveObject != null){
                 Debug.Log("Distance between player and object: " + Vector3.Distance(
-                this.transform.position, mouseOverInteractiveObject.t.position));
+                transform.position, mouseOverInteractiveObject.t.position));
                 
-                if(Vector3.Distance(this.transform.position, mouseOverInteractiveObject.t.position)
+                if(Vector3.Distance(transform.position, mouseOverInteractiveObject.t.position)
                 < objectActivationDistance){
                     didAction = true;
                     mouseOverInteractiveObject.DoDialogue();
@@ -61,6 +65,10 @@ public class PlayerController : MonoBehaviour{
                         mouseOverInteractiveObject.puzzleSpellbook);
                     }
                 }
+                else{
+                    // Queue action if click out of range 
+                    queuedAction = mouseOverInteractiveObject;
+                }
             }
             // Move if no interactive action
             if(!didAction){
@@ -73,6 +81,31 @@ public class PlayerController : MonoBehaviour{
             else{
                 targetPosition = transform.position;
             }
+        }
+        else if(queuedAction!=null && transform.position==targetPosition){
+            // Do queued action
+            queuedAction.DoDialogue();
+            if(queuedAction.pickupOnAction){ 
+                GameMaster.Instance.PickupItem(queuedAction.item);
+                Destroy(queuedAction.gameObject);
+            }
+            else if(queuedAction.puzzleCombine1!=null){
+                PuzzleCombine1Controller.Instance.OpenPuzzle(
+                queuedAction.puzzleCombine1);
+            }
+            else if(queuedAction.puzzleCombine2!=null){
+                PuzzleCombine2Controller.Instance.OpenPuzzle(
+                queuedAction.puzzleCombine2);
+            }
+            else if(queuedAction.combinationLock!=null){
+                CombinationLockController.Instance.OpenPuzzle(
+                queuedAction.combinationLock);
+            }
+            else if(queuedAction.puzzleSpellbook!=null){
+                SpellbookController.Instance.OpenPuzzle(
+                queuedAction.puzzleSpellbook);
+            }
+            queuedAction = null;
         }
             
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 5);
