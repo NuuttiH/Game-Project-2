@@ -28,7 +28,7 @@ public class GameMaster : MonoBehaviour{
 
     public List<Item> items = new List<Item>();
     
-    [Header("Size of dialogue memory")]
+    [Header("Size of dialogue memory (EDIT PREFAB)")]
     public int dialogueMemorySize = 100;
     [HideInInspector]
     public bool[] dialogueMemory;
@@ -117,7 +117,12 @@ public class GameMaster : MonoBehaviour{
 
     public void StartScene(int newSceneNumber){
         sceneNumber = newSceneNumber;
-        SceneManager.LoadScene(newSceneNumber);
+        StartCoroutine(StartSceneCoroutine());
+    }
+    IEnumerator StartSceneCoroutine(){
+        Transition.Instance.FadeOut();
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(sceneNumber);
         Debug.Log("New scene loaded");
     }
 
@@ -186,10 +191,8 @@ public class GameMaster : MonoBehaviour{
             eventMemory = saveObject.eventMemory;  
             // Event loading managed by GameEventHandler.Start()
             startLocation = new Vector3(saveObject.playerLocationX, camHeight, 0f);
-            
+
             StartScene(saveObject.sceneNumber);
-            
-            Debug.Log("Loading compleated!");
         }
         else{
             Debug.Log("Save file not found!");

@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneNumber: 1
   startLocation: {x: 19.2, y: 0, z: 0}
+  camHeight: 0
   puzzleOpen: 0
   menuOpen: 0
   emptyItem: {fileID: 11400000, guid: ecf38ff011186a745a9cc65c782251d3, type: 2}
@@ -52,7 +53,8 @@ MonoBehaviour:
   inventoryOpen: 0
   inventoryOffset: 0
   items: []
-  dialogueMemorySize: 100
+  dialogueMemorySize: 150
   dialogueMemory: 
+  eventCount: 2
   eventMemory: 
   saveLocation: 
