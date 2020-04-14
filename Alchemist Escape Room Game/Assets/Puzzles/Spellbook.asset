@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Spellbook
   m_EditorClassIdentifier: 
   title: A Spellbook title
-  item1: {fileID: 11400000, guid: 363e1bd5450bd094e8b82beccbe1fc8a, type: 2}
-  item2: {fileID: 11400000, guid: 363e1bd5450bd094e8b82beccbe1fc8a, type: 2}
-  item3: {fileID: 11400000, guid: 363e1bd5450bd094e8b82beccbe1fc8a, type: 2}
+  item1: {fileID: 11400000, guid: feec8f5e152e2f942aefef9c1e82622a, type: 2}
+  item2: {fileID: 11400000, guid: 8bd007c9d43b52742a6c6e3275278daa, type: 2}
+  item3: {fileID: 11400000, guid: 74e75b4fe76375d4690593a2243c7423, type: 2}
   firstFailDialogue:
     uniqueID: 0
     lines:
