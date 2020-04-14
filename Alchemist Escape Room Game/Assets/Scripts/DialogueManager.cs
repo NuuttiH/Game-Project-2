@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class DialogueManager : MonoBehaviour{
+public class DialogueManager : MonoBehaviour, IPointerClickHandler{
     public static DialogueManager Instance;
     [Header("GUI Reference")]
     public CanvasGroup dialogueCanvas;
@@ -18,6 +19,8 @@ public class DialogueManager : MonoBehaviour{
     public float dialogueAfterDelay;
 
     private Queue<DialogueLine> lines;
+    private DialogueLine line;
+    private int phase;
     
     void Awake(){
         Instance = this;
@@ -25,12 +28,13 @@ public class DialogueManager : MonoBehaviour{
 
     void Start(){
         lines = new Queue<DialogueLine>();
-        dialogueCanvas.alpha = 0;
+        DisableCanvasGroup(dialogueCanvas);
+        phase = 0;  // Not writing, not displaying
     }
 
     public void StartDialogue(Dialogue dialogue){
         lines.Clear();
-        dialogueCanvas.alpha = 1;
+        EnableCanvasGroup(dialogueCanvas);
 
         foreach(DialogueLine line in dialogue.lines){
             lines.Enqueue(line);
@@ -41,11 +45,12 @@ public class DialogueManager : MonoBehaviour{
 
     public void DisplayNextSentence(){
         if(lines.Count==0){
+            phase = 2;  // Not writing, display
             StartCoroutine(EndDialogue());
             return;
         }
 
-        DialogueLine line = lines.Dequeue();
+        line = lines.Dequeue();
         image.sprite = line.sprite;
         title.text = line.name;
         StopAllCoroutines();
@@ -58,6 +63,7 @@ public class DialogueManager : MonoBehaviour{
         //StartCoroutine(ContinueToNextSentence()); in TypeText()
     }
     IEnumerator TypeText(string text){
+        phase = 1;  // Writing
         textbox.text = "";
         foreach(char c in text.ToCharArray()){
             textbox.text += c;
@@ -69,10 +75,47 @@ public class DialogueManager : MonoBehaviour{
         yield return new WaitForSeconds(dialogueDelay);
         DisplayNextSentence();
     }
-    
-
     IEnumerator EndDialogue(){
         yield return new WaitForSeconds(dialogueAfterDelay);
-        dialogueCanvas.alpha = 0;
+        DisableCanvasGroup(dialogueCanvas);
+        phase = 0;  // Not writing, not displaying
+    }
+
+    public void OnPointerClick(PointerEventData pointerEventData){
+        switch(phase){
+            case 1:     // Writing
+                Debug.Log("CASE 1");
+                StopAllCoroutines();
+                textbox.text = line.sentence;
+                phase = 2;  // Not writing, display
+                StartCoroutine(ContinueToNextSentence());
+                break;
+            case 2:     // Not writing, displaying
+                Debug.Log("CASE 2");
+                if(lines.Count==0){
+                    DisableCanvasGroup(dialogueCanvas);
+                    audioSource.Stop();
+                    phase = 0;  // Not writing, not displaying
+                }
+                else{
+                    StopAllCoroutines();
+                    DisplayNextSentence();
+                }
+                break;
+            default:    // Not writing, not displaying
+                Debug.Log("CASE DEFAULT");
+                break;
+        }
+    }
+
+    private void EnableCanvasGroup(CanvasGroup canvasGroup){
+        canvasGroup.alpha = 1;
+        canvasGroup.interactable = true;
+        canvasGroup.blocksRaycasts = true;
+    }
+    private void DisableCanvasGroup(CanvasGroup canvasGroup){
+        canvasGroup.alpha = 0;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
     }
 }
