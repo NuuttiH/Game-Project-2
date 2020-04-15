@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour{
     public static GameMaster Instance;
+    public AudioSource musicPlayer;
     public int sceneNumber;
     public Vector3 startLocation;
     public float camHeight; // 0
@@ -40,6 +41,8 @@ public class GameMaster : MonoBehaviour{
     [HideInInspector]
     public string saveLocation;
 
+    private bool musicPlaying;
+
 
     void Awake(){
         if(Instance==null) Instance = this;
@@ -58,6 +61,7 @@ public class GameMaster : MonoBehaviour{
 
         dialogueMemory = new bool[dialogueMemorySize];
         eventMemory = new bool[eventCount];
+        musicPlaying = false;
     }
 
     void Update(){
@@ -122,8 +126,17 @@ public class GameMaster : MonoBehaviour{
     IEnumerator StartSceneCoroutine(){
         Transition.Instance.FadeOut();
         yield return new WaitForSeconds(1.5f);
+        if(sceneNumber<2){
+            musicPlayer.Stop();
+            musicPlaying = false;
+        }
         SceneManager.LoadScene(sceneNumber);
+        yield return new WaitForSeconds(0.1f);
         Debug.Log("New scene loaded");
+
+        if(sceneNumber>1 && !musicPlaying){
+            musicPlayer.Play();
+        }
     }
 
     public void PickupItem(Item item){
