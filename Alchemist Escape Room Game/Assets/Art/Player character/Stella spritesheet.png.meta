@@ -32,6 +32,36 @@ TextureImporter:
   - first:
       213: 8884056407016073512
     second: R idle
+  - first:
+      213: -4132721885561191338
+    second: Stella spritesheet_0
+  - first:
+      213: -6064288872833203919
+    second: Stella spritesheet_1
+  - first:
+      213: 1262418792327135345
+    second: Stella spritesheet_2
+  - first:
+      213: -6626208783946807707
+    second: Stella spritesheet_3
+  - first:
+      213: -1008677558597924263
+    second: Stella spritesheet_4
+  - first:
+      213: 3693362608172345156
+    second: Stella spritesheet_5
+  - first:
+      213: -7876151291698167488
+    second: Stella spritesheet_6
+  - first:
+      213: 1971507539268902641
+    second: Stella spritesheet_7
+  - first:
+      213: -6372470870667681879
+    second: Stella spritesheet_8
+  - first:
+      213: -826744958874924208
+    second: Stella spritesheet_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -116,7 +146,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: L1
+      name: Stella spritesheet_0
       rect:
         serializedVersion: 2
         x: 244
@@ -130,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f21693f5c162ecb20800000000000000
-      internalID: 3156502292131832111
+      spriteID: 65484a7575f95a6c0800000000000000
+      internalID: -4132721885561191338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: L2
+      name: Stella spritesheet_1
       rect:
         serializedVersion: 2
         x: 1460
@@ -151,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 797e451ba816893d0800000000000000
-      internalID: -3199700286938224745
+      spriteID: 1314c6f666157dba0800000000000000
+      internalID: -6064288872833203919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: L3
+      name: Stella spritesheet_2
       rect:
         serializedVersion: 2
         x: 2635
@@ -172,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dd0d2f3ec9630c60800000000000000
-      internalID: 7783180915570445779
+      spriteID: 170cf6af333058110800000000000000
+      internalID: 1262418792327135345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: L4
+      name: Stella spritesheet_3
       rect:
         serializedVersion: 2
         x: 3820
@@ -193,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 562e3372d3214dd90800000000000000
-      internalID: -7074009060832189851
+      spriteID: 5660749d73afa04a0800000000000000
+      internalID: -6626208783946807707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: R1
+      name: Stella spritesheet_4
       rect:
         serializedVersion: 2
         x: 239
@@ -214,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a80f1be41f3a94220800000000000000
-      internalID: 2470686127392157834
+      spriteID: 95accdaca157002f0800000000000000
+      internalID: -1008677558597924263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: R2
+      name: Stella spritesheet_5
       rect:
         serializedVersion: 2
         x: 1458
@@ -235,17 +265,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9140772b025af87b0800000000000000
-      internalID: -5219771883247434727
+      spriteID: 447a2de49b5714330800000000000000
+      internalID: 3693362608172345156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: R3
+      name: Stella spritesheet_6
       rect:
         serializedVersion: 2
-        x: 2623
+        x: 2630
         y: 1773
         width: 676
         height: 1447
@@ -256,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baeb776edcb5cd510800000000000000
-      internalID: 1575234909565861547
+      spriteID: 041c81d312a42b290800000000000000
+      internalID: -7876151291698167488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: R4
+      name: Stella spritesheet_7
       rect:
         serializedVersion: 2
         x: 3805
@@ -277,14 +307,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccbd904f841d095d0800000000000000
-      internalID: -3057714035722429492
+      spriteID: 1fe902659a33c5b10800000000000000
+      internalID: 1971507539268902641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: L idle
+      name: Stella spritesheet_8
       rect:
         serializedVersion: 2
         x: 234
@@ -298,14 +328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b528c9b914f5c6120800000000000000
-      internalID: 2408404636124611163
+      spriteID: 9af1454818f6097a0800000000000000
+      internalID: -6372470870667681879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: R idle
+      name: Stella spritesheet_9
       rect:
         serializedVersion: 2
         x: 1433
@@ -319,8 +349,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 829e9b08b328a4b70800000000000000
-      internalID: 8884056407016073512
+      spriteID: 05b4a6617dfc684f0800000000000000
+      internalID: -826744958874924208
       vertices: []
       indices: 
       edges: []
