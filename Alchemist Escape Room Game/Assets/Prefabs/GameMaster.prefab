@@ -49,11 +49,12 @@ MonoBehaviour:
   startLocation: {x: 19.2, y: 0, z: 0}
   camHeight: 0
   cursorTexture: {fileID: 2800000, guid: 3dd955cc55409214e974c7908d406c86, type: 3}
-  cursorFix: {x: 0, y: 0}
+  cursorFix: {x: -1, y: -1}
   puzzleOpen: 0
   menuOpen: 0
   imageZoomOpen: 0
   emptyItem: {fileID: 11400000, guid: ecf38ff011186a745a9cc65c782251d3, type: 2}
+  emptyUIItem: {fileID: 11400000, guid: 810203e85a2463a47bec32dd82c0c861, type: 2}
   inventoryManager: {fileID: 0}
   inventoryOpen: 0
   inventoryOffset: 0

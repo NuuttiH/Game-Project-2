@@ -31,9 +31,9 @@ public class PuzzleCombine2Controller : MonoBehaviour{
     public void OpenPuzzle(PuzzleCombine2 puzzle){
         title.text = puzzle.title;
         
-        item1.GetComponent<ItemDisplay>().EmptyDisplay();
-        item2.GetComponent<ItemDisplay>().EmptyDisplay();
-        item3.GetComponent<ItemDisplay>().EmptyDisplay();
+        item1.GetComponent<ItemDisplay>().EmptyUIDisplay();
+        item2.GetComponent<ItemDisplay>().EmptyUIDisplay();
+        item3.GetComponent<ItemDisplay>().EmptyUIDisplay();
         
         currentPuzzle = puzzle;
 

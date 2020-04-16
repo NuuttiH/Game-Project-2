@@ -2212,7 +2212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 810203e85a2463a47bec32dd82c0c861, type: 2}
   artwork: {fileID: 1189052550}
   itemName: {fileID: 341579549}
   itemDescription: {fileID: 1741203813}
@@ -4607,7 +4607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 810203e85a2463a47bec32dd82c0c861, type: 2}
   artwork: {fileID: 502607970}
   itemName: {fileID: 168174094}
   itemDescription: {fileID: 991376657}
@@ -6416,8 +6416,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6717,7 +6717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 810203e85a2463a47bec32dd82c0c861, type: 2}
   artwork: {fileID: 1651117281}
   itemName: {fileID: 22423248}
   itemDescription: {fileID: 770548631}
@@ -8108,8 +8108,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12258,7 +12258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 810203e85a2463a47bec32dd82c0c861, type: 2}
   artwork: {fileID: 807324088}
   itemName: {fileID: 565153316}
   itemDescription: {fileID: 1415455604}
@@ -12858,7 +12858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: ecf38ff011186a745a9cc65c782251d3, type: 2}
   artwork: {fileID: 1973072518}
   itemName: {fileID: 572976108}
   itemDescription: {fileID: 1922810476}
@@ -20896,8 +20896,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -21115,7 +21115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 810203e85a2463a47bec32dd82c0c861, type: 2}
   artwork: {fileID: 702454306}
   itemName: {fileID: 84032460}
   itemDescription: {fileID: 1337018438}
@@ -22853,16 +22853,6 @@ PrefabInstance:
         type: 3}
       propertyPath: sceneNumber
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4643058175658255050, guid: 7da2d4f6017c8c244975522ab9a4e517,
-        type: 3}
-      propertyPath: cursorFix.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4643058175658255050, guid: 7da2d4f6017c8c244975522ab9a4e517,
-        type: 3}
-      propertyPath: cursorFix.y
-      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4643058175658255051, guid: 7da2d4f6017c8c244975522ab9a4e517,
         type: 3}

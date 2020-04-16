@@ -22,6 +22,7 @@ public class GameMaster : MonoBehaviour{
     public bool imageZoomOpen;
 
     public Item emptyItem;
+    public Item emptyUIItem;
 
     [Header("Inventory")]
     [HideInInspector]
