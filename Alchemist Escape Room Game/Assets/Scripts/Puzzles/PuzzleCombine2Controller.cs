@@ -78,6 +78,8 @@ public class PuzzleCombine2Controller : MonoBehaviour{
                         if(s.rewardItem != null){
                             Debug.Log("Some correct solution found");
                             item3.GetComponent<ItemDisplay>().NewDisplay(s.rewardItem);
+                            GameMaster.Instance.RemoveItem(currentSolution[0]);
+                            GameMaster.Instance.RemoveItem(currentSolution[1]);
                             GameMaster.Instance.PickupItem(s.rewardItem);
                         }
                         else{

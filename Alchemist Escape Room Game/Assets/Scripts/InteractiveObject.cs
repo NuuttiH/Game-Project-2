@@ -25,8 +25,9 @@ public class InteractiveObject : MonoBehaviour{
 
     void Start(){
         // Destroy on startup if already on inventory because of saved data
-        if(pickupOnAction && item!=null 
-        && GameMaster.Instance.items.Find(x => x.name==item.name)){
+        if( pickupOnAction && item!=null 
+        && (GameMaster.Instance.items.Find(x => x.name==item.name)
+        || GameMaster.Instance.hiddenItems.Find(x => x.name==item.name)) ){
             Destroy(this.gameObject);
         }
         else{

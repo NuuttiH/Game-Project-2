@@ -15,6 +15,7 @@ public class Spellbook : ScriptableObject{
     public Dialogue firstFailDialogue;
     public Dialogue correctSolutionDialogue;
 
-    [Header("Event(ID) triggered by success")]
+    [Header("Outcome")]
+    public Item rewardItem;
     public int customEventId;
 }

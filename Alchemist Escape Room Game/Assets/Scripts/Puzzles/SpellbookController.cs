@@ -68,6 +68,13 @@ public class SpellbookController : MonoBehaviour{
             && currentSolution[1].name == currentPuzzle.item2.name 
             && currentSolution[2].name == currentPuzzle.item3.name ){
                 Debug.Log("Puzzle compleated");
+                
+                GameMaster.Instance.RemoveItem(currentSolution[0]);
+                GameMaster.Instance.RemoveItem(currentSolution[1]);
+                GameMaster.Instance.RemoveItem(currentSolution[2]);
+                if(currentPuzzle.rewardItem != null){
+                    GameMaster.Instance.PickupItem(currentPuzzle.rewardItem);
+                }
                 currentPuzzle.correctSolutionDialogue.Trigger();
                 GameEventHandler.Instance
                 .DoEvent(currentPuzzle.customEventId);

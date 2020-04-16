@@ -30,6 +30,7 @@ public class GameMaster : MonoBehaviour{
     public int inventoryOffset;
 
     public List<Item> items = new List<Item>();
+    public List<Item> hiddenItems = new List<Item>();
     
     [Header("Size of dialogue memory (EDIT PREFAB)")]
     public int dialogueMemorySize = 100;
@@ -160,9 +161,13 @@ public class GameMaster : MonoBehaviour{
     }
 
     public void RemoveItem(Item item){
-        Debug.Log("Removing " + item.name);
-        items.Remove(item);
-        inventoryManager.DrawInventory();
+        // Add item to hideItem to prevent it from being displayed
+        Debug.Log("Hiding item " + item.name);
+        if(items.Find(x => x.name==item.name)){
+            items.Remove(item);
+            hiddenItems.Add(item);
+            inventoryManager.DrawInventory();
+        }
     }
 
     public void Save(int saveID){
@@ -179,11 +184,17 @@ public class GameMaster : MonoBehaviour{
             Debug.Log("Saving item:  (" + item.name + ")");
             itemsByName.Add(item.name);
         }
+        List<string> hiddenItemsByName = new List<string>();
+        foreach(Item item in hiddenItems){
+            Debug.Log("Saving hidden item:  (" + item.name + ")");
+            hiddenItemsByName.Add(item.name);
+        }
 
         SaveObject saveObject = new SaveObject{
             playerLocationX = playerLocationX,
             sceneNumber = sceneNumber,
             itemsByName = itemsByName,
+            hiddenItemsByName = hiddenItemsByName,
             dialogueMemory = dialogueMemory,
             eventMemory = eventMemory
         };
@@ -208,6 +219,12 @@ public class GameMaster : MonoBehaviour{
                 Debug.Log("Loading item:  (Items/" + itemName + ")");
                 items.Add(Resources.Load<Item>("Items/" + itemName));
             }
+
+            hiddenItems = new List<Item>();
+            foreach(string itemName in saveObject.hiddenItemsByName){
+                Debug.Log("Loading item:  (Items/" + itemName + ")");
+                hiddenItems.Add(Resources.Load<Item>("Items/" + itemName));
+            }
             // Inventory Drawing managed by InventoryManager.Start()
             // Picked up item removal handled by InteractiveObject.Start()
             dialogueMemory = saveObject.dialogueMemory;
@@ -227,6 +244,8 @@ public class GameMaster : MonoBehaviour{
         public int sceneNumber;
 
         public List<string> itemsByName = new List<string>();
+        public List<string> hiddenItemsByName = new List<string>();
+
         public bool[] dialogueMemory;
         public bool[] eventMemory;
     }

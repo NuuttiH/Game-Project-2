@@ -53,21 +53,32 @@ public class InventoryManager : MonoBehaviour{
         if(sizeAfterCut>0)
             item1.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[0+offset]);
+        else item1.GetComponent<ItemDisplay>().NewDisplay(null);
+
         if(sizeAfterCut>1)
             item2.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[1+offset]);
+        else item2.GetComponent<ItemDisplay>().NewDisplay(null);
+
         if(sizeAfterCut>2)
             item3.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[2+offset]);
+        else item3.GetComponent<ItemDisplay>().NewDisplay(null);
+
         if(sizeAfterCut>3)
             item4.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[3+offset]);
+        else item4.GetComponent<ItemDisplay>().NewDisplay(null);
+
         if(sizeAfterCut>4)
             item5.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[4+offset]);
+        else item5.GetComponent<ItemDisplay>().NewDisplay(null);
+
         if(sizeAfterCut>5)
             item6.GetComponent<ItemDisplay>()
             .NewDisplay(GameMaster.Instance.items[5+offset]);
+        else item6.GetComponent<ItemDisplay>().NewDisplay(null);
     }
 
     public void MoveInventoryRight(){
