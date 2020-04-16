@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: EmptyUIItem
   m_EditorClassIdentifier: 
   description: 
-  artwork: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  artwork: {fileID: 21300000, guid: 73a93a2fc9a4ce94f86bc200f2ef950b, type: 3}
