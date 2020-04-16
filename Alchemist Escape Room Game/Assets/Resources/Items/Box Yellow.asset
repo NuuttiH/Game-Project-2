@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718214b97b4a507439c9b90e0aad6467, type: 3}
   m_Name: Box Yellow
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  description: A locked box
   artwork: {fileID: 21300000, guid: f12f572ddc987cd46a14f0f315c38ace, type: 3}

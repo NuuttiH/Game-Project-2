@@ -38,6 +38,35 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3432476974329624ab40ddcbca48d99a, type: 2}
     customEventId: 0
     rewardItem: {fileID: 11400000, guid: 74e75b4fe76375d4690593a2243c7423, type: 2}
+  - resultDialogue:
+      uniqueID: 0
+      lines: []
+    solution:
+    - {fileID: 11400000, guid: d331bea08dd59f648974340f501a7e3e, type: 2}
+    - {fileID: 11400000, guid: 8da8ac8fcdd923c4db5482bf4d0239ff, type: 2}
+    customEventId: 0
+    rewardItem: {fileID: 11400000, guid: 2003aa9da8b27a442ae900086c757112, type: 2}
+  - resultDialogue:
+      uniqueID: 0
+      lines: []
+    solution:
+    - {fileID: 11400000, guid: e278e7cf50f8e3c46b9f671c0a591dd0, type: 2}
+    - {fileID: 11400000, guid: 4cda069ba8457934a9045d193b41406b, type: 2}
+    customEventId: 0
+    rewardItem: {fileID: 11400000, guid: e17d5df86985e6640bd116501b141261, type: 2}
+  - resultDialogue:
+      uniqueID: 0
+      lines:
+      - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
+        name: Master Wizard Promethia
+        sentence: "Don\u2019t worry. That won\u2019t kill you. It\u2019ll just burn
+          for a while."
+        audioClip: {fileID: 8300000, guid: dcb210f5501449a478188a821a2cce69, type: 3}
+    solution:
+    - {fileID: 11400000, guid: c6d4d8effeac8c849874bb69daf3cc8f, type: 2}
+    - {fileID: 11400000, guid: e17d5df86985e6640bd116501b141261, type: 2}
+    customEventId: 0
+    rewardItem: {fileID: 11400000, guid: d76378ee6e467b248a4634a69fe44991, type: 2}
   defaultFailingSolution:
     resultDialogue:
       uniqueID: 0

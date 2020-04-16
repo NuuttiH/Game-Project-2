@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718214b97b4a507439c9b90e0aad6467, type: 3}
   m_Name: Potion Red
   m_EditorClassIdentifier: 
-  name: Potion Red
-  description: This is placeholder item C.
+  description: A red potion
   artwork: {fileID: 21300000, guid: 5ab1274cf13d8ce4cbbb7d337789241a, type: 3}

@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718214b97b4a507439c9b90e0aad6467, type: 3}
   m_Name: Pillow
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  description: An expensive looking pillow
   artwork: {fileID: 21300000, guid: 90e2e19679ab17d47bdfd24c77bd31f8, type: 3}

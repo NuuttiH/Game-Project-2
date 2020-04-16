@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: A Light Puzzle
   m_EditorClassIdentifier: 
   title: A Light Puzzle
-  puzzleText: Combine two correct things to cast the lights back on.
+  puzzleText: Combine two correct potions to cast the lights back on.
   combineIcon: {fileID: 21300000, guid: 2529a479302d88149a4f49727c67f378, type: 3}
   puzzleItemCount: 4
   item1: {fileID: 11400000, guid: 8da8ac8fcdd923c4db5482bf4d0239ff, type: 2}
@@ -39,7 +39,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: e5211b53d89939247a88195732e6cfc6, type: 2}
     - {fileID: 11400000, guid: 12205b58485db694e974f7896342b026, type: 2}
     customEventId: 1
-    rewardItems: []
+    rewardItems:
+    - {fileID: 11400000, guid: 8da8ac8fcdd923c4db5482bf4d0239ff, type: 2}
   solutions:
   - resultDialogue:
       uniqueID: 112
