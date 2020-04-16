@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a3da9cfb03d10547b4bb183c8dbad5a, type: 3}
   m_Name: Spellbook
   m_EditorClassIdentifier: 
-  title: A Spellbook title
-  item1: {fileID: 11400000, guid: feec8f5e152e2f942aefef9c1e82622a, type: 2}
-  item2: {fileID: 11400000, guid: 8bd007c9d43b52742a6c6e3275278daa, type: 2}
-  item3: {fileID: 11400000, guid: 74e75b4fe76375d4690593a2243c7423, type: 2}
+  title: 'Acid recipe: ground mushroom and green potion make a basic acid, what can
+    I add to make it stronger?'
+  item1: {fileID: 11400000, guid: e17d5df86985e6640bd116501b141261, type: 2}
+  item2: {fileID: 11400000, guid: c6d4d8effeac8c849874bb69daf3cc8f, type: 2}
+  item3: {fileID: 11400000, guid: 8150e488e474eee40b6af19e7fa1e0b8, type: 2}
   firstFailDialogue:
     uniqueID: 0
     lines:
@@ -26,9 +27,10 @@ MonoBehaviour:
   correctSolutionDialogue:
     uniqueID: 3
     lines:
-    - sprite: {fileID: 0}
+    - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
       name: 
-      sentence: correct
-      audioClip: {fileID: 0}
-  rewardItem: {fileID: 0}
-  customEventId: 0
+      sentence: "Don\u2019t worry. That won\u2019t kill you. It\u2019ll just burn
+        for a while."
+      audioClip: {fileID: 8300000, guid: dcb210f5501449a478188a821a2cce69, type: 3}
+  rewardItem: {fileID: 11400000, guid: d76378ee6e467b248a4634a69fe44991, type: 2}
+  customEventId: 4

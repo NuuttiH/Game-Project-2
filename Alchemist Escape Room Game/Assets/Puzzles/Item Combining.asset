@@ -54,19 +54,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 4cda069ba8457934a9045d193b41406b, type: 2}
     customEventId: 0
     rewardItem: {fileID: 11400000, guid: e17d5df86985e6640bd116501b141261, type: 2}
-  - resultDialogue:
-      uniqueID: 0
-      lines:
-      - sprite: {fileID: 21300000, guid: a3348a80d5557494a866d152ffec434d, type: 3}
-        name: Master Wizard Promethia
-        sentence: "Don\u2019t worry. That won\u2019t kill you. It\u2019ll just burn
-          for a while."
-        audioClip: {fileID: 8300000, guid: dcb210f5501449a478188a821a2cce69, type: 3}
-    solution:
-    - {fileID: 11400000, guid: c6d4d8effeac8c849874bb69daf3cc8f, type: 2}
-    - {fileID: 11400000, guid: e17d5df86985e6640bd116501b141261, type: 2}
-    customEventId: 0
-    rewardItem: {fileID: 11400000, guid: d76378ee6e467b248a4634a69fe44991, type: 2}
   defaultFailingSolution:
     resultDialogue:
       uniqueID: 0
