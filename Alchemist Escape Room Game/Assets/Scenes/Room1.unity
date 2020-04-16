@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -146.8, y: 97.3}
-  m_SizeDelta: {x: 762.4, y: 49.4}
+  m_AnchoredPosition: {x: -146.8, y: 93.4}
+  m_SizeDelta: {x: 762.4, y: 56.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2642567
 MonoBehaviour:
@@ -178,12 +178,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 38
+    m_FontSize: 52
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 40
-    m_Alignment: 0
+    m_MaxSize: 52
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -8283,7 +8283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 576758f473d52cb42afbbe9a32f50477, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f55479fed8ca2a84b8253c8d827256dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9014,8 +9014,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 1.5999756, y: -148.4}
-  m_SizeDelta: {x: 1077, y: 259.59998}
+  m_AnchoredPosition: {x: 1.5999756, y: -145.2}
+  m_SizeDelta: {x: 1077, y: 253.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &763120293
 CanvasGroup:
@@ -18912,8 +18912,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -146.8, y: -29.8}
-  m_SizeDelta: {x: 762.4, y: 185.2}
+  m_AnchoredPosition: {x: -146.8, y: -28.725002}
+  m_SizeDelta: {x: 762.4, y: 187.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835619703
 MonoBehaviour:
@@ -18935,12 +18935,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
