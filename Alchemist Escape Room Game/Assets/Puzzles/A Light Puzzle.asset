@@ -34,7 +34,7 @@ MonoBehaviour:
       - sprite: {fileID: 21300000, guid: 7d7b4943d6727a4499c3c17f6098c6ce, type: 3}
         name: Master Wizard Promethia
         sentence: "Now\u2026 let's get back to the real work at hand, shall we."
-        audioClip: {fileID: 8300000, guid: e0e709f0c5d5a8449963d5b89fa2b255, type: 3}
+        audioClip: {fileID: 0}
     solution:
     - {fileID: 11400000, guid: e5211b53d89939247a88195732e6cfc6, type: 2}
     - {fileID: 11400000, guid: 12205b58485db694e974f7896342b026, type: 2}
