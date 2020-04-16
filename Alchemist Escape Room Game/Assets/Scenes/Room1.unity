@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 437353842}
   itemName: {fileID: 873526720}
   itemDescription: {fileID: 576086065}
@@ -354,6 +354,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 0aabcb7d1a574ad458140eb1daad61d3, type: 2}
   pickupOnAction: 1
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 40
     lines:
@@ -1246,9 +1247,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 74
     lines:
@@ -1681,9 +1683,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 3
     lines:
@@ -1851,6 +1854,7 @@ MonoBehaviour:
   item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
@@ -1982,6 +1986,7 @@ MonoBehaviour:
   item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 76
     lines:
@@ -2207,7 +2212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 1189052550}
   itemName: {fileID: 341579549}
   itemDescription: {fileID: 1741203813}
@@ -2316,9 +2321,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 18
     lines:
@@ -2968,9 +2974,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 24
     lines:
@@ -3206,9 +3213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 22
     lines:
@@ -3456,9 +3464,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 1
     lines:
@@ -3807,6 +3816,7 @@ MonoBehaviour:
   item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
@@ -4349,9 +4359,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 32
     lines:
@@ -4596,7 +4607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 502607970}
   itemName: {fileID: 168174094}
   itemDescription: {fileID: 991376657}
@@ -4785,6 +4796,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
   pickupOnAction: 1
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 42
     lines:
@@ -5360,7 +5372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 1689343677}
   itemName: {fileID: 535670394}
   itemDescription: {fileID: 725040204}
@@ -5441,7 +5453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 1156287860}
   itemName: {fileID: 1167562761}
   itemDescription: {fileID: 59352607}
@@ -5897,9 +5909,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 26
     lines:
@@ -6123,9 +6136,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 1
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 56
     lines:
@@ -6703,7 +6717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 1651117281}
   itemName: {fileID: 22423248}
   itemDescription: {fileID: 770548631}
@@ -6917,6 +6931,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 7fbf664b2a910234baa7376fa4fca7f1, type: 2}
   pickupOnAction: 1
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
@@ -7204,9 +7219,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 73
     lines:
@@ -7930,9 +7946,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 11
     lines:
@@ -8872,9 +8889,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 0
     lines:
@@ -9137,9 +9155,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 19
     lines:
@@ -9292,9 +9311,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 17
     lines:
@@ -9447,9 +9467,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 28
     lines:
@@ -9596,9 +9617,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 15
     lines:
@@ -10300,9 +10322,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 30
     lines:
@@ -10623,9 +10646,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 68
     lines:
@@ -10778,9 +10802,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 71
     lines:
@@ -11075,9 +11100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 41
     lines:
@@ -11418,6 +11444,7 @@ MonoBehaviour:
   item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
@@ -11549,6 +11576,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: d3118fe79ec752b45a053caccbca10ad, type: 2}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 110
     lines:
@@ -11777,9 +11805,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 14
     lines:
@@ -12229,7 +12258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 807324088}
   itemName: {fileID: 565153316}
   itemDescription: {fileID: 1415455604}
@@ -12417,7 +12446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 1385835195}
   itemName: {fileID: 212616214}
   itemDescription: {fileID: 1424396628}
@@ -12585,6 +12614,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 3432476974329624ab40ddcbca48d99a, type: 2}
   pickupOnAction: 1
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 51
     lines:
@@ -12828,7 +12858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 1973072518}
   itemName: {fileID: 572976108}
   itemDescription: {fileID: 1922810476}
@@ -13507,9 +13537,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 1
+  eventOnAction: 0
   actionDialogue: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
@@ -13697,6 +13728,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: a5c049cf6d03b4f4f8df5028d80f707f, type: 2}
   pickupOnAction: 1
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
@@ -13937,9 +13969,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 6
     lines:
@@ -15045,9 +15078,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 16
     lines:
@@ -15400,9 +15434,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 9
     lines:
@@ -15634,9 +15669,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 64
     lines:
@@ -15789,9 +15825,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 49
     lines:
@@ -15938,9 +15975,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 37
     lines:
@@ -16617,9 +16655,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 1
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 62
     lines:
@@ -17198,6 +17237,7 @@ MonoBehaviour:
   item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
@@ -18128,9 +18168,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 1
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 63
     lines:
@@ -18441,9 +18482,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 1
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 58
     lines:
@@ -18596,7 +18638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 720624060}
   itemName: {fileID: 474014331}
   itemDescription: {fileID: 315031664}
@@ -19118,9 +19160,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 67
     lines:
@@ -19516,9 +19559,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 34
     lines:
@@ -20300,9 +20344,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 12
     lines:
@@ -20683,9 +20728,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 53
     lines:
@@ -20940,9 +20986,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 1
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 60
     lines:
@@ -21068,7 +21115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ccf483630dcd84bb454051357cffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: c72a5ab11cb5541409e37a55318bf656, type: 2}
+  item: {fileID: 0}
   artwork: {fileID: 702454306}
   itemName: {fileID: 84032460}
   itemDescription: {fileID: 1337018438}
@@ -21649,6 +21696,7 @@ MonoBehaviour:
   item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 11400000, guid: 8a6e817207748244c988f260896ffbd1, type: 2}
@@ -21935,9 +21983,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 20
     lines:
@@ -22199,6 +22248,7 @@ MonoBehaviour:
   item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue: []
   puzzleCombine1: {fileID: 0}
   puzzleCombine2: {fileID: 0}
@@ -22460,9 +22510,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  item: {fileID: 11400000, guid: e892c51366e55b5448818255a567d373, type: 2}
+  item: {fileID: 0}
   pickupOnAction: 0
   zoomOnAction: 0
+  eventOnAction: 0
   actionDialogue:
   - uniqueID: 46
     lines:
