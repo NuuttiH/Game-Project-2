@@ -85,8 +85,5 @@ public class SpellbookController : MonoBehaviour{
                 currentPuzzle.firstFailDialogue.Trigger();
             }
         }
-        else{
-            Debug.Log("Testing");
-        }
     }
 }

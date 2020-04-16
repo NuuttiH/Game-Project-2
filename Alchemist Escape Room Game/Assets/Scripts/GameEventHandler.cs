@@ -40,7 +40,6 @@ public class GameEventHandler : MonoBehaviour{
                     Event5();
                     break;
                 default:
-                    Debug.Log("Custom Event Handler - No Event");
                     break;
             }
             if(customEventId!=0 && !force && customEventId!=5){
@@ -62,8 +61,6 @@ public class GameEventHandler : MonoBehaviour{
         InteractiveObject lampInteractiveObject = GameObject.Find("PuzzleLamp")
         .GetComponent<InteractiveObject>();
         lampInteractiveObject.puzzleCombine1 = null;
-        Item test = Resources.Load<Item>("Items/Puzzle lamp ON");
-        Debug.Log(test);
         lampInteractiveObject.SetItem(Resources.Load<Item>("Items/Puzzle lamp ON"));
     }
 

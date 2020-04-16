@@ -84,14 +84,12 @@ public class DialogueManager : MonoBehaviour, IPointerClickHandler{
     public void OnPointerClick(PointerEventData pointerEventData){
         switch(phase){
             case 1:     // Writing
-                Debug.Log("CASE 1");
                 StopAllCoroutines();
                 textbox.text = line.sentence;
                 phase = 2;  // Not writing, display
                 StartCoroutine(ContinueToNextSentence());
                 break;
             case 2:     // Not writing, displaying
-                Debug.Log("CASE 2");
                 if(lines.Count==0){
                     DisableCanvasGroup(dialogueCanvas);
                     audioSource.Stop();
@@ -103,7 +101,6 @@ public class DialogueManager : MonoBehaviour, IPointerClickHandler{
                 }
                 break;
             default:    // Not writing, not displaying
-                Debug.Log("CASE DEFAULT");
                 break;
         }
     }

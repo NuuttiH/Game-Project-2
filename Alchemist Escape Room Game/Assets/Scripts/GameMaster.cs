@@ -225,7 +225,7 @@ public class GameMaster : MonoBehaviour{
 
             hiddenItems = new List<Item>();
             foreach(string itemName in saveObject.hiddenItemsByName){
-                Debug.Log("Loading item:  (Items/" + itemName + ")");
+                Debug.Log("Loading hidden item:  (Items/" + itemName + ")");
                 hiddenItems.Add(Resources.Load<Item>("Items/" + itemName));
             }
             // Inventory Drawing managed by InventoryManager.Start()

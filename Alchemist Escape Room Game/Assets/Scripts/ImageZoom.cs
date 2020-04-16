@@ -26,7 +26,6 @@ public class ImageZoom : MonoBehaviour{
         // Assess the proper shape of the image by box colliders
         Vector2 imageSize = objectToZoom.GetComponent<BoxCollider2D>().size;
         float xToYRatio = imageSize.x / imageSize.y;
-        Debug.Log(xToYRatio);
 
         if(xToYRatio>1.2f){         // Wide image
             panel.transform.localScale = new Vector3(1.4f, 1, 1);

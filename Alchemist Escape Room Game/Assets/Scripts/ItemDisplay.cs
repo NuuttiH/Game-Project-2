@@ -40,14 +40,12 @@ public class ItemDisplay : MonoBehaviour{
 
     public void EmptyDisplay(){
         item = GameMaster.Instance.emptyItem;
-        Debug.Log("EMPTY-DISPLAY");
         artwork.GetComponent<ItemTooltip>().enabled = false;
         artwork.GetComponent<ItemDragHandler>().enabled = false;
     }
 
     public void EmptyUIDisplay(){
         item = GameMaster.Instance.emptyUIItem;
-        Debug.Log("EMPTY-UI-DISPLAY");
         artwork.sprite = item.artwork;
         //artwork.GetComponent<SpriteRenderer>().color = Color.blue;
         artwork.GetComponent<ItemTooltip>().enabled = false;
