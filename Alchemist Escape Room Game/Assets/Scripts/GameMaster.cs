@@ -133,6 +133,11 @@ public class GameMaster : MonoBehaviour{
     }
 
 
+    public bool NothingOpen(){
+        if(!menuOpen && puzzleOpen==0 && !imageZoomOpen) return true;
+        else return false;
+    }
+
     public void StartScene(int newSceneNumber){
         sceneNumber = newSceneNumber;
         StartCoroutine(StartSceneCoroutine());
