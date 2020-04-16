@@ -115,7 +115,7 @@ MonoBehaviour:
       uniqueID: 0
       lines:
       - sprite: {fileID: 21300000, guid: 641499e48cc2ab649bf75ad656b292ac, type: 3}
-        name: Promethia
+        name: Master Wizard Promethia
         sentence: That's enough of that.
         audioClip: {fileID: 8300000, guid: 8eef52f8e0400f94798d232a02e8fe35, type: 3}
     solution: []
