@@ -78,6 +78,9 @@ public class PuzzleCombine1Controller : MonoBehaviour{
             if(match){
                 Debug.Log("Puzzle compleated");
                 currentPuzzle.correctSolution.resultDialogue.Trigger();
+                foreach(Item rewardItem in currentPuzzle.correctSolution.rewardItems){
+                    GameMaster.Instance.PickupItem(rewardItem);
+                }
                 GameEventHandler.Instance
                 .DoEvent(currentPuzzle.correctSolution.customEventId);
                 ClosePuzzle();

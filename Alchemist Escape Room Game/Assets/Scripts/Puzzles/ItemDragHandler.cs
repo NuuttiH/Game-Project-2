@@ -60,7 +60,7 @@ public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler{
                         break;
                 }
             }
-            else{ Debug.Log("Item dropped over nothing "); }
+            else{ Debug.Log("Item dropped over nothing"); }
         }
         
 

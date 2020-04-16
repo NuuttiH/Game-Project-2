@@ -33,11 +33,12 @@ public class PlayerController : MonoBehaviour{
     }
 
     void Update(){
-        if(!EventSystem.current.IsPointerOverGameObject() && !GameMaster.Instance.menuOpen
-        && GameMaster.Instance.puzzleOpen==0 && Input.GetKeyDown(KeyCode.Mouse0)){
+        if(!EventSystem.current.IsPointerOverGameObject() && GameMaster.Instance.NothingOpen() 
+        && Input.GetKeyDown(KeyCode.Mouse0)){
             queuedAction = null;
 
-            if(cameraMain.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x) spriteRenderer.flipX = false;
+            if(cameraMain.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x) 
+                spriteRenderer.flipX = false;
             else spriteRenderer.flipX = true;
 
             // Interactive action

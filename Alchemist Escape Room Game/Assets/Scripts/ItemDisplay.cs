@@ -26,6 +26,7 @@ public class ItemDisplay : MonoBehaviour{
             artwork.enabled = false;
         }
         else if(newItem == GameMaster.Instance.emptyItem) EmptyDisplay();
+        else if(newItem == GameMaster.Instance.emptyUIItem) EmptyUIDisplay();
         else{
             item = newItem;
             artwork.sprite = item.artwork;
@@ -39,7 +40,14 @@ public class ItemDisplay : MonoBehaviour{
 
     public void EmptyDisplay(){
         item = GameMaster.Instance.emptyItem;
+        artwork.GetComponent<ItemTooltip>().enabled = false;
+        artwork.GetComponent<ItemDragHandler>().enabled = false;
+    }
+
+    public void EmptyUIDisplay(){
+        item = GameMaster.Instance.emptyUIItem;
         artwork.sprite = item.artwork;
+        //artwork.GetComponent<SpriteRenderer>().color = Color.blue;
         artwork.GetComponent<ItemTooltip>().enabled = false;
         artwork.GetComponent<ItemDragHandler>().enabled = false;
     }

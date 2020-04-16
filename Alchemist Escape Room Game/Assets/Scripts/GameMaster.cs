@@ -10,6 +10,8 @@ public class GameMaster : MonoBehaviour{
     public int sceneNumber;
     public Vector3 startLocation;
     public float camHeight; // 0
+    public Texture2D cursorTexture;
+    public Vector2 cursorFix = Vector2.zero;
     
     [HideInInspector]
     public int puzzleOpen;  // 0 = no puzzle, 1 = PuzzleCombine1, 2 = PuzzleCombine2
@@ -20,6 +22,7 @@ public class GameMaster : MonoBehaviour{
     public bool imageZoomOpen;
 
     public Item emptyItem;
+    public Item emptyUIItem;
 
     [Header("Inventory")]
     [HideInInspector]
@@ -130,6 +133,11 @@ public class GameMaster : MonoBehaviour{
     }
 
 
+    public bool NothingOpen(){
+        if(!menuOpen && puzzleOpen==0 && !imageZoomOpen) return true;
+        else return false;
+    }
+
     public void StartScene(int newSceneNumber){
         sceneNumber = newSceneNumber;
         StartCoroutine(StartSceneCoroutine());
@@ -222,7 +230,7 @@ public class GameMaster : MonoBehaviour{
 
             hiddenItems = new List<Item>();
             foreach(string itemName in saveObject.hiddenItemsByName){
-                Debug.Log("Loading item:  (Items/" + itemName + ")");
+                Debug.Log("Loading hidden item:  (Items/" + itemName + ")");
                 hiddenItems.Add(Resources.Load<Item>("Items/" + itemName));
             }
             // Inventory Drawing managed by InventoryManager.Start()
