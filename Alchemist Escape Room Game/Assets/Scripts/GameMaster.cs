@@ -10,6 +10,8 @@ public class GameMaster : MonoBehaviour{
     public int sceneNumber;
     public Vector3 startLocation;
     public float camHeight; // 0
+    public Texture2D cursorTexture;
+    public Vector2 cursorFix = Vector2.zero;
     
     [HideInInspector]
     public int puzzleOpen;  // 0 = no puzzle, 1 = PuzzleCombine1, 2 = PuzzleCombine2

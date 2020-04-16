@@ -48,6 +48,8 @@ MonoBehaviour:
   sceneNumber: 1
   startLocation: {x: 19.2, y: 0, z: 0}
   camHeight: 0
+  cursorTexture: {fileID: 2800000, guid: 3dd955cc55409214e974c7908d406c86, type: 3}
+  cursorFix: {x: 0, y: 0}
   puzzleOpen: 0
   menuOpen: 0
   imageZoomOpen: 0

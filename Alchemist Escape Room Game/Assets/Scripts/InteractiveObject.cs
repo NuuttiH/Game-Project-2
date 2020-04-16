@@ -57,10 +57,12 @@ public class InteractiveObject : MonoBehaviour{
     }
 
     void OnMouseOver(){
+        Cursor.SetCursor(GameMaster.Instance.cursorTexture, GameMaster.Instance.cursorFix, CursorMode.Auto);
         PlayerController.Instance.mouseOverInteractiveObject = this;
     }
 
     void OnMouseExit(){
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         PlayerController.Instance.mouseOverInteractiveObject = null;
     }
 }

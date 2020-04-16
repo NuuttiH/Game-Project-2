@@ -22854,6 +22854,16 @@ PrefabInstance:
       propertyPath: sceneNumber
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4643058175658255050, guid: 7da2d4f6017c8c244975522ab9a4e517,
+        type: 3}
+      propertyPath: cursorFix.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643058175658255050, guid: 7da2d4f6017c8c244975522ab9a4e517,
+        type: 3}
+      propertyPath: cursorFix.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4643058175658255051, guid: 7da2d4f6017c8c244975522ab9a4e517,
         type: 3}
       propertyPath: m_LocalPosition.x
