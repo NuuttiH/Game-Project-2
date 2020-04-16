@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718214b97b4a507439c9b90e0aad6467, type: 3}
   m_Name: Puzzle lamp OFF
   m_EditorClassIdentifier: 
-  name: Puzzle lamp OFF
-  description: Before completing puzzle
+  description: An empty lamp that needs fuel
   artwork: {fileID: 21300000, guid: 2529a479302d88149a4f49727c67f378, type: 3}

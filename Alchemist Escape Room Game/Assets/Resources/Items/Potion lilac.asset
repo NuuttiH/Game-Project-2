@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 718214b97b4a507439c9b90e0aad6467, type: 3}
-  m_Name: Potion clay
+  m_Name: Potion lilac
   m_EditorClassIdentifier: 
-  description: A rune potion
-  artwork: {fileID: 21300000, guid: 2621d896681f05742827b4ea56c32ff4, type: 3}
+  description: A potion made of crystal dust and rune potion
+  artwork: {fileID: 21300000, guid: 3c3b985ae9b7bf2439d29df1a4016ee3, type: 3}

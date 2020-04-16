@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718214b97b4a507439c9b90e0aad6467, type: 3}
   m_Name: Potion Dark Green
   m_EditorClassIdentifier: 
-  name: Potion Dark Green
-  description: 
+  description: A bottle of strong acid, strong enough to melt to the door?
   artwork: {fileID: 21300000, guid: 0477db04ca4dd3b4699b5380dc4fd5ac, type: 3}
