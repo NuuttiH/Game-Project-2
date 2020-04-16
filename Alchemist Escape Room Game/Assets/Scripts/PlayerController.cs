@@ -50,6 +50,11 @@ public class PlayerController : MonoBehaviour{
                 < objectActivationDistance){
                     didAction = true;
                     mouseOverInteractiveObject.DoDialogue();
+
+                    if(mouseOverInteractiveObject.zoomOnAction){
+                        ImageZoom.Instance.ZoomImage(mouseOverInteractiveObject.gameObject);
+                    }
+
                     if(mouseOverInteractiveObject.pickupOnAction){ 
                         GameMaster.Instance.PickupItem(mouseOverInteractiveObject.item);
                         Destroy(mouseOverInteractiveObject.gameObject);

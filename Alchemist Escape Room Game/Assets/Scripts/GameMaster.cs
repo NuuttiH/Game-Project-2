@@ -16,6 +16,8 @@ public class GameMaster : MonoBehaviour{
                             // 3 = CombinationLock, 4 = Spellbook
     [HideInInspector]
     public bool menuOpen;
+    [HideInInspector]
+    public bool imageZoomOpen;
 
     public Item emptyItem;
 
@@ -58,6 +60,8 @@ public class GameMaster : MonoBehaviour{
 
         inventoryOpen = false;
         inventoryOffset = 0;
+        menuOpen = false;
+        imageZoomOpen = false;
 
         dialogueMemory = new bool[dialogueMemorySize];
         eventMemory = new bool[eventCount];
@@ -68,6 +72,9 @@ public class GameMaster : MonoBehaviour{
         if(Input.GetKeyDown(KeyCode.Mouse1)){
             if(menuOpen){
                 MenuController.Instance.CloseMenu();
+            }
+            else if(imageZoomOpen){
+                ImageZoom.Instance.CloseImageZoom();
             }
             else if(puzzleOpen!=0){
                 switch(puzzleOpen){
@@ -106,6 +113,9 @@ public class GameMaster : MonoBehaviour{
                     default:
                         break;
                 }
+            }
+            else if(imageZoomOpen){
+                ImageZoom.Instance.CloseImageZoom();
             }
             else{
                 if(menuOpen){

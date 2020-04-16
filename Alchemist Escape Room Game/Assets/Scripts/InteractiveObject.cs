@@ -10,6 +10,7 @@ public class InteractiveObject : MonoBehaviour{
     [Header("Item Behaviour")]
     public Item item;
     public bool pickupOnAction;
+    public bool zoomOnAction;
     public List<Dialogue> actionDialogue = new List<Dialogue>();
 
     [Header("Attached puzzle")]
