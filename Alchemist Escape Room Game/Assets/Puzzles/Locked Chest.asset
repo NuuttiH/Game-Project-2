@@ -32,14 +32,14 @@ MonoBehaviour:
         read and write first.'
       audioClip: {fileID: 8300000, guid: 35c6bc00587fa984cb3ce91cf9be5257, type: 3}
   firstSuccessDialogue:
-    uniqueID: 0
+    uniqueID: 119
     lines:
     - sprite: {fileID: 21300000, guid: 641499e48cc2ab649bf75ad656b292ac, type: 3}
       name: Master Wizard Promethia
       sentence: That. Might actually help you.
       audioClip: {fileID: 8300000, guid: 414d08e3352526142bc339ff04ddcf59, type: 3}
   correctSolutionDialogue:
-    uniqueID: 119
+    uniqueID: 0
     lines:
     - sprite: {fileID: 21300000, guid: 26a51760890d3aa41a523041e2d7afc2, type: 3}
       name: Master Wizard Promethia
