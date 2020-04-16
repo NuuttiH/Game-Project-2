@@ -15,7 +15,7 @@ MonoBehaviour:
   puzzleText: It requires a code
   correctSolution: 330050003100
   rewardItem: {fileID: 11400000, guid: c6d4d8effeac8c849874bb69daf3cc8f, type: 2}
-  customEventId: 0
+  customEventId: 6
   firstFailDialogue:
     uniqueID: 117
     lines:

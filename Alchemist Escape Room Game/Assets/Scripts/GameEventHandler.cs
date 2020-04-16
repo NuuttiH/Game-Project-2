@@ -39,6 +39,9 @@ public class GameEventHandler : MonoBehaviour{
                 case 5:
                     Event5();
                     break;
+                case 6:
+                    Event6();
+                    break;
                 default:
                     break;
             }
@@ -87,5 +90,11 @@ public class GameEventHandler : MonoBehaviour{
     // Game end
     void Event5(){
         GameMaster.Instance.StartScene(0);
+    }
+
+    // Second locked chest
+    void Event6(){
+        GameObject.Find("Chest2").GetComponent<InteractiveObject>()
+        .combinationLock = null;
     }
 }

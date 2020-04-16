@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f572cfc55e4399545a17cb7a29cb5ffe, type: 3}
   m_Name: Item Combining
   m_EditorClassIdentifier: 
-  title: Title2
+  title: Crafting
   solutions:
   - resultDialogue:
       uniqueID: 0

@@ -52,6 +52,11 @@ public class PlayerController : MonoBehaviour{
                     didAction = true;
                     mouseOverInteractiveObject.DoDialogue();
 
+                    if(mouseOverInteractiveObject.eventOnAction!=0){
+                        GameEventHandler.Instance
+                        .DoEvent(mouseOverInteractiveObject.eventOnAction);
+                    }
+
                     if(mouseOverInteractiveObject.zoomOnAction){
                         ImageZoom.Instance.ZoomImage(mouseOverInteractiveObject.gameObject);
                     }

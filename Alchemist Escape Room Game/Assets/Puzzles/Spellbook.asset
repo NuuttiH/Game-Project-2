@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a3da9cfb03d10547b4bb183c8dbad5a, type: 3}
   m_Name: Spellbook
   m_EditorClassIdentifier: 
-  title: 'Acid recipe: ground mushroom and green potion make a basic acid, what can
-    I add to make it stronger?'
+  title: Acid recipe
+  puzzleText: Ground mushroom and green potion make a basic acid, what can I add
+    to make it stronger?
   item1: {fileID: 11400000, guid: e17d5df86985e6640bd116501b141261, type: 2}
   item2: {fileID: 11400000, guid: c6d4d8effeac8c849874bb69daf3cc8f, type: 2}
   item3: {fileID: 11400000, guid: 8150e488e474eee40b6af19e7fa1e0b8, type: 2}

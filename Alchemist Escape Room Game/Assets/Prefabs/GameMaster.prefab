@@ -62,7 +62,7 @@ MonoBehaviour:
   hiddenItems: []
   dialogueMemorySize: 150
   dialogueMemory: 
-  eventCount: 6
+  eventCount: 7
   eventMemory: 
   saveLocation: 
 --- !u!82 &1102985336749143247

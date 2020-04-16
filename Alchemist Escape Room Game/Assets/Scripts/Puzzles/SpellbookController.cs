@@ -10,6 +10,7 @@ public class SpellbookController : MonoBehaviour{
     public Canvas canvas;
     public Image background;
     public Text title;
+    public Text description;
 
     public GameObject item1;
     public GameObject item2;
@@ -30,6 +31,7 @@ public class SpellbookController : MonoBehaviour{
 
     public void OpenPuzzle(Spellbook puzzle){
         title.text = puzzle.title;
+        description.text = puzzle.puzzleText;
         
         item1.GetComponent<ItemDisplay>().EmptyDisplay();
         item2.GetComponent<ItemDisplay>().EmptyDisplay();

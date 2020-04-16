@@ -15,16 +15,16 @@ MonoBehaviour:
   puzzleText: There are pictures on the box...
   correctSolution: 340032003400
   rewardItem: {fileID: 11400000, guid: d331bea08dd59f648974340f501a7e3e, type: 2}
-  customEventId: 0
+  customEventId: 2
   firstFailDialogue:
-    uniqueID: 0
+    uniqueID: 149
     lines:
     - sprite: {fileID: 21300000, guid: c2847208bdbd1334cb06593a15b56fb0, type: 3}
       name: Master Wizard Promethia
       sentence: ...
       audioClip: {fileID: 0}
   firstSuccessDialogue:
-    uniqueID: 0
+    uniqueID: 148
     lines:
     - sprite: {fileID: 21300000, guid: 641499e48cc2ab649bf75ad656b292ac, type: 3}
       name: Master Wizard Promethia
