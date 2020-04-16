@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a749c6f9832c34b8228f24d5ee4a25, type: 3}
   m_Name: Locked Chest
   m_EditorClassIdentifier: 
-  puzzleText: "Final bodies of light. Flickering flames extinguished.\r\nMaster wizard,
-    first of his name.\r\nDrowning his sorrows, for only so many vessels of thirst
-    remain.\r"
+  puzzleText: It requires a code
   correctSolution: 330050003100
   rewardItem: {fileID: 11400000, guid: c6d4d8effeac8c849874bb69daf3cc8f, type: 2}
   customEventId: 0
