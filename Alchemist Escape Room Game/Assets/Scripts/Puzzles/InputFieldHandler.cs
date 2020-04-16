@@ -9,7 +9,9 @@ public class InputFieldHandler : MonoBehaviour{
     public int id;
 
     public void TextChanged(string newText){
-        char newChar = newText[newText.Length-1];
-        combinationLockController.ChangeSolution(newChar, id);
+        if(newText!=""){
+            char newChar = newText[newText.Length-1];
+            combinationLockController.ChangeSolution(newChar, id);
+        }
     }
 }

@@ -36,6 +36,9 @@ public class CombinationLockController : MonoBehaviour{
         currentPuzzle = puzzle;
 
         currentSolution = new char[3];
+        inputField1.text = "";
+        inputField2.text = "";
+        inputField3.text = "";
         currentSolution[0] = ' ';
         currentSolution[1] = ' ';
         currentSolution[2] = ' ';
