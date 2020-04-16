@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718214b97b4a507439c9b90e0aad6467, type: 3}
   m_Name: Puzzle lamp ON
   m_EditorClassIdentifier: 
-  name: Puzzle lamp ON
   description: After completing puzzle
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: cd2c067cbf2692c41951fd47391f4378, type: 3}

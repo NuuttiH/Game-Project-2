@@ -24,10 +24,11 @@ MonoBehaviour:
       sentence: failure
       audioClip: {fileID: 0}
   correctSolutionDialogue:
-    uniqueID: 0
+    uniqueID: 3
     lines:
     - sprite: {fileID: 0}
       name: 
       sentence: correct
       audioClip: {fileID: 0}
+  rewardItem: {fileID: 0}
   customEventId: 0

@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718214b97b4a507439c9b90e0aad6467, type: 3}
   m_Name: EmptyItem
   m_EditorClassIdentifier: 
-  name: 
   description: 
-  artwork: {fileID: 21300000, guid: 65aedb33342ed2d44b9a8679ad19c287, type: 3}
+  artwork: {fileID: 0}

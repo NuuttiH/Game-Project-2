@@ -11,6 +11,7 @@ public class InteractiveObject : MonoBehaviour{
     public Item item;
     public bool pickupOnAction;
     public bool zoomOnAction;
+    public int eventOnAction;
     public List<Dialogue> actionDialogue = new List<Dialogue>();
 
     [Header("Attached puzzle")]
@@ -36,6 +37,13 @@ public class InteractiveObject : MonoBehaviour{
         }
     }
 
+
+    public void SetItem(Item newItem){
+        if(spriteRenderer!=null){
+            item = newItem;
+            spriteRenderer.sprite = item.artwork;
+        }
+    }
 
     public bool DoDialogue(){
         bool success = false;
